@@ -1,0 +1,644 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/Egor.Sergeev/projects/examples/Sudoku-main/src/Sudoku.UI/Sudoku.UI.csproj": {}
+  },
+  "projects": {
+    "/Users/Egor.Sergeev/projects/examples/Sudoku-main/src/GlobalConfiguration.CodeGen/GlobalConfiguration.CodeGen.csproj": {
+      "version": "0.11.0",
+      "restore": {
+        "projectUniqueName": "/Users/Egor.Sergeev/projects/examples/Sudoku-main/src/GlobalConfiguration.CodeGen/GlobalConfiguration.CodeGen.csproj",
+        "projectName": "GlobalConfiguration.CodeGen",
+        "projectPath": "/Users/Egor.Sergeev/projects/examples/Sudoku-main/src/GlobalConfiguration.CodeGen/GlobalConfiguration.CodeGen.csproj",
+        "packagesPath": "/Users/Egor.Sergeev/.nuget/packages/",
+        "outputPath": "/Users/Egor.Sergeev/projects/examples/Sudoku-main/src/GlobalConfiguration.CodeGen/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/Egor.Sergeev/projects/examples/Sudoku-main/NuGet.Config",
+          "/Users/Egor.Sergeev/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet-public/nuget/v3/index.json": {},
+          "https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet-tools/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "dependencies": {
+            "IndexRange": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "Microsoft.CodeAnalysis.CSharp": {
+              "target": "Package",
+              "version": "[4.0.1, )"
+            },
+            "Microsoft.CodeAnalysis.CSharp.Workspaces": {
+              "target": "Package",
+              "version": "[4.0.1, )"
+            },
+            "Microsoft.CodeAnalysis.Common": {
+              "target": "Package",
+              "version": "[4.0.1, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/Users/Egor.Sergeev/.dotnet/sdk/6.0.201/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/Egor.Sergeev/projects/examples/Sudoku-main/src/Sudoku.Core/Sudoku.Core.csproj": {
+      "version": "0.11.0",
+      "restore": {
+        "projectUniqueName": "/Users/Egor.Sergeev/projects/examples/Sudoku-main/src/Sudoku.Core/Sudoku.Core.csproj",
+        "projectName": "Sudoku.Core",
+        "projectPath": "/Users/Egor.Sergeev/projects/examples/Sudoku-main/src/Sudoku.Core/Sudoku.Core.csproj",
+        "packagesPath": "/Users/Egor.Sergeev/.nuget/packages/",
+        "outputPath": "/Users/Egor.Sergeev/projects/examples/Sudoku-main/src/Sudoku.Core/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/Egor.Sergeev/projects/examples/Sudoku-main/NuGet.Config",
+          "/Users/Egor.Sergeev/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet-public/nuget/v3/index.json": {},
+          "https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet-tools/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/Egor.Sergeev/projects/examples/Sudoku-main/src/Sudoku.Diagnostics.CodeGen/Sudoku.Diagnostics.CodeGen.csproj": {
+                "projectPath": "/Users/Egor.Sergeev/projects/examples/Sudoku-main/src/Sudoku.Diagnostics.CodeGen/Sudoku.Diagnostics.CodeGen.csproj"
+              },
+              "/Users/Egor.Sergeev/projects/examples/Sudoku-main/src/System/SystemExtensions.csproj": {
+                "projectPath": "/Users/Egor.Sergeev/projects/examples/Sudoku-main/src/System/SystemExtensions.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/Users/Egor.Sergeev/.dotnet/sdk/6.0.201/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/Egor.Sergeev/projects/examples/Sudoku-main/src/Sudoku.Diagnostics.CodeGen/Sudoku.Diagnostics.CodeGen.csproj": {
+      "version": "0.11.0",
+      "restore": {
+        "projectUniqueName": "/Users/Egor.Sergeev/projects/examples/Sudoku-main/src/Sudoku.Diagnostics.CodeGen/Sudoku.Diagnostics.CodeGen.csproj",
+        "projectName": "Sudoku.Diagnostics.CodeGen",
+        "projectPath": "/Users/Egor.Sergeev/projects/examples/Sudoku-main/src/Sudoku.Diagnostics.CodeGen/Sudoku.Diagnostics.CodeGen.csproj",
+        "packagesPath": "/Users/Egor.Sergeev/.nuget/packages/",
+        "outputPath": "/Users/Egor.Sergeev/projects/examples/Sudoku-main/src/Sudoku.Diagnostics.CodeGen/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/Egor.Sergeev/projects/examples/Sudoku-main/NuGet.Config",
+          "/Users/Egor.Sergeev/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet-public/nuget/v3/index.json": {},
+          "https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet-tools/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
+            "projectReferences": {
+              "/Users/Egor.Sergeev/projects/examples/Sudoku-main/src/GlobalConfiguration.CodeGen/GlobalConfiguration.CodeGen.csproj": {
+                "projectPath": "/Users/Egor.Sergeev/projects/examples/Sudoku-main/src/GlobalConfiguration.CodeGen/GlobalConfiguration.CodeGen.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "dependencies": {
+            "IndexRange": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "Microsoft.CodeAnalysis.CSharp": {
+              "target": "Package",
+              "version": "[4.0.1, )"
+            },
+            "Microsoft.CodeAnalysis.CSharp.Workspaces": {
+              "target": "Package",
+              "version": "[4.0.1, )"
+            },
+            "Microsoft.CodeAnalysis.Common": {
+              "target": "Package",
+              "version": "[4.0.1, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/Users/Egor.Sergeev/.dotnet/sdk/6.0.201/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/Egor.Sergeev/projects/examples/Sudoku-main/src/Sudoku.Solving.CodeGen/Sudoku.Solving.CodeGen.csproj": {
+      "version": "0.11.0",
+      "restore": {
+        "projectUniqueName": "/Users/Egor.Sergeev/projects/examples/Sudoku-main/src/Sudoku.Solving.CodeGen/Sudoku.Solving.CodeGen.csproj",
+        "projectName": "Sudoku.Solving.CodeGen",
+        "projectPath": "/Users/Egor.Sergeev/projects/examples/Sudoku-main/src/Sudoku.Solving.CodeGen/Sudoku.Solving.CodeGen.csproj",
+        "packagesPath": "/Users/Egor.Sergeev/.nuget/packages/",
+        "outputPath": "/Users/Egor.Sergeev/projects/examples/Sudoku-main/src/Sudoku.Solving.CodeGen/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/Egor.Sergeev/projects/examples/Sudoku-main/NuGet.Config",
+          "/Users/Egor.Sergeev/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet-public/nuget/v3/index.json": {},
+          "https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet-tools/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
+            "projectReferences": {
+              "/Users/Egor.Sergeev/projects/examples/Sudoku-main/src/GlobalConfiguration.CodeGen/GlobalConfiguration.CodeGen.csproj": {
+                "projectPath": "/Users/Egor.Sergeev/projects/examples/Sudoku-main/src/GlobalConfiguration.CodeGen/GlobalConfiguration.CodeGen.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "dependencies": {
+            "IndexRange": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "Microsoft.CodeAnalysis.CSharp": {
+              "target": "Package",
+              "version": "[4.0.1, )"
+            },
+            "Microsoft.CodeAnalysis.CSharp.Workspaces": {
+              "target": "Package",
+              "version": "[4.0.1, )"
+            },
+            "Microsoft.CodeAnalysis.Common": {
+              "target": "Package",
+              "version": "[4.0.1, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/Users/Egor.Sergeev/.dotnet/sdk/6.0.201/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/Egor.Sergeev/projects/examples/Sudoku-main/src/Sudoku.Solving/Sudoku.Solving.csproj": {
+      "version": "0.11.0",
+      "restore": {
+        "projectUniqueName": "/Users/Egor.Sergeev/projects/examples/Sudoku-main/src/Sudoku.Solving/Sudoku.Solving.csproj",
+        "projectName": "Sudoku.Solving",
+        "projectPath": "/Users/Egor.Sergeev/projects/examples/Sudoku-main/src/Sudoku.Solving/Sudoku.Solving.csproj",
+        "packagesPath": "/Users/Egor.Sergeev/.nuget/packages/",
+        "outputPath": "/Users/Egor.Sergeev/projects/examples/Sudoku-main/src/Sudoku.Solving/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/Egor.Sergeev/projects/examples/Sudoku-main/NuGet.Config",
+          "/Users/Egor.Sergeev/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet-public/nuget/v3/index.json": {},
+          "https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet-tools/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/Egor.Sergeev/projects/examples/Sudoku-main/src/Sudoku.Core/Sudoku.Core.csproj": {
+                "projectPath": "/Users/Egor.Sergeev/projects/examples/Sudoku-main/src/Sudoku.Core/Sudoku.Core.csproj"
+              },
+              "/Users/Egor.Sergeev/projects/examples/Sudoku-main/src/Sudoku.Diagnostics.CodeGen/Sudoku.Diagnostics.CodeGen.csproj": {
+                "projectPath": "/Users/Egor.Sergeev/projects/examples/Sudoku-main/src/Sudoku.Diagnostics.CodeGen/Sudoku.Diagnostics.CodeGen.csproj"
+              },
+              "/Users/Egor.Sergeev/projects/examples/Sudoku-main/src/Sudoku.Solving.CodeGen/Sudoku.Solving.CodeGen.csproj": {
+                "projectPath": "/Users/Egor.Sergeev/projects/examples/Sudoku-main/src/Sudoku.Solving.CodeGen/Sudoku.Solving.CodeGen.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/Users/Egor.Sergeev/.dotnet/sdk/6.0.201/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/Egor.Sergeev/projects/examples/Sudoku-main/src/Sudoku.UI/Sudoku.UI.csproj": {
+      "version": "0.11.0",
+      "restore": {
+        "projectUniqueName": "/Users/Egor.Sergeev/projects/examples/Sudoku-main/src/Sudoku.UI/Sudoku.UI.csproj",
+        "projectName": "Sudoku.UI",
+        "projectPath": "/Users/Egor.Sergeev/projects/examples/Sudoku-main/src/Sudoku.UI/Sudoku.UI.csproj",
+        "packagesPath": "/Users/Egor.Sergeev/.nuget/packages/",
+        "outputPath": "/Users/Egor.Sergeev/projects/examples/Sudoku-main/src/Sudoku.UI/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/Egor.Sergeev/projects/examples/Sudoku-main/NuGet.Config",
+          "/Users/Egor.Sergeev/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0-windows10.0.19041.0"
+        ],
+        "sources": {
+          "https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet-public/nuget/v3/index.json": {},
+          "https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet-tools/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0-windows10.0.19041": {
+            "targetAlias": "net6.0-windows10.0.19041.0",
+            "projectReferences": {
+              "/Users/Egor.Sergeev/projects/examples/Sudoku-main/src/Sudoku.Core/Sudoku.Core.csproj": {
+                "projectPath": "/Users/Egor.Sergeev/projects/examples/Sudoku-main/src/Sudoku.Core/Sudoku.Core.csproj"
+              },
+              "/Users/Egor.Sergeev/projects/examples/Sudoku-main/src/Sudoku.Solving/Sudoku.Solving.csproj": {
+                "projectPath": "/Users/Egor.Sergeev/projects/examples/Sudoku-main/src/Sudoku.Solving/Sudoku.Solving.csproj"
+              },
+              "/Users/Egor.Sergeev/projects/examples/Sudoku-main/src/System/SystemExtensions.csproj": {
+                "projectPath": "/Users/Egor.Sergeev/projects/examples/Sudoku-main/src/System/SystemExtensions.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0-windows10.0.19041": {
+          "targetAlias": "net6.0-windows10.0.19041.0",
+          "dependencies": {
+            "ColorCode.Core": {
+              "target": "Package",
+              "version": "[2.0.13, )"
+            },
+            "ColorCode.WinUI": {
+              "target": "Package",
+              "version": "[2.0.13, )"
+            },
+            "CommunityToolkit.Common": {
+              "target": "Package",
+              "version": "[7.1.2, )"
+            },
+            "CommunityToolkit.WinUI": {
+              "target": "Package",
+              "version": "[7.1.2, )"
+            },
+            "CommunityToolkit.WinUI.UI": {
+              "target": "Package",
+              "version": "[7.1.2, )"
+            },
+            "CommunityToolkit.WinUI.UI.Controls": {
+              "target": "Package",
+              "version": "[7.1.2, )"
+            },
+            "CommunityToolkit.WinUI.UI.Controls.Core": {
+              "target": "Package",
+              "version": "[7.1.2, )"
+            },
+            "CommunityToolkit.WinUI.UI.Controls.DataGrid": {
+              "target": "Package",
+              "version": "[7.1.2, )"
+            },
+            "CommunityToolkit.WinUI.UI.Controls.Input": {
+              "target": "Package",
+              "version": "[7.1.2, )"
+            },
+            "CommunityToolkit.WinUI.UI.Controls.Layout": {
+              "target": "Package",
+              "version": "[7.1.2, )"
+            },
+            "CommunityToolkit.WinUI.UI.Controls.Markdown": {
+              "target": "Package",
+              "version": "[7.1.2, )"
+            },
+            "CommunityToolkit.WinUI.UI.Controls.Media": {
+              "target": "Package",
+              "version": "[7.1.2, )"
+            },
+            "CommunityToolkit.WinUI.UI.Controls.Primitives": {
+              "target": "Package",
+              "version": "[7.1.2, )"
+            },
+            "Microsoft.Windows.SDK.BuildTools": {
+              "target": "Package",
+              "version": "[10.0.22000.197, )"
+            },
+            "Microsoft.WindowsAppSDK": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.Windows.SDK.NET.Ref": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/Users/Egor.Sergeev/.dotnet/sdk/6.0.201/RuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "win10-arm64": {
+          "#import": []
+        },
+        "win10-x64": {
+          "#import": []
+        },
+        "win10-x86": {
+          "#import": []
+        }
+      }
+    },
+    "/Users/Egor.Sergeev/projects/examples/Sudoku-main/src/System.CodeGen/SystemExtensions.CodeGen.csproj": {
+      "version": "0.11.0",
+      "restore": {
+        "projectUniqueName": "/Users/Egor.Sergeev/projects/examples/Sudoku-main/src/System.CodeGen/SystemExtensions.CodeGen.csproj",
+        "projectName": "SystemExtensions.CodeGen",
+        "projectPath": "/Users/Egor.Sergeev/projects/examples/Sudoku-main/src/System.CodeGen/SystemExtensions.CodeGen.csproj",
+        "packagesPath": "/Users/Egor.Sergeev/.nuget/packages/",
+        "outputPath": "/Users/Egor.Sergeev/projects/examples/Sudoku-main/src/System.CodeGen/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/Egor.Sergeev/projects/examples/Sudoku-main/NuGet.Config",
+          "/Users/Egor.Sergeev/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet-public/nuget/v3/index.json": {},
+          "https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet-tools/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
+            "projectReferences": {
+              "/Users/Egor.Sergeev/projects/examples/Sudoku-main/src/GlobalConfiguration.CodeGen/GlobalConfiguration.CodeGen.csproj": {
+                "projectPath": "/Users/Egor.Sergeev/projects/examples/Sudoku-main/src/GlobalConfiguration.CodeGen/GlobalConfiguration.CodeGen.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "dependencies": {
+            "IndexRange": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "Microsoft.CodeAnalysis.CSharp": {
+              "target": "Package",
+              "version": "[4.0.1, )"
+            },
+            "Microsoft.CodeAnalysis.CSharp.Workspaces": {
+              "target": "Package",
+              "version": "[4.0.1, )"
+            },
+            "Microsoft.CodeAnalysis.Common": {
+              "target": "Package",
+              "version": "[4.0.1, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/Users/Egor.Sergeev/.dotnet/sdk/6.0.201/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/Egor.Sergeev/projects/examples/Sudoku-main/src/System/SystemExtensions.csproj": {
+      "version": "0.11.0",
+      "restore": {
+        "projectUniqueName": "/Users/Egor.Sergeev/projects/examples/Sudoku-main/src/System/SystemExtensions.csproj",
+        "projectName": "SystemExtensions",
+        "projectPath": "/Users/Egor.Sergeev/projects/examples/Sudoku-main/src/System/SystemExtensions.csproj",
+        "packagesPath": "/Users/Egor.Sergeev/.nuget/packages/",
+        "outputPath": "/Users/Egor.Sergeev/projects/examples/Sudoku-main/src/System/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/Egor.Sergeev/projects/examples/Sudoku-main/NuGet.Config",
+          "/Users/Egor.Sergeev/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet-public/nuget/v3/index.json": {},
+          "https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet-tools/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/Egor.Sergeev/projects/examples/Sudoku-main/src/Sudoku.Diagnostics.CodeGen/Sudoku.Diagnostics.CodeGen.csproj": {
+                "projectPath": "/Users/Egor.Sergeev/projects/examples/Sudoku-main/src/Sudoku.Diagnostics.CodeGen/Sudoku.Diagnostics.CodeGen.csproj"
+              },
+              "/Users/Egor.Sergeev/projects/examples/Sudoku-main/src/System.CodeGen/SystemExtensions.CodeGen.csproj": {
+                "projectPath": "/Users/Egor.Sergeev/projects/examples/Sudoku-main/src/System.CodeGen/SystemExtensions.CodeGen.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "System.Runtime.Experimental": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/Users/Egor.Sergeev/.dotnet/sdk/6.0.201/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

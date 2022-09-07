@@ -1,0 +1,3048 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Sudoku.UI</name>
+    </assembly>
+    <members>
+        <member name="T:Sudoku.UI.App">
+            <summary>
+            Provides application-specific behavior to supplement the default <see cref="T:Microsoft.UI.Xaml.Application"/> class.
+            </summary>
+            <seealso cref="T:Microsoft.UI.Xaml.Application"/>
+        </member>
+        <member name="M:Sudoku.UI.App.#ctor">
+            <summary>
+            <para>Initializes the singleton application object.</para>
+            <para>
+            This is the first line of authored code executed,
+            and as such is the logical equivalent of <c>main()</c> or <c>WinMain()</c>.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Sudoku.UI.App.MainWindow">
+            <summary>
+            Indicates the main window in this application in the current interaction logic.
+            </summary>
+        </member>
+        <member name="P:Sudoku.UI.App.UserPreference">
+            <summary>
+            Indicates the user preference instance.
+            </summary>
+        </member>
+        <member name="M:Sudoku.UI.App.OnLaunched(Microsoft.UI.Xaml.LaunchActivatedEventArgs)">
+            <summary>
+            <para>Invoked when the application is launched normally by the end user.</para>
+            <para>
+            Other entry points will be used such as when the application is launched to open a specific file.
+            </para>
+            </summary>
+            <param name="args">Details about the launch request and process.</param>
+        </member>
+        <member name="M:Sudoku.UI.App.InitializeComponent">
+            <summary>
+            InitializeComponent()
+            </summary>
+        </member>
+        <member name="M:Sudoku.UI.App.GetXamlType(System.Type)">
+            <summary>
+            GetXamlType(Type)
+            </summary>
+        </member>
+        <member name="M:Sudoku.UI.App.GetXamlType(System.String)">
+            <summary>
+            GetXamlType(String)
+            </summary>
+        </member>
+        <member name="M:Sudoku.UI.App.GetXmlnsDefinitions">
+            <summary>
+            GetXmlnsDefinitions()
+            </summary>
+        </member>
+        <member name="T:Sudoku.UI.CommonFileExtensions">
+            <summary>
+            Defines the constants that are the common file extensions.
+            </summary>
+        </member>
+        <member name="F:Sudoku.UI.CommonFileExtensions.All">
+            <summary>
+            Indicates all file extensions are accepted.
+            </summary>
+        </member>
+        <member name="F:Sudoku.UI.CommonFileExtensions.Text">
+            <summary>
+            Indicates the plain-text format.
+            </summary>
+        </member>
+        <member name="F:Sudoku.UI.CommonFileExtensions.Sudoku">
+            <summary>
+            Indicates the sudoku file.
+            </summary>
+        </member>
+        <member name="F:Sudoku.UI.CommonFileExtensions.SudokuWithDrawing">
+            <summary>
+            Indicates the drawing file.
+            </summary>
+        </member>
+        <member name="F:Sudoku.UI.CommonFileExtensions.Configuration">
+            <summary>
+            Indicates the configuration file.
+            </summary>
+        </member>
+        <member name="T:Sudoku.UI.Data.AnalysisResultRow">
+            <summary>
+            Defines a row that used for displaying the information about a technique,
+            whose inner data is from the <see cref="T:Sudoku.Solving.Manual.ManualSolverResult"/> instance.
+            </summary>
+            <seealso cref="T:Sudoku.Solving.Manual.ManualSolverResult"/>
+        </member>
+        <member name="P:Sudoku.UI.Data.AnalysisResultRow.TotalDifficulty">
+            <summary>
+            Indicates the total difficulty of all steps.
+            </summary>
+        </member>
+        <member name="P:Sudoku.UI.Data.AnalysisResultRow.MaximumDifficulty">
+            <summary>
+            Indicates the maximum difficulty in the steps.
+            </summary>
+        </member>
+        <member name="P:Sudoku.UI.Data.AnalysisResultRow.CountOfSteps">
+            <summary>
+            Indicates the number of steps that uses logic of the current technique.
+            </summary>
+        </member>
+        <member name="P:Sudoku.UI.Data.AnalysisResultRow.TechniqueName">
+            <summary>
+            Indicates the technique name.
+            </summary>
+        </member>
+        <member name="P:Sudoku.UI.Data.AnalysisResultRow.DifficultyLevel">
+            <summary>
+            Indicates the difficulty level of the techinque belonging to.
+            </summary>
+        </member>
+        <member name="M:Sudoku.UI.Data.AnalysisResultRow.CreateListFrom(Sudoku.Solving.Manual.ManualSolverResult)">
+            <summary>
+            Creates the list of <see cref="T:Sudoku.UI.Data.AnalysisResultRow"/> as the result value,
+            via the specified <paramref name="analysisResult"/> instance of <see cref="T:Sudoku.Solving.Manual.ManualSolverResult"/> type.
+            </summary>
+            <param name="analysisResult">
+            The <see cref="T:Sudoku.Solving.Manual.ManualSolverResult"/> instance that is used for creating the result value.
+            </param>
+            <returns>The result list of <see cref="T:Sudoku.UI.Data.AnalysisResultRow"/>-typed elements.</returns>
+        </member>
+        <member name="T:Sudoku.UI.Data.DataTemplateSelectors.InfoBarDataTemplateSelector">
+            <summary>
+            Defines a data template selector that selects the <see cref="T:Microsoft.UI.Xaml.DataTemplate"/> between
+            <see cref="T:Sudoku.UI.Data.InfoBarMessage"/> and <see cref="T:Sudoku.UI.Data.HyperlinkMessage"/> as the model types.
+            </summary>
+            <seealso cref="T:Sudoku.UI.Data.InfoBarMessage"/>
+            <seealso cref="T:Sudoku.UI.Data.HyperlinkMessage"/>
+        </member>
+        <member name="P:Sudoku.UI.Data.DataTemplateSelectors.InfoBarDataTemplateSelector.PlainMessageTemplate">
+            <summary>
+            Indicates the data template that is used by the type <see cref="T:Sudoku.UI.Data.PlainMessage"/>.
+            </summary>
+        </member>
+        <member name="P:Sudoku.UI.Data.DataTemplateSelectors.InfoBarDataTemplateSelector.HyperlinkMessageTemplate">
+            <summary>
+            Indicates the data template that is used by the type <see cref="T:Sudoku.UI.Data.HyperlinkMessage"/>.
+            </summary>
+        </member>
+        <member name="P:Sudoku.UI.Data.DataTemplateSelectors.InfoBarDataTemplateSelector.AnalysisResultTemplate">
+            <summary>
+            Indicates the data template that is used by the type <see cref="T:Sudoku.UI.Data.ManualSolverResultMessage"/>.
+            </summary>
+        </member>
+        <member name="M:Sudoku.UI.Data.DataTemplateSelectors.InfoBarDataTemplateSelector.SelectTemplateCore(System.Object)">
+            <inheritdoc/>
+            <exception cref="T:System.InvalidOperationException">
+            Throws when the type of the argument <paramref name="item"/> doesn't derive
+            from <see cref="T:Sudoku.UI.Data.InfoBarMessage"/>.
+            </exception>
+        </member>
+        <member name="T:Sudoku.UI.Data.HyperlinkMessage">
+            <inheritdoc/>
+        </member>
+        <member name="P:Sudoku.UI.Data.HyperlinkMessage.HyperlinkDescription">
+            <summary>
+            Indicates the description text of the hyperlink. The default value is <see cref="F:System.String.Empty"/>.
+            </summary>
+        </member>
+        <member name="P:Sudoku.UI.Data.HyperlinkMessage.Hyperlink">
+            <summary>
+            Indicates the hyperlink that the current <see cref="T:Microsoft.UI.Xaml.Controls.InfoBar"/> relates to.
+            </summary>
+        </member>
+        <member name="T:Sudoku.UI.Data.InfoBarMessage">
+            <summary>
+            Defines a <see cref="T:Sudoku.UI.Data.InfoBarMessage"/> instance that represents for a message
+            that is used for the displaying as the message in <see cref="T:Microsoft.UI.Xaml.Controls.InfoBar"/> controls.
+            </summary>
+            <seealso cref="T:Microsoft.UI.Xaml.Controls.InfoBar"/>
+        </member>
+        <member name="P:Sudoku.UI.Data.InfoBarMessage.Message">
+            <summary>
+            Indicates the message to be displayed. The default value is <see cref="F:System.String.Empty"/>.
+            </summary>
+        </member>
+        <member name="P:Sudoku.UI.Data.InfoBarMessage.Severity">
+            <summary>
+            Indicates the severity of the information.
+            </summary>
+        </member>
+        <member name="T:Sudoku.UI.Data.Interoperability.IInitializeWithWindow">
+            <summary>
+            Exposes a method through which a client can provide an owner window
+            to a Windows Runtime (WinRT) object used in a desktop application.
+            </summary>
+            <remarks>
+            <para>
+            <b>When to initialize:</b><br/>
+            Implement this interface if your object needs to be provided with an owner window,
+            generally to display UI. Most third-party applications will not need to implement this interface.
+            </para>
+            <para>
+            <b>When to use:</b><br/>
+            Use this interface if you will provide an owner window to a WinRT object in a desktop application.
+            For more information about this scenario, see
+            <see href="https://docs.microsoft.com/en-us/windows/apps/desktop/modernize/desktop-to-uwp-supported-api?tabs=csharp#classes-that-use-iinitializewithwindow">
+            Classes that use IInitializeWithWindow
+            </see>.
+            </para>
+            <para>
+            This interface is implemented by the following objects. Note that this is necessarily an incomplete list;
+            refer to an individual object's documentation to determine whether that object implements this interface.
+            </para>
+            </remarks>
+        </member>
+        <member name="M:Sudoku.UI.Data.Interoperability.IInitializeWithWindow.Initialize(System.IntPtr)">
+            <summary>
+            Specifies an owner window to be used by a Windows Runtime (WinRT) object that is used in a desktop app.
+            </summary>
+            <param name="hwnd">The handle of the window to be used as the owner window.</param>
+            <remarks>
+            The method doesn't return anything, but the method returns an HResult value
+            in the Win32 API. For more information, please visit
+            <see href="https://docs.microsoft.com/en-us/windows/win32/api/shobjidl_core/nf-shobjidl_core-iinitializewithwindow-initialize">
+            this link
+            </see>.
+            </remarks>
+        </member>
+        <member name="T:Sudoku.UI.Data.ManualSolverResultMessage">
+            <summary>
+            Defines a <see cref="T:Sudoku.UI.Data.InfoBarMessage"/> instance that can provide with the details
+            for a <see cref="T:Sudoku.Solving.Manual.ManualSolverResult"/> instance.
+            </summary>
+            <seealso cref="T:Sudoku.Solving.Manual.ManualSolverResult"/>
+        </member>
+        <member name="P:Sudoku.UI.Data.ManualSolverResultMessage.AnalysisResult">
+            <summary>
+            Indicates the analysis result.
+            </summary>
+        </member>
+        <member name="T:Sudoku.UI.Data.PlainMessage">
+            <inheritdoc/>
+        </member>
+        <member name="T:Sudoku.UI.Data.ValueConverters.DifficultyLevelToBackgroundConverter">
+            <summary>
+            Defines a value converter that allows the one-way binding from the
+            <see cref="P:Sudoku.UI.Data.AnalysisResultRow.DifficultyLevel"/> to <see cref="P:Microsoft.UI.Xaml.Controls.Control.Background"/> property value.
+            </summary>
+            <seealso cref="P:Sudoku.UI.Data.AnalysisResultRow.DifficultyLevel"/>
+            <seealso cref="P:Microsoft.UI.Xaml.Controls.Control.Background"/>
+        </member>
+        <member name="F:Sudoku.UI.Data.ValueConverters.DifficultyLevelToBackgroundConverter.Backgrounds">
+            <summary>
+            Defines the background brushes.
+            </summary>
+        </member>
+        <member name="M:Sudoku.UI.Data.ValueConverters.DifficultyLevelToBackgroundConverter.Convert(System.Object,System.Type,System.Object,System.String)">
+            <inheritdoc/>
+            <exception cref="T:System.ArgumentException">
+            Throws when the argument <paramref name="targetType"/> is not <see cref="T:Microsoft.UI.Xaml.Media.Brush"/>.
+            </exception>
+        </member>
+        <member name="M:Sudoku.UI.Data.ValueConverters.DifficultyLevelToBackgroundConverter.ConvertBack(System.Object,System.Type,System.Object,System.String)">
+            <inheritdoc/>
+            <exception cref="T:System.NotImplementedException">Always throws due to not implemented.</exception>
+        </member>
+        <member name="T:Sudoku.UI.Data.ValueConverters.DifficultyLevelToForegroundConverter">
+            <summary>
+            Defines a value converter that allows the one-way binding from the
+            <see cref="P:Sudoku.UI.Data.AnalysisResultRow.DifficultyLevel"/> to <see cref="P:Microsoft.UI.Xaml.Controls.Control.Foreground"/> property value.
+            </summary>
+            <seealso cref="P:Sudoku.UI.Data.AnalysisResultRow.DifficultyLevel"/>
+            <seealso cref="P:Microsoft.UI.Xaml.Controls.Control.Foreground"/>
+        </member>
+        <member name="F:Sudoku.UI.Data.ValueConverters.DifficultyLevelToForegroundConverter.Foregrounds">
+            <summary>
+            Defines the foreground brushes.
+            </summary>
+        </member>
+        <member name="M:Sudoku.UI.Data.ValueConverters.DifficultyLevelToForegroundConverter.Convert(System.Object,System.Type,System.Object,System.String)">
+            <inheritdoc/>
+            <exception cref="T:System.ArgumentException">
+            Throws when the argument <paramref name="targetType"/> is not <see cref="T:Microsoft.UI.Xaml.Media.Brush"/>.
+            </exception>
+        </member>
+        <member name="M:Sudoku.UI.Data.ValueConverters.DifficultyLevelToForegroundConverter.ConvertBack(System.Object,System.Type,System.Object,System.String)">
+            <inheritdoc/>
+            <exception cref="T:System.NotImplementedException">Always throws due to not implemented.</exception>
+        </member>
+        <member name="T:Sudoku.UI.Data.ValueConverters.DifficultyLevelToTextConverter">
+            <summary>
+            Defines a value converter that allows the one-way binding from the
+            <see cref="P:Sudoku.UI.Data.AnalysisResultRow.DifficultyLevel"/> to <see cref="P:Microsoft.UI.Xaml.Controls.TextBlock.Text"/> property value.
+            </summary>
+            <seealso cref="P:Sudoku.UI.Data.AnalysisResultRow.DifficultyLevel"/>
+            <seealso cref="P:Microsoft.UI.Xaml.Controls.TextBlock.Text"/>
+        </member>
+        <member name="M:Sudoku.UI.Data.ValueConverters.DifficultyLevelToTextConverter.Convert(System.Object,System.Type,System.Object,System.String)">
+            <inheritdoc/>
+            <exception cref="T:System.ArgumentException">
+            Throws when the argument <paramref name="targetType"/> is not <see cref="T:System.String"/>.
+            </exception>
+        </member>
+        <member name="M:Sudoku.UI.Data.ValueConverters.DifficultyLevelToTextConverter.ConvertBack(System.Object,System.Type,System.Object,System.String)">
+            <inheritdoc/>
+            <exception cref="T:System.NotImplementedException">Always throws due to not implemented.</exception>
+        </member>
+        <member name="T:Sudoku.UI.Data.ValueConverters.InfoBarBoardToIsEnabledConverter">
+            <summary>
+            Defines a value converter that allows the one-way binding from the <see cref="P:Sudoku.UI.Views.Controls.InfoBarBoard.Any"/>
+            to a <see cref="T:System.Boolean"/> value indicating whether the control should be enabled.
+            </summary>
+            <seealso cref="P:Sudoku.UI.Views.Controls.InfoBarBoard.Any"/>
+        </member>
+        <member name="M:Sudoku.UI.Data.ValueConverters.InfoBarBoardToIsEnabledConverter.Convert(System.Object,System.Type,System.Object,System.String)">
+            <inheritdoc/>
+            <exception cref="T:System.ArgumentException">
+            Throws when the argument <paramref name="targetType"/> is not <see cref="T:System.Boolean"/>.
+            </exception>
+        </member>
+        <member name="M:Sudoku.UI.Data.ValueConverters.InfoBarBoardToIsEnabledConverter.ConvertBack(System.Object,System.Type,System.Object,System.String)">
+            <inheritdoc/>
+            <exception cref="T:System.NotImplementedException">Always throws due to not implemented.</exception>
+        </member>
+        <member name="T:Sudoku.UI.Data.ValueConverters.UndoOrRedoStackToIsEnabledConverter">
+            <summary>
+            Defines a value converter that allows the one-way binding from the undo-stack or redo-stack
+            to a <see cref="T:System.Boolean"/> value indicating whether the control should be enabled.
+            </summary>
+        </member>
+        <member name="M:Sudoku.UI.Data.ValueConverters.UndoOrRedoStackToIsEnabledConverter.Convert(System.Object,System.Type,System.Object,System.String)">
+            <inheritdoc/>
+            <exception cref="T:System.ArgumentException">
+            Throws when the argument <paramref name="targetType"/> is not <see cref="T:System.Boolean"/>.
+            </exception>
+        </member>
+        <member name="M:Sudoku.UI.Data.ValueConverters.UndoOrRedoStackToIsEnabledConverter.ConvertBack(System.Object,System.Type,System.Object,System.String)">
+            <inheritdoc/>
+            <exception cref="T:System.NotImplementedException">Always throws due to not implemented.</exception>
+        </member>
+        <member name="T:Sudoku.UI.Drawing.PointConversions">
+            <summary>
+            Stores a set of methods on handling point conversions.
+            </summary>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.PointConversions.GridSize(System.Double,System.Double)">
+            <summary>
+            Gets the grid size from the specified pane size and the outside offset.
+            </summary>
+            <param name="paneSize">The pane size.</param>
+            <param name="outsideOffset">The outside offset value. The value must be a positive value.</param>
+            <returns>The grid size.</returns>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.PointConversions.BlockSize(System.Double,System.Double)">
+            <summary>
+            Gets the block size from the specified pane size and the outside offset.
+            </summary>
+            <param name="paneSize">The pane size.</param>
+            <param name="outsideOffset">The outside offset value. The value must be a positive value.</param>
+            <returns>The block size.</returns>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.PointConversions.CellSize(System.Double,System.Double)">
+            <summary>
+            Gets the cell size from the specified pane size and the outside offset.
+            </summary>
+            <param name="paneSize">The pane size.</param>
+            <param name="outsideOffset">The outside offset value. The value must be a positive value.</param>
+            <returns>The cell size.</returns>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.PointConversions.CandidateSize(System.Double,System.Double)">
+            <summary>
+            Gets the candidate size from the specified pane size and the outside offset.
+            </summary>
+            <param name="paneSize">The pane size.</param>
+            <param name="outsideOffset">The outside offset value. The value must be a positive value.</param>
+            <returns>The candidate size.</returns>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.PointConversions.GetBlockLine(System.Double,System.Double,System.Byte)">
+            <summary>
+            Gets the start and end point that corresponds to the target block line at the specified index.
+            </summary>
+            <param name="paneSize">The pane size.</param>
+            <param name="outsideOffset">The outside offset.</param>
+            <param name="order">The index of the target block line. The value must be between 0 and 3.</param>
+            <returns>The two points indicating the start and end point of the line.</returns>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.PointConversions.GetCellLine(System.Double,System.Double,System.Byte)">
+            <summary>
+            Gets the start and end point that corresponds to the target cell line at the specified index.
+            </summary>
+            <param name="paneSize">The pane size.</param>
+            <param name="outsideOffset">The outside offset.</param>
+            <param name="order">The index of the target cell line. The value must be between 0 and 9.</param>
+            <returns>The two points indicating the start and end point of the line.</returns>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.PointConversions.GetCandidateLine(System.Double,System.Double,System.Byte)">
+            <summary>
+            Gets the start and end point that corresponds to the target candidate line at the specified index.
+            </summary>
+            <param name="paneSize">The pane size.</param>
+            <param name="outsideOffset">The outside offset.</param>
+            <param name="order">The index of the target candidate line. The value must be between 0 and 27.</param>
+            <returns>The two points indicating the start and end point of the line.</returns>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.PointConversions.GetCell(Windows.Foundation.Point@,System.Double,System.Double)">
+            <summary>
+            Gets the cell index via the <see cref="T:Windows.Foundation.Point"/> value through the mouse interaction.
+            </summary>
+            <param name="point">The point value.</param>
+            <param name="paneSize">The pane size.</param>
+            <param name="outsideOffset">The outside offset.</param>
+            <returns>
+            The cell index. If the argument <paramref name="point"/> is invalid,
+            the return value will be -1.
+            </returns>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.PointConversions.GetCandidate(Windows.Foundation.Point@,System.Double,System.Double)">
+            <summary>
+            Gets the candidate index via the <see cref="T:Windows.Foundation.Point"/> value through the mouse interaction.
+            </summary>
+            <param name="point">The point value.</param>
+            <param name="paneSize">The pane size.</param>
+            <param name="outsideOffset">The outside offset.</param>
+            <returns>
+            The candidate index. If the argument <paramref name="point"/> is invalid,
+            the return value will be -1.
+            </returns>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.PointConversions.GetLine(System.Double,System.Double,System.Byte,System.Int32)">
+            <summary>
+            Gets the start and end point that corresponds to the target line at the specified index,
+            with the specified line weight.
+            </summary>
+            <param name="paneSize">The pane size.</param>
+            <param name="outsideOffset">The outside offset.</param>
+            <param name="i">The index of the target line.</param>
+            <param name="w">The weight of the line type. The value must be 3, 9 or 27.</param>
+            <returns>The two points indicating the start and end point of the line.</returns>
+        </member>
+        <member name="T:Sudoku.UI.Drawing.Shapes.BlockLine">
+            <summary>
+            Defines a block line.
+            </summary>
+        </member>
+        <member name="F:Sudoku.UI.Drawing.Shapes.BlockLine._line">
+            <summary>
+            The inner line.
+            </summary>
+        </member>
+        <member name="F:Sudoku.UI.Drawing.Shapes.BlockLine._paneSize">
+            <summary>
+            Indicates the pane size, which is the backing field of the property <see cref="P:Sudoku.UI.Drawing.Shapes.BlockLine.PaneSize"/>.
+            </summary>
+            <seealso cref="P:Sudoku.UI.Drawing.Shapes.BlockLine.PaneSize"/>
+        </member>
+        <member name="F:Sudoku.UI.Drawing.Shapes.BlockLine._outsideOffset">
+            <summary>
+            Indicates the outside offset, which is the backing field of the property <see cref="P:Sudoku.UI.Drawing.Shapes.BlockLine.OutsideOffset"/>.
+            </summary>
+            <seealso cref="P:Sudoku.UI.Drawing.Shapes.BlockLine.OutsideOffset"/>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.Shapes.BlockLine.#ctor(Windows.UI.Color,System.Double,System.Double,System.Double,System.Byte)">
+            <summary>
+            Initializes a <see cref="T:Sudoku.UI.Drawing.Shapes.BlockLine"/> instance via the specified details.
+            </summary>
+            <param name="strokeColor">The stroke color of the block line.</param>
+            <param name="strokeThickness">The stroke thickness of the block line.</param>
+            <param name="paneSize">Indicates the pane size.</param>
+            <param name="outsideOffset">Indicates the outside offset.</param>
+            <param name="order">
+            The order. The value can only be between 0 and 19. For more details of the parameter,
+            please see the property <see cref="P:Sudoku.UI.Drawing.Shapes.BlockLine.Order"/>.
+            </param>
+        </member>
+        <member name="P:Sudoku.UI.Drawing.Shapes.BlockLine.Order">
+            <summary>
+            The order of the block line. The value must be between 0 and 19.
+            <list type="table">
+            <listheader>
+            <term>Range</term>
+            <description>Description</description>
+            </listheader>
+            <item>
+            <term><![CDATA[>= 0 and < 4]]></term>
+            <description>The block line is horizontal.</description>
+            </item>
+            <item>
+            <term><![CDATA[>= 4 and < 8]]></term>
+            <description>The block line is vertical.</description>
+            </item>
+            </list>
+            </summary>
+        </member>
+        <member name="P:Sudoku.UI.Drawing.Shapes.BlockLine.StrokeThickness">
+            <summary>
+            The stroke thickness of the block line.
+            </summary>
+        </member>
+        <member name="P:Sudoku.UI.Drawing.Shapes.BlockLine.PaneSize">
+            <summary>
+            The pane size.
+            </summary>
+        </member>
+        <member name="P:Sudoku.UI.Drawing.Shapes.BlockLine.OutsideOffset">
+            <summary>
+            The outside offset.
+            </summary>
+        </member>
+        <member name="P:Sudoku.UI.Drawing.Shapes.BlockLine.StrokeColor">
+            <summary>
+            The stroke color of the block line.
+            </summary>
+        </member>
+        <member name="P:Sudoku.UI.Drawing.Shapes.BlockLine.DebuggerDisplayView">
+            <summary>
+            Defines the debugger view.
+            </summary>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.Shapes.BlockLine.Equals(Sudoku.UI.Drawing.Shapes.DrawingElement)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.Shapes.BlockLine.GetHashCode">
+            <inheritdoc/>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.Shapes.BlockLine.GetControl">
+            <inheritdoc/>
+        </member>
+        <member name="T:Sudoku.UI.Drawing.Shapes.CandidateDigit">
+            <summary>
+            Defines a drawing element that displays for a digit that is the candidate-levelled digit.
+            The data structure represents for all possible candidates in a cell.
+            </summary>
+        </member>
+        <member name="F:Sudoku.UI.Drawing.Shapes.CandidateDigit._grid">
+            <summary>
+            Indicates the inner grid.
+            </summary>
+        </member>
+        <member name="F:Sudoku.UI.Drawing.Shapes.CandidateDigit._userPreference">
+            <summary>
+            Indicates the user preference.
+            </summary>
+        </member>
+        <member name="F:Sudoku.UI.Drawing.Shapes.CandidateDigit._digitBlocks">
+            <summary>
+            Indicates the digit blocks.
+            </summary>
+        </member>
+        <member name="F:Sudoku.UI.Drawing.Shapes.CandidateDigit._candidateMask">
+            <summary>
+            Indicates the candidate mask.
+            </summary>
+        </member>
+        <member name="F:Sudoku.UI.Drawing.Shapes.CandidateDigit._wrongDigitMask">
+            <summary>
+            Indicates the wrong digit mask.
+            </summary>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.Shapes.CandidateDigit.#ctor(Sudoku.UI.UserPreference)">
+            <summary>
+            Initializes a <see cref="T:Sudoku.UI.Drawing.Shapes.CandidateDigit"/> instance via the details.
+            </summary>
+            <param name="userPreference">The user preference.</param>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.Shapes.CandidateDigit.#ctor(System.Int16,System.Int16,Sudoku.UI.UserPreference)">
+            <summary>
+            Initializes a <see cref="T:Sudoku.UI.Drawing.Shapes.CandidateDigit"/> instance via the details.
+            </summary>
+            <param name="candidateMask">The candidate mask.</param>
+            <param name="wrongDigitMask">The wrong digits mask.</param>
+            <param name="userPreference">The user preference.</param>
+            <exception cref="T:System.ArgumentOutOfRangeException">
+            Throws when the argument <paramref name="candidateMask"/> is negative number or greater than 511.
+            </exception>
+        </member>
+        <member name="P:Sudoku.UI.Drawing.Shapes.CandidateDigit.ShowCandidates">
+            <summary>
+            Gets or sets the value indicating whether the candidate block shows digits.
+            </summary>
+        </member>
+        <member name="P:Sudoku.UI.Drawing.Shapes.CandidateDigit.CandidateMask">
+            <summary>
+            Indicates the candidate mask.
+            </summary>
+        </member>
+        <member name="P:Sudoku.UI.Drawing.Shapes.CandidateDigit.WrongDigitMask">
+            <summary>
+            Indicates the wrong digits mask.
+            </summary>
+        </member>
+        <member name="P:Sudoku.UI.Drawing.Shapes.CandidateDigit.DebuggerDisplayView">
+            <summary>
+            Defines the debugger view.
+            </summary>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.Shapes.CandidateDigit.Equals(Sudoku.UI.Drawing.Shapes.DrawingElement)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.Shapes.CandidateDigit.GetHashCode">
+            <inheritdoc/>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.Shapes.CandidateDigit.GetControl">
+            <inheritdoc/>
+        </member>
+        <member name="T:Sudoku.UI.Drawing.Shapes.CandidateLine">
+            <summary>
+            Defines a candidate line.
+            </summary>
+        </member>
+        <member name="F:Sudoku.UI.Drawing.Shapes.CandidateLine._line">
+            <summary>
+            The inner line.
+            </summary>
+        </member>
+        <member name="F:Sudoku.UI.Drawing.Shapes.CandidateLine._paneSize">
+            <summary>
+            Indicates the pane size, which is the backing field of the property <see cref="P:Sudoku.UI.Drawing.Shapes.CandidateLine.PaneSize"/>.
+            </summary>
+            <seealso cref="P:Sudoku.UI.Drawing.Shapes.CandidateLine.PaneSize"/>
+        </member>
+        <member name="F:Sudoku.UI.Drawing.Shapes.CandidateLine._outsideOffset">
+            <summary>
+            Indicates the outside offset, which is the backing field of the property <see cref="P:Sudoku.UI.Drawing.Shapes.CandidateLine.OutsideOffset"/>.
+            </summary>
+            <seealso cref="P:Sudoku.UI.Drawing.Shapes.CandidateLine.OutsideOffset"/>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.Shapes.CandidateLine.#ctor(Windows.UI.Color,System.Double,System.Double,System.Double,System.Byte)">
+            <summary>
+            Initializes a <see cref="T:Sudoku.UI.Drawing.Shapes.CandidateLine"/> instance via the specified details.
+            </summary>
+            <param name="strokeColor">The stroke color of the block line.</param>
+            <param name="strokeThickness">The stroke thickness of the block line.</param>
+            <param name="paneSize">Indicates the pane size.</param>
+            <param name="outsideOffset">Indicates the outside offset.</param>
+            <param name="order">
+            The order. The value can only be between 0 and 27. For more details of the parameter,
+            please see the property <see cref="P:Sudoku.UI.Drawing.Shapes.CandidateLine.Order"/>.
+            </param>
+        </member>
+        <member name="P:Sudoku.UI.Drawing.Shapes.CandidateLine.Order">
+            <summary>
+            The order of the block line. The value must be between 0 and 27.
+            <list type="table">
+            <listheader>
+            <term>Range</term>
+            <description>Description</description>
+            </listheader>
+            <item>
+            <term><![CDATA[>= 0 and < 28]]></term>
+            <description>The block line is horizontal.</description>
+            </item>
+            <item>
+            <term><![CDATA[>= 28 and < 56]]></term>
+            <description>The block line is vertical.</description>
+            </item>
+            </list>
+            </summary>
+        </member>
+        <member name="P:Sudoku.UI.Drawing.Shapes.CandidateLine.StrokeThickness">
+            <summary>
+            The stroke thickness of the block line.
+            </summary>
+        </member>
+        <member name="P:Sudoku.UI.Drawing.Shapes.CandidateLine.PaneSize">
+            <summary>
+            The pane size.
+            </summary>
+        </member>
+        <member name="P:Sudoku.UI.Drawing.Shapes.CandidateLine.OutsideOffset">
+            <summary>
+            The outside offset.
+            </summary>
+        </member>
+        <member name="P:Sudoku.UI.Drawing.Shapes.CandidateLine.StrokeColor">
+            <summary>
+            The stroke color of the block line.
+            </summary>
+        </member>
+        <member name="P:Sudoku.UI.Drawing.Shapes.CandidateLine.DebuggerDisplayView">
+            <summary>
+            Defines the debugger view.
+            </summary>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.Shapes.CandidateLine.Equals(Sudoku.UI.Drawing.Shapes.DrawingElement)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.Shapes.CandidateLine.GetHashCode">
+            <inheritdoc/>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.Shapes.CandidateLine.GetControl">
+            <inheritdoc/>
+        </member>
+        <member name="T:Sudoku.UI.Drawing.Shapes.CellDigit">
+            <summary>
+            Defines a drawing element that displays for a digit that is the cell-levelled digit.
+            </summary>
+        </member>
+        <member name="F:Sudoku.UI.Drawing.Shapes.CellDigit._textBlock">
+            <summary>
+            The inner text block.
+            </summary>
+        </member>
+        <member name="F:Sudoku.UI.Drawing.Shapes.CellDigit._userPreference">
+            <summary>
+            The user preference.
+            </summary>
+        </member>
+        <member name="F:Sudoku.UI.Drawing.Shapes.CellDigit._isGiven">
+            <summary>
+            Indicates the cell status.
+            </summary>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.Shapes.CellDigit.#ctor(Sudoku.UI.UserPreference)">
+            <summary>
+            Initializes a <see cref="T:Sudoku.UI.Drawing.Shapes.CellDigit"/> instance via the details.
+            </summary>
+            <param name="userPreference">The user preference.</param>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.Shapes.CellDigit.#ctor(System.Byte,System.Nullable{System.Boolean},Sudoku.UI.UserPreference)">
+            <summary>
+            Initializes a <see cref="T:Sudoku.UI.Drawing.Shapes.CellDigit"/> instance via the details.
+            </summary>
+            <param name="digit">
+            The digit value. If you want to hide the value, just assign 255;
+            otherwise, using 0 to 8 to indicate the displaying value corresponding to the real digit 1 to 9.
+            </param>
+            <param name="isGiven">
+            Indicates whether the cell is given. If <see langword="false"/>, modifiable value.
+            </param>
+            <param name="userPreference">The user preference.</param>
+            <exception cref="T:System.ArgumentOutOfRangeException">
+            Throws when the argument <paramref name="digit"/> is not 255 and not in range 0 to 8.
+            </exception>
+        </member>
+        <member name="P:Sudoku.UI.Drawing.Shapes.CellDigit.IsGiven">
+            <summary>
+            Indicates whether the current cell is the given cell.
+            </summary>
+            <returns>
+            The return value is <see cref="T:System.Boolean"/>?, which means the return value contains three possible cases:
+            <list type="table">
+            <item>
+            <term><see langword="true"/></term>
+            <description>The cell is the given.</description>
+            </item>
+            <item>
+            <term><see langword="false"/></term>
+            <description>The cell is modifiable.</description>
+            </item>
+            <item>
+            <term><see langword="null"/></term>
+            <description>The cell is modifiable, but the value is wrong.</description>
+            </item>
+            </list>
+            </returns>
+        </member>
+        <member name="P:Sudoku.UI.Drawing.Shapes.CellDigit.IsShown">
+            <summary>
+            Indicates whether the current element is shown.
+            </summary>
+            <exception cref="T:System.ArgumentException">
+            Throws when the argument <see langword="value"/> holds <see langword="true"/> value.
+            </exception>
+        </member>
+        <member name="P:Sudoku.UI.Drawing.Shapes.CellDigit.Digit">
+            <summary>
+            Indicates the digit used.
+            </summary>
+        </member>
+        <member name="P:Sudoku.UI.Drawing.Shapes.CellDigit.FontSize">
+            <summary>
+            The font size.
+            </summary>
+        </member>
+        <member name="P:Sudoku.UI.Drawing.Shapes.CellDigit.FontName">
+            <summary>
+            The font name.
+            </summary>
+        </member>
+        <member name="P:Sudoku.UI.Drawing.Shapes.CellDigit.GivenColor">
+            <summary>
+            The given color.
+            </summary>
+        </member>
+        <member name="P:Sudoku.UI.Drawing.Shapes.CellDigit.ModifiableColor">
+            <summary>
+            The modifiable color.
+            </summary>
+        </member>
+        <member name="P:Sudoku.UI.Drawing.Shapes.CellDigit.CellDeltaColor">
+            <summary>
+            Indicates the cell delta color.
+            </summary>
+        </member>
+        <member name="P:Sudoku.UI.Drawing.Shapes.CellDigit.DebuggerDisplayView">
+            <summary>
+            Defines the debugger view.
+            </summary>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.Shapes.CellDigit.Equals(Sudoku.UI.Drawing.Shapes.DrawingElement)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.Shapes.CellDigit.GetHashCode">
+            <inheritdoc/>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.Shapes.CellDigit.GetControl">
+            <inheritdoc/>
+        </member>
+        <member name="T:Sudoku.UI.Drawing.Shapes.CellLine">
+            <summary>
+            Defines a cell line.
+            </summary>
+        </member>
+        <member name="F:Sudoku.UI.Drawing.Shapes.CellLine._line">
+            <summary>
+            The inner line.
+            </summary>
+        </member>
+        <member name="F:Sudoku.UI.Drawing.Shapes.CellLine._paneSize">
+            <summary>
+            Indicates the pane size, which is the backing field of the property <see cref="P:Sudoku.UI.Drawing.Shapes.CellLine.PaneSize"/>.
+            </summary>
+            <seealso cref="P:Sudoku.UI.Drawing.Shapes.CellLine.PaneSize"/>
+        </member>
+        <member name="F:Sudoku.UI.Drawing.Shapes.CellLine._outsideOffset">
+            <summary>
+            Indicates the outside offset, which is the backing field of the property <see cref="P:Sudoku.UI.Drawing.Shapes.CellLine.OutsideOffset"/>.
+            </summary>
+            <seealso cref="P:Sudoku.UI.Drawing.Shapes.CellLine.OutsideOffset"/>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.Shapes.CellLine.#ctor(Windows.UI.Color,System.Double,System.Double,System.Double,System.Byte)">
+            <summary>
+            Initializes a <see cref="T:Sudoku.UI.Drawing.Shapes.CellLine"/> instance via the specified details.
+            </summary>
+            <param name="strokeColor">The stroke color of the block line.</param>
+            <param name="strokeThickness">The stroke thickness of the block line.</param>
+            <param name="paneSize">Indicates the pane size.</param>
+            <param name="outsideOffset">Indicates the outside offset.</param>
+            <param name="order">
+            The order. The value can only be between 0 and 19. For more details of the parameter,
+            please see the property <see cref="P:Sudoku.UI.Drawing.Shapes.CellLine.Order"/>.
+            </param>
+        </member>
+        <member name="P:Sudoku.UI.Drawing.Shapes.CellLine.Order">
+            <summary>
+            The order of the block line. The value must be between 0 and 19.
+            <list type="table">
+            <listheader>
+            <term>Range</term>
+            <description>Description</description>
+            </listheader>
+            <item>
+            <term><![CDATA[>= 0 and < 10]]></term>
+            <description>The block line is horizontal.</description>
+            </item>
+            <item>
+            <term><![CDATA[>= 10 and < 20]]></term>
+            <description>The block line is vertical.</description>
+            </item>
+            </list>
+            </summary>
+        </member>
+        <member name="P:Sudoku.UI.Drawing.Shapes.CellLine.StrokeThickness">
+            <summary>
+            The stroke thickness of the block line.
+            </summary>
+        </member>
+        <member name="P:Sudoku.UI.Drawing.Shapes.CellLine.PaneSize">
+            <summary>
+            The pane size.
+            </summary>
+        </member>
+        <member name="P:Sudoku.UI.Drawing.Shapes.CellLine.OutsideOffset">
+            <summary>
+            The outside offset.
+            </summary>
+        </member>
+        <member name="P:Sudoku.UI.Drawing.Shapes.CellLine.StrokeColor">
+            <summary>
+            The stroke color of the block line.
+            </summary>
+        </member>
+        <member name="P:Sudoku.UI.Drawing.Shapes.CellLine.DebuggerDisplayView">
+            <summary>
+            Defines the debugger view.
+            </summary>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.Shapes.CellLine.Equals(Sudoku.UI.Drawing.Shapes.DrawingElement)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.Shapes.CellLine.GetHashCode">
+            <inheritdoc/>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.Shapes.CellLine.GetControl">
+            <inheritdoc/>
+        </member>
+        <member name="T:Sudoku.UI.Drawing.Shapes.DrawingElement">
+            <summary>
+            Defines a drawing element that represents a sudoku information.
+            </summary>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.Shapes.DrawingElement.DynamicAssign(System.Action{System.Object})">
+            <summary>
+            Provides a way to assign the inner properties using the reflection via the specified parameters.
+            </summary>
+            <param name="objectHandler">The handler that checks and changes the inner value.</param>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.Shapes.DrawingElement.Equals(System.Object)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.Shapes.DrawingElement.Equals(Sudoku.UI.Drawing.Shapes.DrawingElement)">
+            <inheritdoc cref="M:System.IEquatable`1.Equals(`0)"/>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.Shapes.DrawingElement.GetHashCode">
+            <inheritdoc/>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.Shapes.DrawingElement.GetControl">
+            <summary>
+            To get the <see cref="T:Microsoft.UI.Xaml.UIElement"/> that is used for displaying the data structure,
+            on the <see cref="T:Microsoft.UI.Xaml.Controls.Canvas"/>.
+            </summary>
+            <returns>The <see cref="T:Microsoft.UI.Xaml.UIElement"/> control instance.</returns>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.Shapes.DrawingElement.op_Equality(Sudoku.UI.Drawing.Shapes.DrawingElement,Sudoku.UI.Drawing.Shapes.DrawingElement)">
+            <summary>
+            Determines whether the two <see cref="T:Sudoku.UI.Drawing.Shapes.DrawingElement"/>s are equal of both type and inner value. 
+            </summary>
+            <param name="left">The left-side instance to compare.</param>
+            <param name="right">The right-side instance to compare.</param>
+            <returns>The result.</returns>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.Shapes.DrawingElement.op_Inequality(Sudoku.UI.Drawing.Shapes.DrawingElement,Sudoku.UI.Drawing.Shapes.DrawingElement)">
+            <summary>
+            Determines whether the two <see cref="T:Sudoku.UI.Drawing.Shapes.DrawingElement"/>s aren't equal of both type and inner value. 
+            </summary>
+            <param name="left">The left-side instance to compare.</param>
+            <param name="right">The right-side instance to compare.</param>
+            <returns>The result.</returns>
+        </member>
+        <member name="T:Sudoku.UI.Drawing.Shapes.DrawingElementBag">
+            <summary>
+            Defines a custom collection that stores the <see cref="T:Sudoku.UI.Drawing.Shapes.DrawingElement"/>s.
+            </summary>
+        </member>
+        <member name="F:Sudoku.UI.Drawing.Shapes.DrawingElementBag._elements">
+            <summary>
+            <para>Defines the inner elements.</para>
+            <para>
+            The reference of the current field may be modified if adding a new element into it
+            but it being already full.
+            </para>
+            </summary>
+        </member>
+        <member name="F:Sudoku.UI.Drawing.Shapes.DrawingElementBag._capacity">
+            <summary>
+            Indicates the capacity value.
+            </summary>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.Shapes.DrawingElementBag.#ctor">
+            <summary>
+            Initializes a <see cref="T:Sudoku.UI.Drawing.Shapes.DrawingElement"/> instance with the default capacity value 16.
+            </summary>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.Shapes.DrawingElementBag.#ctor(Sudoku.UI.Drawing.Shapes.DrawingElement[])">
+            <summary>
+            Initializes a <see cref="T:Sudoku.UI.Drawing.Shapes.DrawingElementBag"/> instance
+            via the specified list of <see cref="T:Sudoku.UI.Drawing.Shapes.DrawingElement"/>s to add into the current collection.
+            </summary>
+            <param name="elements">The list of <see cref="T:Sudoku.UI.Drawing.Shapes.DrawingElement"/>s.</param>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.Shapes.DrawingElementBag.#ctor(System.Collections.Generic.IEnumerable{Sudoku.UI.Drawing.Shapes.DrawingElement})">
+            <summary>
+            Initializes a <see cref="T:Sudoku.UI.Drawing.Shapes.DrawingElementBag"/> instance
+            via the specified list of <see cref="T:Sudoku.UI.Drawing.Shapes.DrawingElement"/>s to add into the current collection.
+            </summary>
+            <param name="elements">The list of <see cref="T:Sudoku.UI.Drawing.Shapes.DrawingElement"/>s.</param>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.Shapes.DrawingElementBag.#ctor(System.UInt32)">
+            <summary>
+            Initializes a <see cref="T:Sudoku.UI.Drawing.Shapes.DrawingElementBag"/> instance via the specified capacity.
+            </summary>
+            <param name="capacity">
+            The capacity of the collection to be initialized. In other words, this parameter indicates
+            how many elements can be stored into the current collection.
+            </param>
+            <remarks>
+            The argument <paramref name="capacity"/> must be the power of 2;
+            otherwise, the method will call <see cref="M:System.Numerics.BitOperations.RoundUpToPowerOf2(System.UInt32)"/> to make the value
+            be the power of 2.
+            </remarks>
+        </member>
+        <member name="P:Sudoku.UI.Drawing.Shapes.DrawingElementBag.Capacity">
+            <summary>
+            Indicates the capacity of the current collection. The value may be greater than <see cref="P:Sudoku.UI.Drawing.Shapes.DrawingElementBag.Count"/>.
+            </summary>
+            <seealso cref="P:Sudoku.UI.Drawing.Shapes.DrawingElementBag.Count"/>
+        </member>
+        <member name="P:Sudoku.UI.Drawing.Shapes.DrawingElementBag.Count">
+            <summary>
+            Indicates the number of <see cref="T:Sudoku.UI.Drawing.Shapes.DrawingElement"/>s being stored in the current collection.
+            </summary>
+        </member>
+        <member name="P:Sudoku.UI.Drawing.Shapes.DrawingElementBag.Item(System.Int32)">
+            <summary>
+            Gets the <see cref="T:Sudoku.UI.Drawing.Shapes.DrawingElement"/> instance at the specified index.
+            </summary>
+            <param name="index">The index. Should be less than <see cref="P:Sudoku.UI.Drawing.Shapes.DrawingElementBag.Count"/>.</param>
+            <returns>The <see cref="T:Sudoku.UI.Drawing.Shapes.DrawingElement"/> element at the specified index.</returns>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.Shapes.DrawingElementBag.Add(Sudoku.UI.Drawing.Shapes.DrawingElement)">
+            <summary>
+            Adds the specified element into the current collection.
+            </summary>
+            <param name="element">The element to be added.</param>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.Shapes.DrawingElementBag.AddRange(System.Collections.Generic.IEnumerable{Sudoku.UI.Drawing.Shapes.DrawingElement})">
+            <summary>
+            Adds the specified list of elements into the current collection.
+            </summary>
+            <param name="elements">The elements to be added.</param>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.Shapes.DrawingElementBag.Contains``1(``0)">
+            <summary>
+            Determine whether the collection has been stored the instance whose value is equal to the specified one.
+            </summary>
+            <param name="element">The element to compare.</param>
+            <returns>A <see cref="T:System.Boolean"/> result indicating that.</returns>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.Shapes.DrawingElementBag.ToString">
+            <inheritdoc/>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.Shapes.DrawingElementBag.GetEnumerator">
+            <inheritdoc cref="M:System.Collections.Generic.IEnumerable`1.GetEnumerator"/>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.Shapes.DrawingElementBag.Slice(System.Int32)">
+            <summary>
+            Slices the current collection and only gets the specified number of elements from the basic collection,
+            from the first element.
+            </summary>
+            <param name="count">The desired number of elements.</param>
+            <returns>The list of the collection.</returns>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.Shapes.DrawingElementBag.Slice(System.Int32,System.Int32)">
+            <summary>
+            Slices the current collection and only gets the specified number of elements from the basic collection,
+            at the specified index as the beginning.
+            </summary>
+            <param name="start">The desired start index.</param>
+            <param name="count">The desired number of elements.</param>
+            <returns>The list of the collection.</returns>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.Shapes.DrawingElementBag.System#Collections#IEnumerable#GetEnumerator">
+            <inheritdoc/>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.Shapes.DrawingElementBag.System#Collections#Generic#IEnumerable{Sudoku#UI#Drawing#Shapes#DrawingElement}#GetEnumerator">
+            <inheritdoc/>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.Shapes.DrawingElementBag.EnsureCapacity">
+            <summary>
+            Ensures the capacity, allowing new element being added into the current collection.
+            If the collection has been already full, the method will re-allocate the memory to allow
+            more elements stored into the current collection.
+            </summary>
+            <exception cref="T:System.OutOfMemoryException">
+            Throws when the size of the collection is greater than or equals 32767.
+            </exception>
+        </member>
+        <member name="T:Sudoku.UI.Drawing.Shapes.DrawingElementBag.Enumerator">
+            <summary>
+            Indicates the enumerator type that allows iterating on <see cref="T:Sudoku.UI.Drawing.Shapes.DrawingElementBag"/> instances. 
+            </summary>
+            <seealso cref="T:Sudoku.UI.Drawing.Shapes.DrawingElementBag"/>
+        </member>
+        <member name="F:Sudoku.UI.Drawing.Shapes.DrawingElementBag.Enumerator._count">
+            <summary>
+            The number of elements to be iterated.
+            </summary>
+        </member>
+        <member name="F:Sudoku.UI.Drawing.Shapes.DrawingElementBag.Enumerator._elements">
+            <summary>
+            The list of elements.
+            </summary>
+        </member>
+        <member name="F:Sudoku.UI.Drawing.Shapes.DrawingElementBag.Enumerator._ptr">
+            <summary>
+            Indicates the index value that points to the current iterated value.
+            </summary>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.Shapes.DrawingElementBag.Enumerator.#ctor(Sudoku.UI.Drawing.Shapes.DrawingElement[],System.Int32)">
+            <summary>
+            Initializes an <see cref="T:Sudoku.UI.Drawing.Shapes.DrawingElementBag.Enumerator"/> instance via the specified elements and the iteration length.
+            </summary>
+            <param name="elements">The elements to be iterated.</param>
+            <param name="count">The number of elements to be iterated.</param>
+        </member>
+        <member name="P:Sudoku.UI.Drawing.Shapes.DrawingElementBag.Enumerator.Current">
+            <inheritdoc cref="P:System.Collections.Generic.IEnumerator`1.Current"/>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.Shapes.DrawingElementBag.Enumerator.MoveNext">
+            <inheritdoc cref="M:System.Collections.IEnumerator.MoveNext"/>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.Shapes.DrawingElementBag.First(System.Predicate{Sudoku.UI.Drawing.Shapes.DrawingElement})">
+            <summary>
+            Gets the first element that satisfies the specified condition.
+            </summary>
+            <param name="predicate">The condition.</param>
+            <returns>The result.</returns>
+            <exception cref="T:System.InvalidOperationException">
+            Throws when no elements satisfy the specified condition.
+            </exception>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.Shapes.DrawingElementBag.First()">
+            <summary>
+            Gets the first element that satisfies the specified condition.
+            </summary>
+            <param name="predicate">The condition.</param>
+            <returns>The result.</returns>
+            <exception cref="T:System.InvalidOperationException">
+            Throws when no elements satisfy the specified condition.
+            </exception>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.Shapes.DrawingElementBag.FirstOrDefault(System.Predicate{Sudoku.UI.Drawing.Shapes.DrawingElement})">
+            <summary>
+            Gets the first element that satisfies the specified condition.
+            </summary>
+            <param name="predicate">The condition.</param>
+            <returns>The result.</returns>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.Shapes.DrawingElementBag.FirstOrDefault()">
+            <summary>
+            Gets the first element that satisfies the specified condition.
+            </summary>
+            <param name="predicate">The condition.</param>
+            <returns>The result.</returns>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.Shapes.DrawingElementBag.Single(System.Predicate{Sudoku.UI.Drawing.Shapes.DrawingElement})">
+            <summary>
+            Retrieve the collection, to get the only element that may satisfy the specified condition.
+            </summary>
+            <param name="predicate">The condition.</param>
+            <returns>The only element that may satisfy the condition.</returns>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.Shapes.DrawingElementBag.Single()">
+            <summary>
+            Retrieve the collection, to get the only element that may satisfy the specified condition.
+            </summary>
+            <param name="predicate">The condition.</param>
+            <returns>The only element that may satisfy the condition.</returns>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.Shapes.DrawingElementBag.SingleOrDefault(System.Predicate{Sudoku.UI.Drawing.Shapes.DrawingElement})">
+            <summary>
+            Retrieve the collection, to get the only element that may satisfy the specified condition.
+            </summary>
+            <param name="predicate">The condition.</param>
+            <returns>
+            The only element that may satisfy the condition; or <see langword="null"/> if the collection
+            has multiple values satisfying the condition.
+            </returns>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.Shapes.DrawingElementBag.SingleOrDefault()">
+            <summary>
+            Retrieve the collection, to get the only element that may satisfy the specified condition.
+            </summary>
+            <param name="predicate">The condition.</param>
+            <returns>
+            The only element that may satisfy the condition; or <see langword="null"/> if the collection
+            has multiple values satisfying the condition.
+            </returns>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.Shapes.DrawingElementBag.OfType``1">
+            <summary>
+            Gets all possible elements that are all of type <typeparamref name="TDrawingElement"/>.
+            </summary>
+            <typeparam name="TDrawingElement">The type of the elements to be iterated.</typeparam>
+            <returns>
+            The enumerator instance that allows you using <see langword="foreach"/> loop to iterate on them.
+            </returns>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.Shapes.DrawingElementBag.OfType``2">
+            <summary>
+            Gets all possible elements that are all of either type <typeparamref name="T1"/>
+            or <typeparamref name="T2"/>.
+            </summary>
+            <typeparam name="T1">The first allowed type whose instances being iterated.</typeparam>
+            <typeparam name="T2">The second allowed type whose instances being iterated.</typeparam>
+            <returns>
+            The enumerator instance that allows you using <see langword="foreach"/> loop to iterate on them.
+            </returns>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.Shapes.DrawingElementBag.OfType``3">
+            <summary>
+            Gets all possible elements that are all of type <typeparamref name="T1"/>,
+            <typeparamref name="T2"/> or <typeparamref name="T3"/>.
+            </summary>
+            <typeparam name="T1">The first allowed type whose instances being iterated.</typeparam>
+            <typeparam name="T2">The second allowed type whose instances being iterated.</typeparam>
+            <typeparam name="T3">The third allowed type whose instances being iterated.</typeparam>
+            <returns>
+            The enumerator instance that allows you using <see langword="foreach"/> loop to iterate on them.
+            </returns>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.Shapes.DrawingElementBag.Select``1(System.Func{Sudoku.UI.Drawing.Shapes.DrawingElement,``0})">
+            <summary>
+            Makes a projection that converts each element to the target value of type <typeparamref name="T"/>,
+            using the specified method to convert.
+            </summary>
+            <typeparam name="T">The type of the target result that each element converted.</typeparam>
+            <param name="selector">The selector to convert the element.</param>
+            <returns>
+            The enumerator that allows you using <see langword="select"/> clause to get the result.
+            </returns>
+            <remarks>
+            The method can be used by the following two ways:
+            <list type="number">
+            <item>
+            Using query expression syntax: <c>var controls = from e in list select e.GetControl();</c>.
+            </item>
+            <item>
+            Using method invocation syntax: <c>var controls = list.Select(static e => e.GetControl());</c>.
+            </item>
+            </list>
+            </remarks>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.Shapes.DrawingElementBag.Select``1()">
+            <summary>
+            Makes a projection that converts each element to the target value of type <typeparamref name="T"/>,
+            using the specified method to convert.
+            </summary>
+            <typeparam name="T">The type of the target result that each element converted.</typeparam>
+            <param name="selector">The selector to convert the element.</param>
+            <returns>The enumerator instance.</returns>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.Shapes.DrawingElementBag.Where(System.Predicate{Sudoku.UI.Drawing.Shapes.DrawingElement})">
+            <summary>
+            Makes a filerting that removes the elements not satisfied the specified condition.
+            </summary>
+            <param name="predicate">The filtering condition method.</param>
+            <returns>
+            The enumerator that allows you using <see langword="where"/> clause to filter each element,
+            but you cannot use <see langword="select"/> clause as the continuation to make the projection
+            to another typed instance.
+            </returns>
+            <remarks>
+            The method can be used by the following two ways:
+            <list type="number">
+            <item>
+            Using query expression syntax: <c>var controls = from e in list where e is CellDigit select e;</c>.
+            </item>
+            <item>
+            Using method invocation syntax: <c>var controls = list.Where(static e => e is CellDigit);</c>.
+            </item>
+            </list>
+            </remarks>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.Shapes.DrawingElementBag.Where()">
+            <summary>
+            Makes a filerting that removes the elements not satisfied the specified condition.
+            </summary>
+            <param name="predicate">The filtering condition method.</param>
+            <returns>The enumerator instance.</returns>
+        </member>
+        <member name="T:Sudoku.UI.Drawing.Shapes.DrawingElementBag.OfTypeEnumerator`1">
+            <summary>
+            Indicates the enumerator type that allows iterating on <see cref="T:Sudoku.UI.Drawing.Shapes.DrawingElementBag"/> instances,
+            with the specified type parameter as the type of all iterated elements.
+            </summary>
+            <typeparam name="TDrawingElement">The type of the elements to be iterated.</typeparam>
+            <seealso cref="T:Sudoku.UI.Drawing.Shapes.DrawingElementBag"/>
+        </member>
+        <member name="F:Sudoku.UI.Drawing.Shapes.DrawingElementBag.OfTypeEnumerator`1._count">
+            <summary>
+            The number of elements to be iterated.
+            </summary>
+        </member>
+        <member name="F:Sudoku.UI.Drawing.Shapes.DrawingElementBag.OfTypeEnumerator`1._elements">
+            <summary>
+            The list of elements.
+            </summary>
+        </member>
+        <member name="F:Sudoku.UI.Drawing.Shapes.DrawingElementBag.OfTypeEnumerator`1._ptr">
+            <summary>
+            Indicates the index value that points to the current iterated value.
+            </summary>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.Shapes.DrawingElementBag.OfTypeEnumerator`1.#ctor(Sudoku.UI.Drawing.Shapes.DrawingElement[],System.Int32)">
+            <summary>
+            Initializes an <see cref="T:Sudoku.UI.Drawing.Shapes.DrawingElementBag.OfTypeEnumerator`1"/> instance via the details.
+            </summary>
+            <param name="elements">The elements to be iterated.</param>
+            <param name="count">The number of elements to be iterated.</param>
+        </member>
+        <member name="P:Sudoku.UI.Drawing.Shapes.DrawingElementBag.OfTypeEnumerator`1.Current">
+            <inheritdoc cref="P:System.Collections.Generic.IEnumerator`1.Current"/>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.Shapes.DrawingElementBag.OfTypeEnumerator`1.MoveNext">
+            <inheritdoc cref="M:System.Collections.IEnumerator.MoveNext"/>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.Shapes.DrawingElementBag.OfTypeEnumerator`1.GetEnumerator">
+            <inheritdoc cref="M:System.Collections.Generic.IEnumerable`1.GetEnumerator"/>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.Shapes.DrawingElementBag.OfTypeEnumerator`1.Single">
+            <summary>
+            Gets the only element.
+            </summary>
+            <returns>The only element.</returns>
+            <exception cref="T:System.InvalidOperationException">
+            Throws when the enumerator can enumerate on multiple values, or the enumerator cannot step advanced.
+            </exception>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.Shapes.DrawingElementBag.OfTypeEnumerator`1.SingleOrDefault">
+            <summary>
+            Gets the only element, or <see langword="null"/> if the enumerator can iterates multiple values.
+            </summary>
+            <returns>The only element.</returns>
+            <exception cref="T:System.InvalidOperationException">
+            Throws when the enumerator cannot step advanced.
+            </exception>
+        </member>
+        <member name="T:Sudoku.UI.Drawing.Shapes.DrawingElementBag.OfTypeEnumerator`2">
+            <summary>
+            Indicates the enumerator type that allows iterating on <see cref="T:Sudoku.UI.Drawing.Shapes.DrawingElementBag"/> instances,
+            with 2 specified type parameters as the type of all iterated elements.
+            If the type is either <typeparamref name="T1"/> or <typeparamref name="T2"/>, it'll be iterated.
+            </summary>
+            <typeparam name="T1">The first type of the elements to be iterated.</typeparam>
+            <typeparam name="T2">The second type of the elements to be iterated.</typeparam>
+            <seealso cref="T:Sudoku.UI.Drawing.Shapes.DrawingElementBag"/>
+        </member>
+        <member name="F:Sudoku.UI.Drawing.Shapes.DrawingElementBag.OfTypeEnumerator`2._count">
+            <summary>
+            The number of elements to be iterated.
+            </summary>
+        </member>
+        <member name="F:Sudoku.UI.Drawing.Shapes.DrawingElementBag.OfTypeEnumerator`2._elements">
+            <summary>
+            The list of elements.
+            </summary>
+        </member>
+        <member name="F:Sudoku.UI.Drawing.Shapes.DrawingElementBag.OfTypeEnumerator`2._ptr">
+            <summary>
+            Indicates the index value that points to the current iterated value.
+            </summary>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.Shapes.DrawingElementBag.OfTypeEnumerator`2.#ctor(Sudoku.UI.Drawing.Shapes.DrawingElement[],System.Int32)">
+            <summary>
+            Initializes an <see cref="T:Sudoku.UI.Drawing.Shapes.DrawingElementBag.OfTypeEnumerator`2"/> instance via the details.
+            </summary>
+            <param name="elements">The elements to be iterated.</param>
+            <param name="count">The number of elements to be iterated.</param>
+        </member>
+        <member name="P:Sudoku.UI.Drawing.Shapes.DrawingElementBag.OfTypeEnumerator`2.Current">
+            <inheritdoc cref="P:System.Collections.Generic.IEnumerator`1.Current"/>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.Shapes.DrawingElementBag.OfTypeEnumerator`2.MoveNext">
+            <inheritdoc cref="M:System.Collections.IEnumerator.MoveNext"/>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.Shapes.DrawingElementBag.OfTypeEnumerator`2.GetEnumerator">
+            <inheritdoc cref="M:System.Collections.Generic.IEnumerable`1.GetEnumerator"/>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.Shapes.DrawingElementBag.OfTypeEnumerator`2.Single">
+            <summary>
+            Gets the only element.
+            </summary>
+            <returns>The only element.</returns>
+            <exception cref="T:System.InvalidOperationException">
+            Throws when the enumerator can enumerate on multiple values, or the enumerator cannot step advanced.
+            </exception>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.Shapes.DrawingElementBag.OfTypeEnumerator`2.SingleOrDefault">
+            <summary>
+            Gets the only element, or <see langword="null"/> if the enumerator can iterates multiple values.
+            </summary>
+            <returns>The only element.</returns>
+            <exception cref="T:System.InvalidOperationException">
+            Throws when the enumerator cannot step advanced.
+            </exception>
+        </member>
+        <member name="T:Sudoku.UI.Drawing.Shapes.DrawingElementBag.OfTypeEnumerator`3">
+            <summary>
+            Indicates the enumerator type that allows iterating on <see cref="T:Sudoku.UI.Drawing.Shapes.DrawingElementBag"/> instances,
+            with 3 specified type parameters as the type of all iterated elements.
+            If the type is either <typeparamref name="T1"/>, <typeparamref name="T2"/>
+            or <typeparamref name="T3"/>, it'll be iterated.
+            </summary>
+            <typeparam name="T1">The type of the elements to be iterated.</typeparam>
+            <typeparam name="T2">The type of the elements to be iterated.</typeparam>
+            <typeparam name="T3">The type of the elements to be iterated.</typeparam>
+            <seealso cref="T:Sudoku.UI.Drawing.Shapes.DrawingElementBag"/>
+        </member>
+        <member name="F:Sudoku.UI.Drawing.Shapes.DrawingElementBag.OfTypeEnumerator`3._count">
+            <summary>
+            The number of elements to be iterated.
+            </summary>
+        </member>
+        <member name="F:Sudoku.UI.Drawing.Shapes.DrawingElementBag.OfTypeEnumerator`3._elements">
+            <summary>
+            The list of elements.
+            </summary>
+        </member>
+        <member name="F:Sudoku.UI.Drawing.Shapes.DrawingElementBag.OfTypeEnumerator`3._ptr">
+            <summary>
+            Indicates the index value that points to the current iterated value.
+            </summary>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.Shapes.DrawingElementBag.OfTypeEnumerator`3.#ctor(Sudoku.UI.Drawing.Shapes.DrawingElement[],System.Int32)">
+            <summary>
+            Initializes an <see cref="T:Sudoku.UI.Drawing.Shapes.DrawingElementBag.OfTypeEnumerator`3"/> instance via the details.
+            </summary>
+            <param name="elements">The elements to be iterated.</param>
+            <param name="count">The number of elements to be iterated.</param>
+        </member>
+        <member name="P:Sudoku.UI.Drawing.Shapes.DrawingElementBag.OfTypeEnumerator`3.Current">
+            <inheritdoc cref="P:System.Collections.Generic.IEnumerator`1.Current"/>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.Shapes.DrawingElementBag.OfTypeEnumerator`3.MoveNext">
+            <inheritdoc cref="M:System.Collections.IEnumerator.MoveNext"/>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.Shapes.DrawingElementBag.OfTypeEnumerator`3.GetEnumerator">
+            <inheritdoc cref="M:System.Collections.Generic.IEnumerable`1.GetEnumerator"/>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.Shapes.DrawingElementBag.OfTypeEnumerator`3.Single">
+            <summary>
+            Gets the only element.
+            </summary>
+            <returns>The only element.</returns>
+            <exception cref="T:System.InvalidOperationException">
+            Throws when the enumerator can enumerate on multiple values, or the enumerator cannot step advanced.
+            </exception>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.Shapes.DrawingElementBag.OfTypeEnumerator`3.SingleOrDefault">
+            <summary>
+            Gets the only element, or <see langword="null"/> if the enumerator can iterates multiple values.
+            </summary>
+            <returns>The only element.</returns>
+            <exception cref="T:System.InvalidOperationException">
+            Throws when the enumerator cannot step advanced.
+            </exception>
+        </member>
+        <member name="T:Sudoku.UI.Drawing.Shapes.DrawingElementBag.SelectEnumerator`1">
+            <summary>
+            Indicates the enumerator type that makes the projection from the <see cref="T:Sudoku.UI.Drawing.Shapes.DrawingElement"/> to
+            a specified target type <typeparamref name="T"/>. 
+            </summary>
+            <typeparam name="T">The type of the projection result.</typeparam>
+            <seealso cref="T:Sudoku.UI.Drawing.Shapes.DrawingElement"/>
+        </member>
+        <member name="F:Sudoku.UI.Drawing.Shapes.DrawingElementBag.SelectEnumerator`1._count">
+            <summary>
+            The number of elements to be iterated.
+            </summary>
+        </member>
+        <member name="F:Sudoku.UI.Drawing.Shapes.DrawingElementBag.SelectEnumerator`1._elements">
+            <summary>
+            The list of elements.
+            </summary>
+        </member>
+        <member name="F:Sudoku.UI.Drawing.Shapes.DrawingElementBag.SelectEnumerator`1._selector">
+            <summary>
+            The selector.
+            </summary>
+        </member>
+        <member name="F:Sudoku.UI.Drawing.Shapes.DrawingElementBag.SelectEnumerator`1._selectorMethodPtr">
+            <summary>
+            The selector, but using function pointer.
+            </summary>
+        </member>
+        <member name="F:Sudoku.UI.Drawing.Shapes.DrawingElementBag.SelectEnumerator`1._ptr">
+            <summary>
+            Indicates the index value that points to the current iterated value.
+            </summary>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.Shapes.DrawingElementBag.SelectEnumerator`1.#ctor(Sudoku.UI.Drawing.Shapes.DrawingElement[],System.Int32,System.Func{Sudoku.UI.Drawing.Shapes.DrawingElement,`0})">
+            <summary>
+            Initializes an <see cref="T:Sudoku.UI.Drawing.Shapes.DrawingElementBag.SelectEnumerator`1"/> instance via the details.
+            </summary>
+            <param name="elements">The elements to be iterated.</param>
+            <param name="count">The number of elements to be iterated.</param>
+            <param name="selector">
+            The method that produces a projection from <see cref="T:Sudoku.UI.Drawing.Shapes.DrawingElement"/>
+            to the target type <typeparamref name="T"/>.
+            </param>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.Shapes.DrawingElementBag.SelectEnumerator`1.#ctor(Sudoku.UI.Drawing.Shapes.DrawingElement[],System.Int32,)">
+            <summary>
+            Initializes an <see cref="T:Sudoku.UI.Drawing.Shapes.DrawingElementBag.SelectEnumerator`1"/> instance via the details.
+            </summary>
+            <param name="elements">The elements to be iterated.</param>
+            <param name="count">The number of elements to be iterated.</param>
+            <param name="selector">
+            The function pointer that points to a method, which produces a projection
+            from <see cref="T:Sudoku.UI.Drawing.Shapes.DrawingElement"/> to the target type <typeparamref name="T"/>.
+            </param>
+            <exception cref="T:System.ArgumentNullException">
+            Throws when the argument <paramref name="selector"/> is <see langword="null"/>.
+            </exception>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.Shapes.DrawingElementBag.SelectEnumerator`1.#ctor(Sudoku.UI.Drawing.Shapes.DrawingElement[],System.Int32)">
+            <summary>
+            Initializes the items.
+            </summary>
+            <param name="elements">The elements.</param>
+            <param name="count">The number of values to be iterated.</param>
+        </member>
+        <member name="P:Sudoku.UI.Drawing.Shapes.DrawingElementBag.SelectEnumerator`1.Current">
+            <inheritdoc cref="P:System.Collections.Generic.IEnumerator`1.Current"/>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.Shapes.DrawingElementBag.SelectEnumerator`1.MoveNext">
+            <inheritdoc cref="M:System.Collections.IEnumerator.MoveNext"/>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.Shapes.DrawingElementBag.SelectEnumerator`1.GetEnumerator">
+            <inheritdoc cref="M:System.Collections.Generic.IEnumerable`1.GetEnumerator"/>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.Shapes.DrawingElementBag.SelectEnumerator`1.Single">
+            <summary>
+            Gets the only element.
+            </summary>
+            <returns>The only element.</returns>
+            <exception cref="T:System.InvalidOperationException">
+            Throws when the enumerator can enumerate on multiple values, or the enumerator cannot step advanced.
+            </exception>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.Shapes.DrawingElementBag.SelectEnumerator`1.SingleOrDefault">
+            <summary>
+            Gets the only element, or <see langword="null"/> if the enumerator can iterates multiple values.
+            </summary>
+            <returns>The only element.</returns>
+            <exception cref="T:System.InvalidOperationException">
+            Throws when the enumerator cannot step advanced.
+            </exception>
+        </member>
+        <member name="T:Sudoku.UI.Drawing.Shapes.DrawingElementBag.WhereEnumerator">
+            <summary>
+            Indicates the enumerator type that makes the filtering on each element
+            of type <see cref="T:Sudoku.UI.Drawing.Shapes.DrawingElement"/>.
+            </summary>
+            <seealso cref="T:Sudoku.UI.Drawing.Shapes.DrawingElement"/>
+        </member>
+        <member name="F:Sudoku.UI.Drawing.Shapes.DrawingElementBag.WhereEnumerator._count">
+            <summary>
+            The number of elements to be iterated.
+            </summary>
+        </member>
+        <member name="F:Sudoku.UI.Drawing.Shapes.DrawingElementBag.WhereEnumerator._elements">
+            <summary>
+            The list of elements.
+            </summary>
+        </member>
+        <member name="F:Sudoku.UI.Drawing.Shapes.DrawingElementBag.WhereEnumerator._predicate">
+            <summary>
+            The predicate.
+            </summary>
+        </member>
+        <member name="F:Sudoku.UI.Drawing.Shapes.DrawingElementBag.WhereEnumerator._predicateMethodPtr">
+            <summary>
+            The predicate, but using function pointer.
+            </summary>
+        </member>
+        <member name="F:Sudoku.UI.Drawing.Shapes.DrawingElementBag.WhereEnumerator._ptr">
+            <summary>
+            Indicates the index value that points to the current iterated value.
+            </summary>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.Shapes.DrawingElementBag.WhereEnumerator.#ctor(Sudoku.UI.Drawing.Shapes.DrawingElement[],System.Int32,System.Predicate{Sudoku.UI.Drawing.Shapes.DrawingElement})">
+            <summary>
+            Initializes an <see cref="T:Sudoku.UI.Drawing.Shapes.DrawingElementBag.WhereEnumerator"/> instance via the details.
+            </summary>
+            <param name="elements">The elements to be iterated.</param>
+            <param name="count">The number of elements to be iterated.</param>
+            <param name="predicate">The filtering condition.</param>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.Shapes.DrawingElementBag.WhereEnumerator.#ctor(Sudoku.UI.Drawing.Shapes.DrawingElement[],System.Int32,)">
+            <summary>
+            Initializes an <see cref="T:Sudoku.UI.Drawing.Shapes.DrawingElementBag.WhereEnumerator"/> instance via the details.
+            </summary>
+            <param name="elements">The elements to be iterated.</param>
+            <param name="count">The number of elements to be iterated.</param>
+            <param name="predicate">The filerting condition.</param>
+            <exception cref="T:System.ArgumentNullException">
+            Throws when the argument <paramref name="predicate"/> is <see langword="null"/>.
+            </exception>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.Shapes.DrawingElementBag.WhereEnumerator.#ctor(Sudoku.UI.Drawing.Shapes.DrawingElement[],System.Int32)">
+            <summary>
+            Initializes the items.
+            </summary>
+            <param name="elements">The elements.</param>
+            <param name="count">The number of values to be iterated.</param>
+        </member>
+        <member name="P:Sudoku.UI.Drawing.Shapes.DrawingElementBag.WhereEnumerator.Current">
+            <inheritdoc cref="P:System.Collections.Generic.IEnumerator`1.Current"/>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.Shapes.DrawingElementBag.WhereEnumerator.MoveNext">
+            <inheritdoc cref="M:System.Collections.IEnumerator.MoveNext"/>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.Shapes.DrawingElementBag.WhereEnumerator.GetEnumerator">
+            <inheritdoc cref="M:System.Collections.Generic.IEnumerable`1.GetEnumerator"/>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.Shapes.DrawingElementBag.WhereEnumerator.Select``1(System.Func{Sudoku.UI.Drawing.Shapes.DrawingElement,``0})">
+            <summary>
+            Makes a projection that converts each element to the target value of type <typeparamref name="T"/>,
+            using the specified method to convert.
+            </summary>
+            <typeparam name="T">The type of the target result that each element converted.</typeparam>
+            <param name="selector">The selector to convert the element.</param>
+            <returns>
+            The enumerator that allows you using <see langword="select"/> clause to get the result.
+            </returns>
+            <remarks>
+            The method can be used by the following two ways:
+            <list type="number">
+            <item>
+            Using query expression syntax:
+            <c>
+            var controls = from e in list where e is CellDigit select e.GetControl();
+            </c>.
+            </item>
+            <item>
+            Using method invocation syntax:
+            <c>
+            var controls = list.Where(static e => e is CellDigit).Select(static e => e.GetControl());
+            </c>.
+            </item>
+            </list>
+            </remarks>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.Shapes.DrawingElementBag.WhereEnumerator.Select``1()">
+            <summary>
+            Makes a projection that converts each element to the target value of type <typeparamref name="T"/>,
+            using the specified method to convert.
+            </summary>
+            <typeparam name="T">The type of the target result that each element converted.</typeparam>
+            <param name="selector">The selector to convert the element.</param>
+            <returns>The enumerator instance.</returns>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.Shapes.DrawingElementBag.WhereEnumerator.Single">
+            <summary>
+            Gets the only element.
+            </summary>
+            <returns>The only element.</returns>
+            <exception cref="T:System.InvalidOperationException">
+            Throws when the enumerator can enumerate on multiple values, or the enumerator cannot step advanced.
+            </exception>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.Shapes.DrawingElementBag.WhereEnumerator.SingleOrDefault">
+            <summary>
+            Gets the only element, or <see langword="null"/> if the enumerator can iterates multiple values.
+            </summary>
+            <returns>The only element.</returns>
+            <exception cref="T:System.InvalidOperationException">
+            Throws when the enumerator cannot step advanced.
+            </exception>
+        </member>
+        <member name="T:Sudoku.UI.Drawing.Shapes.DrawingElementBag.WhereEnumerator.SelectEnumerator`1">
+            <summary>
+            Indicates the enumerator type that makes the projection from the <see cref="T:Sudoku.UI.Drawing.Shapes.DrawingElement"/> to
+            a specified target type <typeparamref name="T"/>, on the type <see cref="T:Sudoku.UI.Drawing.Shapes.DrawingElementBag.WhereEnumerator"/> iterating.
+            </summary>
+            <typeparam name="T">The type of the projection result.</typeparam>
+            <seealso cref="T:Sudoku.UI.Drawing.Shapes.DrawingElement"/>
+        </member>
+        <member name="F:Sudoku.UI.Drawing.Shapes.DrawingElementBag.WhereEnumerator.SelectEnumerator`1._whereEnumerator">
+            <summary>
+            The enunmerator.
+            </summary>
+        </member>
+        <member name="F:Sudoku.UI.Drawing.Shapes.DrawingElementBag.WhereEnumerator.SelectEnumerator`1._selector">
+            <summary>
+            The selector.
+            </summary>
+        </member>
+        <member name="F:Sudoku.UI.Drawing.Shapes.DrawingElementBag.WhereEnumerator.SelectEnumerator`1._selectorMethodPtr">
+            <summary>
+            The selector, but using function pointer.
+            </summary>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.Shapes.DrawingElementBag.WhereEnumerator.SelectEnumerator`1.#ctor(Sudoku.UI.Drawing.Shapes.DrawingElementBag.WhereEnumerator,System.Func{Sudoku.UI.Drawing.Shapes.DrawingElement,`0})">
+            <summary>
+            Initializes an <see cref="T:Sudoku.UI.Drawing.Shapes.DrawingElementBag.WhereEnumerator.SelectEnumerator`1"/> instance via the details.
+            </summary>
+            <param name="enumerator">The enumerator.</param>
+            <param name="selector">
+            The method that produces a projection from <see cref="T:Sudoku.UI.Drawing.Shapes.DrawingElement"/>
+            to the target type <typeparamref name="T"/>.
+            </param>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.Shapes.DrawingElementBag.WhereEnumerator.SelectEnumerator`1.#ctor(Sudoku.UI.Drawing.Shapes.DrawingElementBag.WhereEnumerator,)">
+            <summary>
+            Initializes an <see cref="T:Sudoku.UI.Drawing.Shapes.DrawingElementBag.WhereEnumerator.SelectEnumerator`1"/> instance via the details.
+            </summary>
+            <param name="enumerator">The enumerator.</param>
+            <param name="selector">
+            The function pointer that points to a method, which produces a projection
+            from <see cref="T:Sudoku.UI.Drawing.Shapes.DrawingElement"/> to the target type <typeparamref name="T"/>.
+            </param>
+            <exception cref="T:System.ArgumentNullException">
+            Throws when the argument <paramref name="selector"/> is <see langword="null"/>.
+            </exception>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.Shapes.DrawingElementBag.WhereEnumerator.SelectEnumerator`1.#ctor(Sudoku.UI.Drawing.Shapes.DrawingElementBag.WhereEnumerator)">
+            <summary>
+            Initializes the items.
+            </summary>
+            <param name="enumerator">The enumerator.</param>
+        </member>
+        <member name="P:Sudoku.UI.Drawing.Shapes.DrawingElementBag.WhereEnumerator.SelectEnumerator`1.Current">
+            <inheritdoc cref="P:System.Collections.Generic.IEnumerator`1.Current"/>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.Shapes.DrawingElementBag.WhereEnumerator.SelectEnumerator`1.MoveNext">
+            <inheritdoc cref="M:System.Collections.IEnumerator.MoveNext"/>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.Shapes.DrawingElementBag.WhereEnumerator.SelectEnumerator`1.GetEnumerator">
+            <inheritdoc cref="M:System.Collections.Generic.IEnumerable`1.GetEnumerator"/>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.Shapes.DrawingElementBag.WhereEnumerator.SelectEnumerator`1.Single">
+            <summary>
+            Gets the only element.
+            </summary>
+            <returns>The only element.</returns>
+            <exception cref="T:System.InvalidOperationException">
+            Throws when the enumerator can enumerate on multiple values, or the enumerator cannot step advanced.
+            </exception>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.Shapes.DrawingElementBag.WhereEnumerator.SelectEnumerator`1.SingleOrDefault">
+            <summary>
+            Gets the only element, or <see langword="null"/> if the enumerator can iterates multiple values.
+            </summary>
+            <returns>The only element.</returns>
+            <exception cref="T:System.InvalidOperationException">
+            Throws when the enumerator cannot step advanced.
+            </exception>
+        </member>
+        <member name="T:Sudoku.UI.Drawing.Shapes.OutsideRectangle">
+            <summary>
+            Defines an outside rectangle.
+            </summary>
+        </member>
+        <member name="F:Sudoku.UI.Drawing.Shapes.OutsideRectangle._rect">
+            <summary>
+            The inner rectangle.
+            </summary>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.Shapes.OutsideRectangle.#ctor(Windows.UI.Color,System.Double,System.Double)">
+            <summary>
+            Initializes an <see cref="T:Sudoku.UI.Drawing.Shapes.OutsideRectangle"/> instance via the specified details.
+            </summary>
+            <param name="strokeColor">The stroke color.</param>
+            <param name="paneSize">The pane size.</param>
+            <param name="strokeThickness">The stroke thickness.</param>
+        </member>
+        <member name="P:Sudoku.UI.Drawing.Shapes.OutsideRectangle.RectangleSize">
+            <summary>
+            The size of the rectangle.
+            </summary>
+        </member>
+        <member name="P:Sudoku.UI.Drawing.Shapes.OutsideRectangle.StrokeThickness">
+            <summary>
+            The stroke thickness of the block line.
+            </summary>
+        </member>
+        <member name="P:Sudoku.UI.Drawing.Shapes.OutsideRectangle.StrokeColor">
+            <summary>
+            The stroke color of the block line.
+            </summary>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.Shapes.OutsideRectangle.Equals(Sudoku.UI.Drawing.Shapes.DrawingElement)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.Shapes.OutsideRectangle.GetHashCode">
+            <inheritdoc/>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.Shapes.OutsideRectangle.GetControl">
+            <inheritdoc/>
+        </member>
+        <member name="T:Sudoku.UI.Drawing.Shapes.SudokuGrid">
+            <summary>
+            Defines a sudoku grid.
+            </summary>
+        </member>
+        <member name="F:Sudoku.UI.Drawing.Shapes.SudokuGrid._gridLayout">
+            <summary>
+            Indicates the inner grid layout control.
+            </summary>
+        </member>
+        <member name="F:Sudoku.UI.Drawing.Shapes.SudokuGrid._cellDigits">
+            <summary>
+            Indicates the cell digits.
+            </summary>
+        </member>
+        <member name="F:Sudoku.UI.Drawing.Shapes.SudokuGrid._candidateDigits">
+            <summary>
+            Indicates the candidate digits.
+            </summary>
+        </member>
+        <member name="F:Sudoku.UI.Drawing.Shapes.SudokuGrid._userPreference">
+            <summary>
+            Indicates the user preference used.
+            </summary>
+        </member>
+        <member name="F:Sudoku.UI.Drawing.Shapes.SudokuGrid._undoSteps">
+            <summary>
+            Indicates the stacks to store the undoing and redoing steps.
+            </summary>
+        </member>
+        <member name="F:Sudoku.UI.Drawing.Shapes.SudokuGrid._redoSteps">
+            <summary>
+            Indicates the stacks to store the undoing and redoing steps.
+            </summary>
+        </member>
+        <member name="F:Sudoku.UI.Drawing.Shapes.SudokuGrid._undoRedoStepsUpdatedCallback">
+            <summary>
+            Indicates the callback method that invokes when the undoing and redoing steps are updated.
+            </summary>
+        </member>
+        <member name="F:Sudoku.UI.Drawing.Shapes.SudokuGrid._paneSize">
+            <summary>
+            Indicates the pane size.
+            </summary>
+        </member>
+        <member name="F:Sudoku.UI.Drawing.Shapes.SudokuGrid._outsideOffset">
+            <summary>
+            Indicates the outside offset.
+            </summary>
+        </member>
+        <member name="F:Sudoku.UI.Drawing.Shapes.SudokuGrid._grid">
+            <summary>
+            Indicates the inner grid.
+            </summary>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.Shapes.SudokuGrid.#ctor(Sudoku.UI.UserPreference,System.Double,System.Double,System.Action)">
+            <summary>
+            Initializes a <see cref="T:Sudoku.UI.Drawing.Shapes.SudokuGrid"/> instance via the details.
+            </summary>
+            <param name="userPreference">The user preference instance.</param>
+            <param name="paneSize">The pane size.</param>
+            <param name="outsideOffset">The outside offset.</param>
+            <param name="elementUpdatedCallback">
+            The callback method that triggers when the inner undo-redo steps are updated.
+            </param>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.Shapes.SudokuGrid.#ctor(Sudoku.Concepts.Collections.Grid@,Sudoku.UI.UserPreference,System.Double,System.Double,System.Action)">
+            <summary>
+            Initializes a <see cref="T:Sudoku.UI.Drawing.Shapes.SudokuGrid"/> instance via the details.
+            </summary>
+            <param name="grid">The <see cref="P:Sudoku.UI.Drawing.Shapes.SudokuGrid.Grid"/> instance.</param>
+            <param name="userPreference">The user preference.</param>
+            <param name="paneSize">The pane size.</param>
+            <param name="outsideOffset">The outside offset.</param>
+            <param name="elementUpdatedCallback">
+            The callback method that triggers when the inner undo-redo steps are updated.
+            </param>
+        </member>
+        <member name="P:Sudoku.UI.Drawing.Shapes.SudokuGrid.ShowCandidates">
+            <summary>
+            Indicates whether the grid displays for candidates.
+            </summary>
+        </member>
+        <member name="P:Sudoku.UI.Drawing.Shapes.SudokuGrid.OutsideOffset">
+            <summary>
+            Gets or sets the outside offset.
+            </summary>
+        </member>
+        <member name="P:Sudoku.UI.Drawing.Shapes.SudokuGrid.PaneSize">
+            <summary>
+            Gets or sets the pane size.
+            </summary>
+        </member>
+        <member name="P:Sudoku.UI.Drawing.Shapes.SudokuGrid.Grid">
+            <summary>
+            Gets or sets the grid.
+            </summary>
+        </member>
+        <member name="P:Sudoku.UI.Drawing.Shapes.SudokuGrid.UndoStepsCount">
+            <summary>
+            Indicates the number of available undoable steps.
+            </summary>
+        </member>
+        <member name="P:Sudoku.UI.Drawing.Shapes.SudokuGrid.RedoStepsCount">
+            <summary>
+            Indicates the number of available redoable steps.
+            </summary>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.Shapes.SudokuGrid.Undo">
+            <summary>
+            To undo a step.
+            </summary>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.Shapes.SudokuGrid.Redo">
+            <summary>
+            To redo a step.
+            </summary>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.Shapes.SudokuGrid.MakeDigit(System.Int32,System.Int32)">
+            <summary>
+            To make the specified cell fill the specified digit.
+            </summary>
+            <param name="cell">The cell that the conclusion is from.</param>
+            <param name="digit">The digit made.</param>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.Shapes.SudokuGrid.EliminateDigit(System.Int32,System.Int32)">
+            <summary>
+            To eliminate the specified digit from the specified cell.
+            </summary>
+            <param name="cell">The cell that the eliminated digit is from.</param>
+            <param name="digit">The digit eliminated.</param>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.Shapes.SudokuGrid.FixGrid">
+            <summary>
+            To fix the grid, which means all modifiable digits will be changed their own status to given ones.
+            </summary>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.Shapes.SudokuGrid.UnfixGrid">
+            <summary>
+            To unfix the grid, which means all given digits will be changed their own status to modifiable ones.
+            </summary>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.Shapes.SudokuGrid.ResetGrid">
+            <summary>
+            To reset the grid, which means all value having been filled into the grid as modifiable ones
+            will be cleared.
+            </summary>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.Shapes.SudokuGrid.ReplaceGrid(Sudoku.Concepts.Collections.Grid@)">
+            <summary>
+            To replace with the new grid.
+            </summary>
+            <param name="grid">The grid to be replaced with.</param>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.Shapes.SudokuGrid.Equals(Sudoku.UI.Drawing.Shapes.DrawingElement)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.Shapes.SudokuGrid.GetHashCode">
+            <inheritdoc/>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.Shapes.SudokuGrid.GetGridByReference">
+            <summary>
+            Gets the inner grid instance by reference.
+            </summary>
+            <returns>The reference of the grid.</returns>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.Shapes.SudokuGrid.GetControl">
+            <inheritdoc/>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.Shapes.SudokuGrid.AddStep(Sudoku.Concepts.Collections.Grid@)">
+            <summary>
+            Adds the specified step into the collection.
+            </summary>
+            <param name="grid">The step to be added.</param>
+        </member>
+        <member name="M:Sudoku.UI.Drawing.Shapes.SudokuGrid.UpdateView">
+            <summary>
+            To update the view via the current grid.
+            </summary>
+        </member>
+        <member name="T:Sudoku.UI.BindingConversions">
+            <summary>
+            Provides a set of methods to convert the information.
+            </summary>
+        </member>
+        <member name="M:Sudoku.UI.BindingConversions.License(System.String)">
+            <summary>
+            Indicates the license displaying value on <see cref="P:Sudoku.UI.RepositoryInfo.OpenSourceLicense"/>.
+            </summary>
+            <param name="input">The license name.</param>
+            <returns>The converted result string.</returns>
+            <seealso cref="P:Sudoku.UI.RepositoryInfo.OpenSourceLicense"/>
+        </member>
+        <member name="M:Sudoku.UI.BindingConversions.ForReference(System.Boolean)">
+            <summary>
+            Indicates the conversion on <see cref="P:Sudoku.UI.RepositoryInfo.IsForReference"/>.
+            </summary>
+            <param name="input">The input value.</param>
+            <returns>The converted result string value.</returns>
+            <seealso cref="P:Sudoku.UI.RepositoryInfo.IsForReference"/>
+        </member>
+        <member name="M:Sudoku.UI.BindingConversions.InfoBarTitle(Microsoft.UI.Xaml.Controls.InfoBarSeverity)">
+            <summary>
+            Gets the title of the info bar via its severity.
+            </summary>
+            <param name="severity">The severity.</param>
+            <returns>The title of the info bar.</returns>
+            <exception cref="T:System.ArgumentOutOfRangeException">Throws when the severity is not defined.</exception>
+        </member>
+        <member name="T:Sudoku.UI.Website">
+            <summary>
+            Provides methods on website visiting.
+            </summary>
+        </member>
+        <member name="M:Sudoku.UI.Website.Visit(System.String)">
+            <summary>
+            Visit the specified website.
+            </summary>
+            <param name="uri">The URI website.</param>
+            <returns>The process.</returns>
+        </member>
+        <member name="T:Sudoku.UI.RepositoryInfo">
+            <summary>
+            Defines a set of properties to describe an image.
+            </summary>
+        </member>
+        <member name="P:Sudoku.UI.RepositoryInfo.IsForReference">
+            <summary>
+            Indicates whether the repository code is for reference.
+            </summary>
+        </member>
+        <member name="P:Sudoku.UI.RepositoryInfo.OpenSourceLicense">
+            <summary>
+            Indicates the open-source license being used for this repository.
+            </summary>
+        </member>
+        <member name="P:Sudoku.UI.RepositoryInfo.Initials">
+            <summary>
+            Indicates the initials displaying on the <see cref="T:Microsoft.UI.Xaml.Controls.PersonPicture"/> control.
+            </summary>
+        </member>
+        <member name="P:Sudoku.UI.RepositoryInfo.Name">
+            <summary>
+            Indicates the name of the image.
+            </summary>
+        </member>
+        <member name="P:Sudoku.UI.RepositoryInfo.IconPath">
+            <summary>
+            Indicates the path of the image to show. The field can be <see langword="null"/>.
+            </summary>
+        </member>
+        <member name="P:Sudoku.UI.RepositoryInfo.Site">
+            <summary>
+            Indicates the website which name is corresponding to.
+            </summary>
+        </member>
+        <member name="T:Sudoku.UI.StringResource">
+            <summary>
+            Defines a <see langword="static class"/> that provides the method
+            to get the <see cref="T:System.String"/>-typed resources.
+            </summary>
+        </member>
+        <member name="M:Sudoku.UI.StringResource.Get(System.String)">
+            <summary>
+            Try to get the resource value via the specified string key.
+            </summary>
+            <param name="key">The <see cref="T:System.String"/>-typed resource key.</param>
+            <returns>The resource value.</returns>
+        </member>
+        <member name="T:Sudoku.UI.UserPreference">
+            <summary>
+            Defines the user preferences in the program.
+            </summary>
+        </member>
+        <member name="F:Sudoku.UI.UserPreference.ShowCandidates">
+            <summary>
+            Indicates whether the current grid displays the candidates.
+            </summary>
+            <remarks>
+            The default value is <see langword="true"/>.
+            </remarks>
+        </member>
+        <member name="F:Sudoku.UI.UserPreference.ShowCandidateBorderLines">
+            <summary>
+            Indicates whether the candidate border lines will be shown in the sudoku pane.
+            </summary>
+            <remarks>
+            The default value is <see langword="false"/>.
+            </remarks>
+        </member>
+        <member name="F:Sudoku.UI.UserPreference.EnableDeltaValuesDisplaying">
+            <summary>
+            Indicates whether the sudoku grid pane will display for wrong digits (cell or candidate values),
+            using the different color.
+            </summary>
+            <remarks>
+            The default value is <see langword="true"/>.
+            </remarks>
+        </member>
+        <member name="F:Sudoku.UI.UserPreference.DescendingOrderedInfoBarBoard">
+            <summary>
+            <para>
+            Indicates whether the info bar controls will always be updated and inserted into the first place
+            of the whole info bar board. If <see langword="true"/>, descending ordered mode will be enabled,
+            the behavior will be like the above; otherwise, the new controls will be appended into the last place
+            of the board.
+            </para>
+            <para>
+            Sets the value to <see langword="true"/> may help you check new hints more quickly than
+            the case setting the value to <see langword="false"/>.
+            </para>
+            </summary>
+            <remarks>
+            The default value is <see langword="true"/>.
+            </remarks>
+        </member>
+        <member name="F:Sudoku.UI.UserPreference.OutsideBorderWidth">
+            <summary>
+            Indicates the outside border width. The value cannot be negative.
+            </summary>
+            <remarks>
+            The default value is <c>0</c>.
+            </remarks>
+        </member>
+        <member name="F:Sudoku.UI.UserPreference.BlockBorderWidth">
+            <summary>
+            Indicates the width of the block border lines. The value cannot be negative.
+            </summary>
+            <remarks>
+            The default value is <c>4</c>.
+            </remarks>
+        </member>
+        <member name="F:Sudoku.UI.UserPreference.CellBorderWidth">
+            <summary>
+            Indicates the width of the cell border lines. The value cannot be negative.
+            </summary>
+            <remarks>
+            The default value is <c>1</c>.
+            </remarks>
+        </member>
+        <member name="F:Sudoku.UI.UserPreference.CandidateBorderWidth">
+            <summary>
+            Indicates the width of the candidate border lines. The value cannot be negative.
+            </summary>
+            <remarks>
+            The default value is <c>1</c>.
+            </remarks>
+        </member>
+        <member name="F:Sudoku.UI.UserPreference.ValueFontSize">
+            <summary>
+            Indicates the value font size.
+            </summary>
+            <remarks>
+            The default value is <c>36</c>.
+            </remarks>
+        </member>
+        <member name="F:Sudoku.UI.UserPreference.CandidateFontSize">
+            <summary>
+            Indicates the candidate font size.
+            </summary>
+            <remarks>
+            The default value is <c>16</c>.
+            </remarks>
+        </member>
+        <member name="F:Sudoku.UI.UserPreference.ValueFontName">
+            <summary>
+            Indicates the value font name.
+            </summary>
+            <remarks>
+            The default value is <c>"Tahoma"</c>.
+            </remarks>
+        </member>
+        <member name="F:Sudoku.UI.UserPreference.CandidateFontName">
+            <summary>
+            Indicates the candidate font name.
+            </summary>
+            <remarks>
+            The default value is <c>"Tahoma"</c>.
+            </remarks>
+        </member>
+        <member name="F:Sudoku.UI.UserPreference.OutsideBorderColor">
+            <summary>
+            Indicates the color of the outside borders.
+            </summary>
+            <remarks>
+            The default value is <c>#FF000000</c> (i.e. <see cref="P:Microsoft.UI.Colors.Black"/>).
+            </remarks>
+        </member>
+        <member name="F:Sudoku.UI.UserPreference.BlockBorderColor">
+            <summary>
+            Indicates the color of the block borders.
+            </summary>
+            <remarks>
+            The default value is <c>#FF000000</c> (i.e. <see cref="P:Microsoft.UI.Colors.Black"/>).
+            </remarks>
+        </member>
+        <member name="F:Sudoku.UI.UserPreference.CellBorderColor">
+            <summary>
+            Indicates the color of the cell borders.
+            </summary>
+            <remarks>
+            The default value is <c>#FF000000</c> (i.e. <see cref="P:Microsoft.UI.Colors.Black"/>).
+            </remarks>
+        </member>
+        <member name="F:Sudoku.UI.UserPreference.CandidateBorderColor">
+            <summary>
+            Indicates the color of the candidate borders.
+            </summary>
+            <remarks>
+            The default value is <c>#FFD3D3D3</c> (i.e. <see cref="P:Microsoft.UI.Colors.LightGray"/>).
+            </remarks>
+        </member>
+        <member name="F:Sudoku.UI.UserPreference.GivenColor">
+            <summary>
+            Indicates the color of the given values.
+            </summary>
+            <remarks>
+            The default value is <c>#FF000000</c> (i.e. <see cref="P:Microsoft.UI.Colors.Black"/>).
+            </remarks>
+        </member>
+        <member name="F:Sudoku.UI.UserPreference.ModifiableColor">
+            <summary>
+            Indicates the color of the modifiable values.
+            </summary>
+            <remarks>
+            The default value is <c>#FF0000FF</c> (i.e. <see cref="P:Microsoft.UI.Colors.Blue"/>).
+            </remarks>
+        </member>
+        <member name="F:Sudoku.UI.UserPreference.CandidateColor">
+            <summary>
+            Indicates the color of the candidate values.
+            </summary>
+            <remarks>
+            The default value is <c>#FF696969</c> (i.e. <see cref="P:Microsoft.UI.Colors.DimGray"/>).
+            </remarks>
+        </member>
+        <member name="F:Sudoku.UI.UserPreference.CellDeltaColor">
+            <summary>
+            Indicates the color of the wrong cell value input.
+            </summary>
+            <remarks>
+            The default value is <c>#FFFF0000</c> (i.e. <see cref="P:Microsoft.UI.Colors.Red"/>).
+            </remarks>
+        </member>
+        <member name="F:Sudoku.UI.UserPreference.CandidateDeltaColor">
+            <summary>
+            Indicates the color of the wrong candidate value input.
+            </summary>
+            <remarks>
+            The default value is <c>#FFFFB9B9</c> (i.e. <see cref="T:Windows.UI.Color"/> {255, 255, 185, 185}).
+            </remarks>
+        </member>
+        <member name="T:Sudoku.UI.Views.Controls.InfoBarBoard">
+            <summary>
+            Defines a user control that handles the messages displaying via <see cref="T:Microsoft.UI.Xaml.Controls.InfoBar"/>s.
+            </summary>
+            <seealso cref="T:Microsoft.UI.Xaml.Controls.InfoBar"/>
+        </member>
+        <member name="F:Sudoku.UI.Views.Controls.InfoBarBoard._list">
+            <summary>
+            The list of <see cref="T:Sudoku.UI.Data.InfoBarMessage"/>s.
+            </summary>
+        </member>
+        <member name="F:Sudoku.UI.Views.Controls.InfoBarBoard._spacing">
+            <summary>
+            Indicates the backing field of property <see cref="P:Sudoku.UI.Views.Controls.InfoBarBoard.InfoBarSpacing"/>.
+            </summary>
+            <seealso cref="P:Sudoku.UI.Views.Controls.InfoBarBoard.InfoBarSpacing"/>
+        </member>
+        <member name="M:Sudoku.UI.Views.Controls.InfoBarBoard.#ctor">
+            <summary>
+            Initializes a <see cref="T:Sudoku.UI.Views.Controls.InfoBarBoard"/> instance.
+            </summary>
+        </member>
+        <member name="P:Sudoku.UI.Views.Controls.InfoBarBoard.Any">
+            <summary>
+            Indicates whether the collection is not empty.
+            </summary>
+        </member>
+        <member name="P:Sudoku.UI.Views.Controls.InfoBarBoard.InfoBarSpacing">
+            <summary>
+            Indicates the spacing between two adjacent <see cref="T:Microsoft.UI.Xaml.Controls.InfoBar"/> instances.
+            </summary>
+        </member>
+        <member name="E:Sudoku.UI.Views.Controls.InfoBarBoard.PropertyChanged">
+            <inheritdoc/>
+        </member>
+        <member name="E:Sudoku.UI.Views.Controls.InfoBarBoard.CollectionChanged">
+            <inheritdoc/>
+        </member>
+        <member name="M:Sudoku.UI.Views.Controls.InfoBarBoard.AddMessage(Microsoft.UI.Xaml.Controls.InfoBarSeverity,System.String)">
+            <summary>
+            Creates a new <see cref="T:Microsoft.UI.Xaml.Controls.InfoBar"/> instance via the specified severity
+            and the information.
+            </summary>
+            <param name="severity">The severity of the info bar.</param>
+            <param name="info">The displaing text of the info bar.</param>
+            <seealso cref="T:Microsoft.UI.Xaml.Controls.InfoBar"/>
+        </member>
+        <member name="M:Sudoku.UI.Views.Controls.InfoBarBoard.AddMessage(Microsoft.UI.Xaml.Controls.InfoBarSeverity,System.String,System.String,System.String)">
+            <summary>
+            Creates a new <see cref="T:Microsoft.UI.Xaml.Controls.InfoBar"/> instance via the specified severity,
+            the information and the hyperlink button.
+            </summary>
+            <param name="severity">The severity of the info bar.</param>
+            <param name="info">The displaing text of the info bar.</param>
+            <param name="link">The hyperlink to be appended into.</param>
+            <param name="linkDescription">The description of the hyperlink.</param>
+            <seealso cref="T:Microsoft.UI.Xaml.Controls.InfoBar"/>
+        </member>
+        <member name="M:Sudoku.UI.Views.Controls.InfoBarBoard.AddMessage(Sudoku.Solving.Manual.ManualSolverResult,Microsoft.UI.Xaml.Controls.InfoBarSeverity)">
+            <summary>
+            Creates a new <see cref="T:Microsoft.UI.Xaml.Controls.InfoBar"/> instance via the specified severity,
+            with the specified <see cref="T:Sudoku.Solving.Manual.ManualSolverResult"/> instance.
+            </summary>
+            <param name="analysisResult">The <see cref="T:Sudoku.Solving.Manual.ManualSolverResult"/> instance.</param>
+            <param name="severity">The severity. The default value is <see cref="F:Microsoft.UI.Xaml.Controls.InfoBarSeverity.Success"/>.</param>
+        </member>
+        <member name="M:Sudoku.UI.Views.Controls.InfoBarBoard.ClearMessages">
+            <summary>
+            Clears all messages.
+            </summary>
+        </member>
+        <member name="M:Sudoku.UI.Views.Controls.InfoBarBoard.UserControl_Loaded(System.Object,Microsoft.UI.Xaml.RoutedEventArgs)">
+            <summary>
+            Triggers when the current control is loaded.
+            </summary>
+            <param name="sender">The object that triggers the event.</param>
+            <param name="e">The event arguments provided.</param>
+        </member>
+        <member name="M:Sudoku.UI.Views.Controls.InfoBarBoard.InitializeComponent">
+            <summary>
+            InitializeComponent()
+            </summary>
+        </member>
+        <member name="M:Sudoku.UI.Views.Controls.InfoBarBoard.Connect(System.Int32,System.Object)">
+            <summary>
+            Connect()
+            </summary>
+        </member>
+        <member name="M:Sudoku.UI.Views.Controls.InfoBarBoard.GetBindingConnector(System.Int32,System.Object)">
+            <summary>
+            GetBindingConnector(int connectionId, object target)
+            </summary>
+        </member>
+        <member name="T:Sudoku.UI.Views.Controls.SudokuPane">
+            <summary>
+            Defines a user control that interacts with a sudoku grid.
+            </summary>
+        </member>
+        <member name="F:Sudoku.UI.Views.Controls.SudokuPane.Epsilon">
+            <summary>
+            Indicates the delta that is used for checking whether two <see cref="T:System.Double"/> values are same
+            or their difference is below to the delta value.
+            </summary>
+        </member>
+        <member name="F:Sudoku.UI.Views.Controls.SudokuPane._drawingElements">
+            <summary>
+            Indicates the inner collection that stores the drawing elements, and also influences the controls
+            displaying in the window.
+            </summary>
+        </member>
+        <member name="F:Sudoku.UI.Views.Controls.SudokuPane._size">
+            <summary>
+            Indicates the size that the current pane is, which is the backing field
+            of the property <see cref="P:Sudoku.UI.Views.Controls.SudokuPane.Size"/>.
+            </summary>
+            <seealso cref="P:Sudoku.UI.Views.Controls.SudokuPane.Size"/>
+        </member>
+        <member name="F:Sudoku.UI.Views.Controls.SudokuPane._outsideOffset">
+            <summary>
+            Indicates the outside offset value, which is the backing field
+            of the property <see cref="P:Sudoku.UI.Views.Controls.SudokuPane.OutsideOffset"/>.
+            </summary>
+            <seealso cref="P:Sudoku.UI.Views.Controls.SudokuPane.OutsideOffset"/>
+        </member>
+        <member name="F:Sudoku.UI.Views.Controls.SudokuPane._currentPointPosition">
+            <summary>
+            Indicates the current mouse point.
+            </summary>
+            <remarks>
+            The variable is used for the following members:
+            <list type="bullet">
+            <item><see cref="M:Sudoku.UI.Views.Controls.SudokuPane.OnPointerMoved(Microsoft.UI.Xaml.Input.PointerRoutedEventArgs)"/></item>
+            <item><see cref="M:Sudoku.UI.Views.Controls.SudokuPane.OnKeyDown(Microsoft.UI.Xaml.Input.KeyRoutedEventArgs)"/></item>
+            </list>
+            </remarks>
+        </member>
+        <member name="M:Sudoku.UI.Views.Controls.SudokuPane.#ctor">
+            <summary>
+            Initializes a <see cref="T:Sudoku.UI.Views.Controls.SudokuPane"/> instance.
+            </summary>
+        </member>
+        <member name="P:Sudoku.UI.Views.Controls.SudokuPane.Size">
+            <summary>
+            Gets or sets the size of the pane.
+            </summary>
+        </member>
+        <member name="P:Sudoku.UI.Views.Controls.SudokuPane.OutsideOffset">
+            <summary>
+            Gets or sets the outside offset to the view model.
+            </summary>
+        </member>
+        <member name="P:Sudoku.UI.Views.Controls.SudokuPane.CurrentCell">
+            <summary>
+            Indicates the current cell focused. The default value is -1.
+            </summary>
+        </member>
+        <member name="P:Sudoku.UI.Views.Controls.SudokuPane.UndoStepsCount">
+            <summary>
+            Indicates the number of the total undo steps.
+            </summary>
+        </member>
+        <member name="P:Sudoku.UI.Views.Controls.SudokuPane.RedoStepsCount">
+            <summary>
+            Indicates the number of the total redo steps.
+            </summary>
+        </member>
+        <member name="P:Sudoku.UI.Views.Controls.SudokuPane.Grid">
+            <summary>
+            Gets or sets the current used grid.
+            </summary>
+        </member>
+        <member name="E:Sudoku.UI.Views.Controls.SudokuPane.PropertyChanged">
+            <inheritdoc/>
+        </member>
+        <member name="M:Sudoku.UI.Views.Controls.SudokuPane.UndoStep">
+            <summary>
+            Undo a step.
+            </summary>
+        </member>
+        <member name="M:Sudoku.UI.Views.Controls.SudokuPane.RedoStep">
+            <summary>
+            Redo a step.
+            </summary>
+        </member>
+        <member name="M:Sudoku.UI.Views.Controls.SudokuPane.MakeDigit(System.Int32,System.Int32)">
+            <summary>
+            To make the cell fill the digit.
+            </summary>
+            <param name="cell">The cell.</param>
+            <param name="digit">The digit.</param>
+        </member>
+        <member name="M:Sudoku.UI.Views.Controls.SudokuPane.EliminateDigit(System.Int32,System.Int32)">
+            <summary>
+            To eliminate the digit from the grid.
+            </summary>
+            <param name="cell">The cell.</param>
+            <param name="digit">The digit.</param>
+        </member>
+        <member name="M:Sudoku.UI.Views.Controls.SudokuPane.FixGrid">
+            <summary>
+            To fix the grid, to change all modifiable values to given ones.
+            </summary>
+        </member>
+        <member name="M:Sudoku.UI.Views.Controls.SudokuPane.UnfixGrid">
+            <summary>
+            To unfix the grid, to change all given values to modifiable ones.
+            </summary>
+        </member>
+        <member name="M:Sudoku.UI.Views.Controls.SudokuPane.ResetGrid">
+            <summary>
+            To reset the grid, to revert the grid to the initial status.
+            </summary>
+        </member>
+        <member name="M:Sudoku.UI.Views.Controls.SudokuPane.ReplaceGridUndoable(Sudoku.Concepts.Collections.Grid@)">
+            <summary>
+            To replace the grid with the new one, in order to make the current operation undoable.
+            </summary>
+            <param name="grid">The grid to be replaced with.</param>
+        </member>
+        <member name="M:Sudoku.UI.Views.Controls.SudokuPane.GridByReference">
+            <summary>
+            Gets or sets the current used grid by reference. The method will return by reference, in order to
+            copy the reference instead of the instance itself, to optimize the memory allocation.
+            </summary>
+        </member>
+        <member name="M:Sudoku.UI.Views.Controls.SudokuPane.OnPointerMoved(Microsoft.UI.Xaml.Input.PointerRoutedEventArgs)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Sudoku.UI.Views.Controls.SudokuPane.OnKeyDown(Microsoft.UI.Xaml.Input.KeyRoutedEventArgs)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Sudoku.UI.Views.Controls.SudokuPane.OnRightTapped(Microsoft.UI.Xaml.Input.RightTappedRoutedEventArgs)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Sudoku.UI.Views.Controls.SudokuPane.GetSudokuGridViewModel">
+            <summary>
+            Gets the <see cref="T:Sudoku.UI.Drawing.Shapes.SudokuGrid"/> instance as the view model.
+            </summary>
+            <returns>The <see cref="T:Sudoku.UI.Drawing.Shapes.SudokuGrid"/> instance.</returns>
+        </member>
+        <member name="M:Sudoku.UI.Views.Controls.SudokuPane.SudokuPane_Loaded(System.Object,Microsoft.UI.Xaml.RoutedEventArgs)">
+            <summary>
+            Triggers when the pane is loaded.
+            </summary>
+            <param name="sender">The object to trigger the event. The instance is always itself.</param>
+            <param name="e">The event arguments provided.</param>
+        </member>
+        <member name="M:Sudoku.UI.Views.Controls.SudokuPane.SudokuPane_PointerEntered(System.Object,Microsoft.UI.Xaml.Input.PointerRoutedEventArgs)">
+            <summary>
+            Triggers when the mouse is moved into the current control.
+            </summary>
+            <param name="sender">The object to trigger the event.</param>
+            <param name="e">The event arguments provided.</param>
+        </member>
+        <member name="M:Sudoku.UI.Views.Controls.SudokuPane.MakeOrDeleteMenuItem_Click(System.Object,Microsoft.UI.Xaml.RoutedEventArgs)">
+            <summary>
+            Triggers when the target <see cref="T:Microsoft.UI.Xaml.Controls.MenuFlyoutItem"/> is clicked.
+            </summary>
+            <param name="sender">The object that triggers the event.</param>
+            <param name="e">The event arguments provided.</param>
+        </member>
+        <member name="M:Sudoku.UI.Views.Controls.SudokuPane.InitializeComponent">
+            <summary>
+            InitializeComponent()
+            </summary>
+        </member>
+        <member name="M:Sudoku.UI.Views.Controls.SudokuPane.Connect(System.Int32,System.Object)">
+            <summary>
+            Connect()
+            </summary>
+        </member>
+        <member name="M:Sudoku.UI.Views.Controls.SudokuPane.GetBindingConnector(System.Int32,System.Object)">
+            <summary>
+            GetBindingConnector(int connectionId, object target)
+            </summary>
+        </member>
+        <member name="T:Sudoku.UI.Views.Pages.AboutPage">
+            <summary>
+            A page that can be used on its own or navigated to within a <see cref="T:Microsoft.UI.Xaml.Controls.Frame"/>.
+            </summary>
+            <seealso cref="T:Microsoft.UI.Xaml.Controls.Frame"/>
+        </member>
+        <member name="M:Sudoku.UI.Views.Pages.AboutPage.#ctor">
+            <summary>
+            Initializes an <see cref="T:Sudoku.UI.Views.Pages.AboutPage"/> instance.
+            </summary>
+        </member>
+        <member name="M:Sudoku.UI.Views.Pages.AboutPage.InitializeComponent">
+            <summary>
+            InitializeComponent()
+            </summary>
+        </member>
+        <member name="M:Sudoku.UI.Views.Pages.AboutPage.Connect(System.Int32,System.Object)">
+            <summary>
+            Connect()
+            </summary>
+        </member>
+        <member name="M:Sudoku.UI.Views.Pages.AboutPage.GetBindingConnector(System.Int32,System.Object)">
+            <summary>
+            GetBindingConnector(int connectionId, object target)
+            </summary>
+        </member>
+        <member name="T:Sudoku.UI.Views.Pages.MainPage">
+            <summary>
+            Indicates the main page of the window. The page is used for navigation to other pages.
+            </summary>
+        </member>
+        <member name="F:Sudoku.UI.Views.Pages.MainPage.NavigationPairs">
+            <summary>
+            Indicates the navigation info tuples that controls to route pages.
+            </summary>
+        </member>
+        <member name="M:Sudoku.UI.Views.Pages.MainPage.#ctor">
+            <summary>
+            Initializes a <see cref="T:Sudoku.UI.Views.Pages.MainPage"/> instance.
+            </summary>
+        </member>
+        <member name="M:Sudoku.UI.Views.Pages.MainPage.OnNavigate(System.String,Microsoft.UI.Xaml.Media.Animation.NavigationTransitionInfo)">
+            <summary>
+            Try to navigate the pages.
+            </summary>
+            <param name="tag">The specified tag of the navigate page item.</param>
+            <param name="transitionInfo">The transition information.</param>
+        </member>
+        <member name="M:Sudoku.UI.Views.Pages.MainPage.ViewRouter_Loaded(System.Object,Microsoft.UI.Xaml.RoutedEventArgs)">
+            <summary>
+            Triggers when the view router control is loaded.
+            </summary>
+            <param name="sender">The object that triggers the event.</param>
+            <param name="e">The event arguments provided.</param>
+        </member>
+        <member name="M:Sudoku.UI.Views.Pages.MainPage.ViewRouterFrame_NavigationFailed(System.Object,Microsoft.UI.Xaml.Navigation.NavigationFailedEventArgs)">
+            <summary>
+            Triggers when the navigation is failed. The method will be invoked if and only if the routing is invalid.
+            </summary>
+            <param name="sender">The object that triggers the event.</param>
+            <param name="e">The event arguments provided.</param>
+            <exception cref="T:System.InvalidOperationException">
+            Always throws. Because the method is handled with the failure of the navigation,
+            the throwing is expected.
+            </exception>
+        </member>
+        <member name="M:Sudoku.UI.Views.Pages.MainPage.ViewRouterFrame_Navigated(System.Object,Microsoft.UI.Xaml.Navigation.NavigationEventArgs)">
+            <summary>
+            Triggers when the frame of the navigation view control has navigated to a certain page.
+            </summary>
+            <param name="sender">The object that triggers the event.</param>
+            <param name="e">The event arguments provided.</param>
+        </member>
+        <member name="M:Sudoku.UI.Views.Pages.MainPage.ViewRouter_ItemInvoked(Microsoft.UI.Xaml.Controls.NavigationView,Microsoft.UI.Xaml.Controls.NavigationViewItemInvokedEventArgs)">
+            <summary>
+            Triggers when a page-related navigation item is clicked and selected.
+            </summary>
+            <param name="sender">The object that triggers the event.</param>
+            <param name="args">The event arguments provided.</param>
+        </member>
+        <member name="M:Sudoku.UI.Views.Pages.MainPage.ViewRouter_SelectionChanged(Microsoft.UI.Xaml.Controls.NavigationView,Microsoft.UI.Xaml.Controls.NavigationViewSelectionChangedEventArgs)">
+            <summary>
+            Triggers when the page-related navigation item, as the selection, is changed.
+            </summary>
+            <param name="sender">The object that triggers the event.</param>
+            <param name="args">The event arguments provided.</param>
+        </member>
+        <member name="M:Sudoku.UI.Views.Pages.MainPage.InitializeComponent">
+            <summary>
+            InitializeComponent()
+            </summary>
+        </member>
+        <member name="M:Sudoku.UI.Views.Pages.MainPage.Connect(System.Int32,System.Object)">
+            <summary>
+            Connect()
+            </summary>
+        </member>
+        <member name="M:Sudoku.UI.Views.Pages.MainPage.GetBindingConnector(System.Int32,System.Object)">
+            <summary>
+            GetBindingConnector(int connectionId, object target)
+            </summary>
+        </member>
+        <member name="T:Sudoku.UI.Views.Pages.SettingsPage">
+            <summary>
+            A page that can be used on its own or navigated to within a <see cref="T:Microsoft.UI.Xaml.Controls.Frame"/>.
+            </summary>
+            <seealso cref="T:Microsoft.UI.Xaml.Controls.Frame"/>
+        </member>
+        <member name="M:Sudoku.UI.Views.Pages.SettingsPage.#ctor">
+            <summary>
+            Initializes a <see cref="T:Sudoku.UI.Views.Pages.SettingsPage"/> instance.
+            </summary>
+        </member>
+        <member name="M:Sudoku.UI.Views.Pages.SettingsPage.InitializeComponent">
+            <summary>
+            InitializeComponent()
+            </summary>
+        </member>
+        <member name="M:Sudoku.UI.Views.Pages.SettingsPage.Connect(System.Int32,System.Object)">
+            <summary>
+            Connect()
+            </summary>
+        </member>
+        <member name="M:Sudoku.UI.Views.Pages.SettingsPage.GetBindingConnector(System.Int32,System.Object)">
+            <summary>
+            GetBindingConnector(int connectionId, object target)
+            </summary>
+        </member>
+        <member name="T:Sudoku.UI.Views.Pages.SudokuPage">
+            <summary>
+            An empty page that can be used on its own or navigated to within a Frame.
+            </summary>
+        </member>
+        <member name="F:Sudoku.UI.Views.Pages.SudokuPage.Solver">
+            <summary>
+            Indicates the internal solver to solve a puzzle.
+            </summary>
+        </member>
+        <member name="F:Sudoku.UI.Views.Pages.SudokuPage.Generator">
+            <summary>
+            Indicates the internal puzzle generator.
+            </summary>
+        </member>
+        <member name="M:Sudoku.UI.Views.Pages.SudokuPage.#ctor">
+            <summary>
+            Initializes a <see cref="T:Sudoku.UI.Views.Pages.SudokuPage"/> instance.
+            </summary>
+        </member>
+        <member name="M:Sudoku.UI.Views.Pages.SudokuPage.OnKeyDown(Microsoft.UI.Xaml.Input.KeyRoutedEventArgs)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Sudoku.UI.Views.Pages.SudokuPage.InitialAddSudokuTechniqueInfoBar">
+            <summary>
+            Adds the initial sudoku-technique based <see cref="T:Microsoft.UI.Xaml.Controls.InfoBar"/> instance.
+            </summary>
+        </member>
+        <member name="M:Sudoku.UI.Views.Pages.SudokuPage.ClearSudokuGrid">
+            <summary>
+            Clear the current sudoku grid, and revert the status to the empty grid.
+            </summary>
+        </member>
+        <member name="M:Sudoku.UI.Views.Pages.SudokuPage.CopySudokuCode">
+            <summary>
+            Copy the string text that represents the current sudoku grid used, to the clipboard.
+            </summary>
+        </member>
+        <member name="M:Sudoku.UI.Views.Pages.SudokuPage.CopySnapshotAsync">
+            <summary>
+            Copy the snapshot of the sudoku grid control, to the clipboard.
+            </summary>
+            <returns>
+            The typical awaitable instance that holds the task to copy the snapshot.
+            </returns>
+        </member>
+        <member name="M:Sudoku.UI.Views.Pages.SudokuPage.UpdateIsEnabledStatus">
+            <summary>
+            Update the status of the property <see cref="P:Microsoft.UI.Xaml.Controls.Control.IsEnabled"/>
+            of the control <see cref="F:Sudoku.UI.Views.Pages.SudokuPage._cClearInfoBars"/>.
+            </summary>
+        </member>
+        <member name="M:Sudoku.UI.Views.Pages.SudokuPage.ClearMessages">
+            <summary>
+            Clear the messages.
+            </summary>
+        </member>
+        <member name="M:Sudoku.UI.Views.Pages.SudokuPage.Undo">
+            <summary>
+            Undo the step.
+            </summary>
+        </member>
+        <member name="M:Sudoku.UI.Views.Pages.SudokuPage.Redo">
+            <summary>
+            Redo the step.
+            </summary>
+        </member>
+        <member name="M:Sudoku.UI.Views.Pages.SudokuPage.FixGrid">
+            <summary>
+            Fix the grid.
+            </summary>
+        </member>
+        <member name="M:Sudoku.UI.Views.Pages.SudokuPage.UnfixGrid">
+            <summary>
+            Unfix the grid.
+            </summary>
+        </member>
+        <member name="M:Sudoku.UI.Views.Pages.SudokuPage.ResetGrid">
+            <summary>
+            Reset the grid.
+            </summary>
+        </member>
+        <member name="M:Sudoku.UI.Views.Pages.SudokuPage.EnsureUnsnapped">
+            <summary>
+            To determine whether the current application view is in an unsnapped state.
+            </summary>
+            <returns>The <see cref="T:System.Boolean"/> value indicating that.</returns>
+        </member>
+        <member name="M:Sudoku.UI.Views.Pages.SudokuPage.OpenFileAsync">
+            <summary>
+            Asynchronously opening the file, and get the inner content to be parsed to a <see cref="T:Sudoku.Concepts.Collections.Grid"/> result
+            to display.
+            </summary>
+            <returns>
+            The typical awaitable instance that holds the task to open the file from the local position.
+            </returns>
+        </member>
+        <member name="M:Sudoku.UI.Views.Pages.SudokuPage.SaveFileAsync">
+            <summary>
+            Asynchronously saving the file using the current sudoku grid as the base content.
+            </summary>
+            <returns>
+            The typical awaitable instance that holds the task to save the file to the local position.
+            </returns>
+        </member>
+        <member name="M:Sudoku.UI.Views.Pages.SudokuPage.PasteAsync">
+            <summary>
+            To paste the text via the clipboard asynchonously.
+            </summary>
+            <returns>The typical awaitable instance that holds the task to paste the sudoku grid text.</returns>
+        </member>
+        <member name="M:Sudoku.UI.Views.Pages.SudokuPage.GenerateAsync(Microsoft.UI.Xaml.Controls.AppBarButton)">
+            <summary>
+            Try to generate a sudoku puzzle, to display onto the sudoku pane.
+            </summary>
+            <param name="button">The button.</param>
+            <returns>The typical awaitable instance that holds the task to generate the puzzle.</returns>
+        </member>
+        <member name="M:Sudoku.UI.Views.Pages.SudokuPage.GetSolution">
+            <summary>
+            Gets the solution of the grid.
+            </summary>
+        </member>
+        <member name="M:Sudoku.UI.Views.Pages.SudokuPage.AnalyzeAsync(Microsoft.UI.Xaml.Controls.AppBarButton)">
+            <summary>
+            To analyze the current sudoku grid.
+            </summary>
+            <param name="button">The button.</param>
+            <returns>The typical awaitable instance that holds the task to analyze the puzzle.</returns>
+        </member>
+        <member name="M:Sudoku.UI.Views.Pages.SudokuPage.Page_Loaded(System.Object,Microsoft.UI.Xaml.RoutedEventArgs)">
+            <summary>
+            Triggers when the current page is loaded.
+            </summary>
+            <param name="sender">The object that triggers the event.</param>
+            <param name="e">The event arguments provided.</param>
+        </member>
+        <member name="M:Sudoku.UI.Views.Pages.SudokuPage.InfoBoard_CollectionChanged(System.Object,System.Collections.Specialized.NotifyCollectionChangedEventArgs)">
+            <summary>
+            Triggers when the inner collection of the control <see cref="F:Sudoku.UI.Views.Pages.SudokuPage._cInfoBoard"/> is changed.
+            </summary>
+            <param name="sender">The object that triggers the event.</param>
+            <param name="e">The event arguments provided.</param>
+        </member>
+        <member name="M:Sudoku.UI.Views.Pages.SudokuPage.CommandOpenOrSaveSudokuFile_CanExecuteRequested(Microsoft.UI.Xaml.Input.XamlUICommand,Microsoft.UI.Xaml.Input.CanExecuteRequestedEventArgs)">
+            <summary>
+            Indicates the event trigger callback method that determines
+            whether the current window status can execute the following operation.
+            </summary>
+        </member>
+        <member name="M:Sudoku.UI.Views.Pages.SudokuPage.CommandOpenSudokuFile_ExecuteRequestedAsync(Microsoft.UI.Xaml.Input.XamlUICommand,Microsoft.UI.Xaml.Input.ExecuteRequestedEventArgs)">
+            <summary>
+            Indicates the event trigger callback method that executes opening sudoku file.
+            </summary>
+        </member>
+        <member name="M:Sudoku.UI.Views.Pages.SudokuPage.CommandCopySudokuGridText_ExecuteRequested(Microsoft.UI.Xaml.Input.XamlUICommand,Microsoft.UI.Xaml.Input.ExecuteRequestedEventArgs)">
+            <summary>
+            Indicates the event trigger callback method that executes
+            copying the string text representing as the current sudoku grid.
+            </summary>
+        </member>
+        <member name="M:Sudoku.UI.Views.Pages.SudokuPage.CommandCopyControlSnapshot_ExecuteRequestedAsync(Microsoft.UI.Xaml.Input.XamlUICommand,Microsoft.UI.Xaml.Input.ExecuteRequestedEventArgs)">
+            <summary>
+            Indicates the event trigger callback method that executes
+            copying the snapshot of the sudoku grid control.
+            </summary>
+        </member>
+        <member name="M:Sudoku.UI.Views.Pages.SudokuPage.CommandPasteSudokuGridText_ExecuteRequestedAsync(Microsoft.UI.Xaml.Input.XamlUICommand,Microsoft.UI.Xaml.Input.ExecuteRequestedEventArgs)">
+            <summary>
+            Indicates the event trigger callback method that executes
+            parsing the string text representing as a sudoku grid from the clipboard.
+            </summary>
+        </member>
+        <member name="M:Sudoku.UI.Views.Pages.SudokuPage.CommandSaveSudokuFile_ExecuteRequestedAsync(Microsoft.UI.Xaml.Input.XamlUICommand,Microsoft.UI.Xaml.Input.ExecuteRequestedEventArgs)">
+            <summary>
+            Indicates the event trigger callback method that executes saving sudoku file.
+            </summary>
+        </member>
+        <member name="M:Sudoku.UI.Views.Pages.SudokuPage.CommandReturnEmptyGrid_ExecuteRequested(Microsoft.UI.Xaml.Input.XamlUICommand,Microsoft.UI.Xaml.Input.ExecuteRequestedEventArgs)">
+            <summary>
+            Indicates the event trigger callback method that executes returning back to the empty grid.
+            </summary>
+        </member>
+        <member name="M:Sudoku.UI.Views.Pages.SudokuPage.CommandReset_ExecuteRequested(Microsoft.UI.Xaml.Input.XamlUICommand,Microsoft.UI.Xaml.Input.ExecuteRequestedEventArgs)">
+            <summary>
+            Indicates the event trigger callback method that executes resetting the grid to the initial status.
+            </summary>
+        </member>
+        <member name="M:Sudoku.UI.Views.Pages.SudokuPage.CommandFix_ExecuteRequested(Microsoft.UI.Xaml.Input.XamlUICommand,Microsoft.UI.Xaml.Input.ExecuteRequestedEventArgs)">
+            <summary>
+            Indicates the event trigger callback method that executes fixing digits.
+            </summary>
+        </member>
+        <member name="M:Sudoku.UI.Views.Pages.SudokuPage.CommandUnfix_ExecuteRequested(Microsoft.UI.Xaml.Input.XamlUICommand,Microsoft.UI.Xaml.Input.ExecuteRequestedEventArgs)">
+            <summary>
+            Indicates the event trigger callback method that executes unfixing digits.
+            </summary>
+        </member>
+        <member name="M:Sudoku.UI.Views.Pages.SudokuPage.CommandUndo_ExecuteRequested(Microsoft.UI.Xaml.Input.XamlUICommand,Microsoft.UI.Xaml.Input.ExecuteRequestedEventArgs)">
+            <summary>
+            Indicates the event trigger callback method that executes undoing a step.
+            </summary>
+        </member>
+        <member name="M:Sudoku.UI.Views.Pages.SudokuPage.CommandRedo_ExecuteRequested(Microsoft.UI.Xaml.Input.XamlUICommand,Microsoft.UI.Xaml.Input.ExecuteRequestedEventArgs)">
+            <summary>
+            Indicates the event trigger callback method that executes redoing a step.
+            </summary>
+        </member>
+        <member name="M:Sudoku.UI.Views.Pages.SudokuPage.CommandClearMessages_ExecuteRequested(Microsoft.UI.Xaml.Input.XamlUICommand,Microsoft.UI.Xaml.Input.ExecuteRequestedEventArgs)">
+            <summary>
+            Indicates the event trigger callback method that executes clearing all messages.
+            </summary>
+        </member>
+        <member name="M:Sudoku.UI.Views.Pages.SudokuPage.CommandGenerate_ExecuteRequestedAsync(Microsoft.UI.Xaml.Input.XamlUICommand,Microsoft.UI.Xaml.Input.ExecuteRequestedEventArgs)">
+            <summary>
+            Indicates the event trigger callback method that executes generating a puzzle.
+            </summary>
+        </member>
+        <member name="M:Sudoku.UI.Views.Pages.SudokuPage.CommandGetSolution_ExecuteRequested(Microsoft.UI.Xaml.Input.XamlUICommand,Microsoft.UI.Xaml.Input.ExecuteRequestedEventArgs)">
+            <summary>
+            Indicates the event trigger callback method that gets the solution of the puzzle.
+            </summary>
+        </member>
+        <member name="M:Sudoku.UI.Views.Pages.SudokuPage.CommandAnalysis_ExecuteRequestedAsync(Microsoft.UI.Xaml.Input.XamlUICommand,Microsoft.UI.Xaml.Input.ExecuteRequestedEventArgs)">
+            <summary>
+            Indicates the event trigger callback method that analyzes the puzzle.
+            </summary>
+        </member>
+        <member name="M:Sudoku.UI.Views.Pages.SudokuPage.InitializeComponent">
+            <summary>
+            InitializeComponent()
+            </summary>
+        </member>
+        <member name="M:Sudoku.UI.Views.Pages.SudokuPage.Connect(System.Int32,System.Object)">
+            <summary>
+            Connect()
+            </summary>
+        </member>
+        <member name="M:Sudoku.UI.Views.Pages.SudokuPage.GetBindingConnector(System.Int32,System.Object)">
+            <summary>
+            GetBindingConnector(int connectionId, object target)
+            </summary>
+        </member>
+        <member name="T:Sudoku.UI.Views.Windows.MainWindow">
+            <summary>
+            An empty window that can be used on its own or navigated to within a <see cref="T:Microsoft.UI.Xaml.Controls.Frame"/>.
+            </summary>
+            <seealso cref="T:Microsoft.UI.Xaml.Controls.Frame"/>
+        </member>
+        <member name="M:Sudoku.UI.Views.Windows.MainWindow.#ctor">
+            <summary>
+            Initializes a <see cref="T:Sudoku.UI.Views.Windows.MainWindow"/> instance.
+            </summary>
+        </member>
+        <member name="M:Sudoku.UI.Views.Windows.MainWindow.CustomizeTitleBar">
+            <summary>
+            Customize the title bar if available.
+            </summary>
+        </member>
+        <member name="M:Sudoku.UI.Views.Windows.MainWindow.InitializeComponent">
+            <summary>
+            InitializeComponent()
+            </summary>
+        </member>
+        <member name="M:Sudoku.UI.Views.Windows.MainWindow.Connect(System.Int32,System.Object)">
+            <summary>
+            Connect()
+            </summary>
+        </member>
+        <member name="M:Sudoku.UI.Views.Windows.MainWindow.GetBindingConnector(System.Int32,System.Object)">
+            <summary>
+            GetBindingConnector(int connectionId, object target)
+            </summary>
+        </member>
+        <member name="T:Sudoku.UI.Program">
+            <summary>
+            Program class
+            </summary>
+        </member>
+        <member name="T:Sudoku.UI.Sudoku_UI_XamlTypeInfo.XamlMetaDataProvider">
+            <summary>
+            Main class for providing metadata for the app or library
+            </summary>
+        </member>
+        <member name="M:Sudoku.UI.Sudoku_UI_XamlTypeInfo.XamlMetaDataProvider.GetXamlType(System.Type)">
+            <summary>
+            GetXamlType(Type)
+            </summary>
+        </member>
+        <member name="M:Sudoku.UI.Sudoku_UI_XamlTypeInfo.XamlMetaDataProvider.GetXamlType(System.String)">
+            <summary>
+            GetXamlType(String)
+            </summary>
+        </member>
+        <member name="M:Sudoku.UI.Sudoku_UI_XamlTypeInfo.XamlMetaDataProvider.GetXmlnsDefinitions">
+            <summary>
+            GetXmlnsDefinitions()
+            </summary>
+        </member>
+        <member name="T:Microsoft.UI.Xaml.Controls.GridWithExtensions">
+            <summary>
+            Provides extension methods on <see cref="T:Microsoft.UI.Xaml.Controls.Grid"/>.
+            </summary>
+            <seealso cref="T:Microsoft.UI.Xaml.Controls.Grid"/>
+        </member>
+        <member name="M:Microsoft.UI.Xaml.Controls.GridWithExtensions.WithGridLayout``1(``0,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Sets the info on <see cref="T:Microsoft.UI.Xaml.Controls.Grid"/>, and returns the reference
+            of the argument <paramref name="this"/>.
+            </summary>
+            <typeparam name="TFrameworkElement">The type of the control.</typeparam>
+            <param name="this">The <typeparamref name="TFrameworkElement"/>-typed control.</param>
+            <param name="row">
+            The row value that is used for <see cref="M:Microsoft.UI.Xaml.Controls.Grid.SetRow(Microsoft.UI.Xaml.FrameworkElement,System.Int32)"/>.
+            </param>
+            <param name="column">
+            The row value that is used for <see cref="M:Microsoft.UI.Xaml.Controls.Grid.SetColumn(Microsoft.UI.Xaml.FrameworkElement,System.Int32)"/>.
+            </param>
+            <param name="rowSpan">
+            The row value that is used for <see cref="M:Microsoft.UI.Xaml.Controls.Grid.SetRowSpan(Microsoft.UI.Xaml.FrameworkElement,System.Int32)"/>.
+            </param>
+            <param name="columnSpan">
+            The row value that is used for <see cref="M:Microsoft.UI.Xaml.Controls.Grid.SetColumnSpan(Microsoft.UI.Xaml.FrameworkElement,System.Int32)"/>.
+            </param>
+            <returns>The reference that is same as the argument <paramref name="this"/>.</returns>
+        </member>
+        <member name="M:Microsoft.UI.Xaml.Controls.GridWithExtensions.WithRowDefinitionsCount(Microsoft.UI.Xaml.Controls.Grid,System.Int32)">
+            <summary>
+            Creates the specified number of new <see cref="T:Microsoft.UI.Xaml.Controls.RowDefinition"/> instances and adds into the target
+            <see cref="T:Microsoft.UI.Xaml.Controls.Grid"/> instance.
+            </summary>
+            <param name="this">The <see cref="T:Microsoft.UI.Xaml.Controls.Grid"/> instance.</param>
+            <param name="count">The number of <see cref="T:Microsoft.UI.Xaml.Controls.RowDefinition"/>s to be added.</param>
+            <returns>The reference that is same as the argument <paramref name="this"/>.</returns>
+            <exception cref="T:System.ArgumentOutOfRangeException">
+            Throws when the argument <paramref name="count"/> is negative.
+            </exception>
+        </member>
+        <member name="M:Microsoft.UI.Xaml.Controls.GridWithExtensions.WithColumnDefinitionsCount(Microsoft.UI.Xaml.Controls.Grid,System.Int32)">
+            <summary>
+            Creates the specified number of new <see cref="T:Microsoft.UI.Xaml.Controls.ColumnDefinition"/> instances and adds into the target
+            <see cref="T:Microsoft.UI.Xaml.Controls.Grid"/> instance.
+            </summary>
+            <param name="this">The <see cref="T:Microsoft.UI.Xaml.Controls.Grid"/> instance.</param>
+            <param name="count">The number of <see cref="T:Microsoft.UI.Xaml.Controls.ColumnDefinition"/>s to be added.</param>
+            <returns>The reference that is same as the argument <paramref name="this"/>.</returns>
+            <exception cref="T:System.ArgumentOutOfRangeException">
+            Throws when the argument <paramref name="count"/> is negative.
+            </exception>
+        </member>
+        <member name="T:Microsoft.UI.Xaml.Shapes.LineExtensions">
+            <summary>
+            Provides extension methods on <see cref="T:Microsoft.UI.Xaml.Shapes.Line"/>.
+            </summary>
+            <seealso cref="T:Microsoft.UI.Xaml.Shapes.Line"/>
+        </member>
+        <member name="M:Microsoft.UI.Xaml.Shapes.LineExtensions.Deconstruct(Microsoft.UI.Xaml.Shapes.Line,Windows.Foundation.Point@,Windows.Foundation.Point@)">
+            <summary>
+            Deconstruct the instance to multiple values.
+            </summary>
+        </member>
+        <member name="M:Microsoft.UI.Xaml.Shapes.LineExtensions.Deconstruct(Microsoft.UI.Xaml.Shapes.Line,System.Double@,System.Double@,System.Double@,System.Double@)">
+            <summary>
+            Deconstruct the instance to multiple values.
+            </summary>
+        </member>
+        <member name="T:Microsoft.UI.Xaml.WindowExtensions">
+            <summary>
+            Provides extension methods on <see cref="T:Microsoft.UI.Xaml.Window"/>.
+            </summary>
+            <seealso cref="T:Microsoft.UI.Xaml.Window"/>
+        </member>
+        <member name="M:Microsoft.UI.Xaml.WindowExtensions.GetAppWindow``1(``0)">
+            <summary>
+            Gets the <see cref="T:Microsoft.UI.Windowing.AppWindow"/> instance via the specified <see cref="T:Microsoft.UI.Xaml.Window"/>.
+            </summary>
+            <typeparam name="TWindow">The type of the window.</typeparam>
+            <param name="this">The <typeparamref name="TWindow"/>-typed instance.</param>
+            <returns>The <see cref="T:Microsoft.UI.Windowing.AppWindow"/> instance.</returns>
+        </member>
+        <member name="T:Windows.Storage.Pickers.FileOpenPickerExtensions">
+            <summary>
+            Provides extension methods on <see cref="T:Windows.Storage.Pickers.FileOpenPicker"/>.
+            </summary>
+            <seealso cref="T:Windows.Storage.Pickers.FileOpenPicker"/>
+        </member>
+        <member name="M:Windows.Storage.Pickers.FileOpenPickerExtensions.AwareHandleOnWin32(Windows.Storage.Pickers.FileOpenPicker)">
+            <summary>
+            To aware the handle of the window, and apply to the <see cref="T:Windows.Storage.Pickers.FileOpenPicker"/> instance.
+            </summary>
+            <param name="this">The instance.</param>
+        </member>
+        <member name="T:Windows.Storage.Pickers.FileSavePickerExtensions">
+            <summary>
+            Provides extension methods on <see cref="T:Windows.Storage.Pickers.FileSavePicker"/>.
+            </summary>
+            <seealso cref="T:Windows.Storage.Pickers.FileSavePicker"/>
+        </member>
+        <member name="M:Windows.Storage.Pickers.FileSavePickerExtensions.AwareHandleOnWin32(Windows.Storage.Pickers.FileSavePicker)">
+            <summary>
+            To aware the handle of the window, and apply to the <see cref="T:Windows.Storage.Pickers.FileSavePicker"/> instance.
+            </summary>
+            <param name="this">The instance.</param>
+        </member>
+        <member name="T:Windows.Foundation.PointExtensions">
+            <summary>
+            Provides extension methods on <see cref="T:Windows.Foundation.Point"/>.
+            </summary>
+            <seealso cref="T:Windows.Foundation.Point"/>
+        </member>
+        <member name="M:Windows.Foundation.PointExtensions.Deconstruct(Windows.Foundation.Point@,System.Double@,System.Double@)">
+            <summary>
+            Deconstruct the instance to multiple values.
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,1314 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AnalysisResultBeenSolved" xml:space="preserve">
+    <value>been solved.</value>
+  </data>
+  <data name="AnalysisResultBottleneckStep" xml:space="preserve">
+    <value>Bottleneck step:</value>
+  </data>
+  <data name="AnalysisResultInStep" xml:space="preserve">
+    <value>In step</value>
+  </data>
+  <data name="AnalysisResultMin" xml:space="preserve">
+    <value>min</value>
+  </data>
+  <data name="AnalysisResultNot" xml:space="preserve">
+    <value>not </value>
+  </data>
+  <data name="AnalysisResultPuzzle" xml:space="preserve">
+    <value>Puzzle: </value>
+  </data>
+  <data name="AnalysisResultPuzzleHas" xml:space="preserve">
+    <value>Puzzle has </value>
+  </data>
+  <data name="AnalysisResultPuzzleRating" xml:space="preserve">
+    <value>Puzzle rating: </value>
+  </data>
+  <data name="AnalysisResultPuzzleSolution" xml:space="preserve">
+    <value>Solution: </value>
+  </data>
+  <data name="AnalysisResultSolvingSteps" xml:space="preserve">
+    <value>Solving steps:</value>
+  </data>
+  <data name="AnalysisResultStepPlural" xml:space="preserve">
+    <value>steps</value>
+  </data>
+  <data name="AnalysisResultStepSingular" xml:space="preserve">
+    <value>step</value>
+  </data>
+  <data name="AnalysisResultTechniqueUsed" xml:space="preserve">
+    <value>Technique used:</value>
+  </data>
+  <data name="AnalysisResultTechniqueUsing" xml:space="preserve">
+    <value>  technique using</value>
+  </data>
+  <data name="AnalysisResultTimeElapsed" xml:space="preserve">
+    <value>Time elapsed: </value>
+  </data>
+  <data name="AnalysisResultTotal" xml:space="preserve">
+    <value>total</value>
+  </data>
+  <data name="BruteForceSolverResultBeenSolved" xml:space="preserve">
+    <value>been solved.</value>
+  </data>
+  <data name="BruteForceSolverResultNot" xml:space="preserve">
+    <value>not </value>
+  </data>
+  <data name="BruteForceSolverResultPuzzle" xml:space="preserve">
+    <value>Puzzle: </value>
+  </data>
+  <data name="BruteForceSolverResultPuzzleHas" xml:space="preserve">
+    <value>Puzzle has </value>
+  </data>
+  <data name="BruteForceSolverResultSolution" xml:space="preserve">
+    <value>Solution: </value>
+  </data>
+  <data name="BruteForceSolverResultTimeElapsed" xml:space="preserve">
+    <value>Time elapsed: </value>
+  </data>
+  <data name="Colon" xml:space="preserve">
+    <value>:</value>
+  </data>
+  <data name="Ellipsis" xml:space="preserve">
+    <value>...</value>
+  </data>
+  <data name="EndoTaraget" xml:space="preserve">
+    <value>endo target: </value>
+  </data>
+  <data name="ExocetBasicEliminationName" xml:space="preserve">
+    <value>Target</value>
+  </data>
+  <data name="ExocetBiBiPatternEliminationName" xml:space="preserve">
+    <value>Bi-bi Pattern</value>
+  </data>
+  <data name="ExocetCompatibilityTestEliminationName" xml:space="preserve">
+    <value>Compatibility Test</value>
+  </data>
+  <data name="ExocetElimination" xml:space="preserve">
+    <value> eliminations: </value>
+  </data>
+  <data name="ExocetGeneralizedSwordfishEliminationName" xml:space="preserve">
+    <value>Generalized Swordfish</value>
+  </data>
+  <data name="ExocetMirrorEliminationName" xml:space="preserve">
+    <value>Mirror</value>
+  </data>
+  <data name="ExocetTargetInferenceEliminationName" xml:space="preserve">
+    <value>Target Inference</value>
+  </data>
+  <data name="ExocetTargetPairEliminationName" xml:space="preserve">
+    <value>Target Pair</value>
+  </data>
+  <data name="ExocetTrueBaseEliminationName" xml:space="preserve">
+    <value>True Base</value>
+  </data>
+  <data name="FalseKeyword" xml:space="preserve">
+    <value>false</value>
+  </data>
+  <data name="Fin" xml:space="preserve">
+    <value> f</value>
+  </data>
+  <data name="GuardianPlural" xml:space="preserve">
+    <value>guardians</value>
+  </data>
+  <data name="GuardianSingular" xml:space="preserve">
+    <value>a guardian</value>
+  </data>
+  <data name="HiddenKeyword" xml:space="preserve">
+    <value>hidden</value>
+  </data>
+  <data name="IncludedExtraRegion" xml:space="preserve">
+    <value>. Extra regions will be included:</value>
+  </data>
+  <data name="KeywordIn" xml:space="preserve">
+    <value>in</value>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>1033</value>
+  </data>
+  <data name="LockedMemberQ" xml:space="preserve">
+    <value>, locked member 1:</value>
+  </data>
+  <data name="LockedMemberR" xml:space="preserve">
+    <value>, locked member 2: </value>
+  </data>
+  <data name="NakedKeyword" xml:space="preserve">
+    <value>naked</value>
+  </data>
+  <data name="OrKeywordWithSpaces" xml:space="preserve">
+    <value> or </value>
+  </data>
+  <data name="SubsetNamesSize2" xml:space="preserve">
+    <value>pair</value>
+  </data>
+  <data name="SubsetNamesSize3" xml:space="preserve">
+    <value>triple</value>
+  </data>
+  <data name="SubsetNamesSize4" xml:space="preserve">
+    <value>quadruple</value>
+  </data>
+  <data name="SubsetNamesSize5" xml:space="preserve">
+    <value>quintuple</value>
+  </data>
+  <data name="SubsetNamesSize6" xml:space="preserve">
+    <value>sextuple</value>
+  </data>
+  <data name="SubsetNamesSize7" xml:space="preserve">
+    <value>septuple</value>
+  </data>
+  <data name="TechniqueFormat_AlmostLockedCandidatesStep" xml:space="preserve">
+    <value>{Name}: {DigitsStr} from {BaseCellsStr} to {TargetCellsStr} =&gt; {ElimStr}</value>
+  </data>
+  <data name="TechniqueFormat_AlmostLockedSetsWWingStep" xml:space="preserve">
+    <value>{Name}: Two ALSes {Als1Str}, {Als2Str} connected by {ConjStr}, W = {WStr}, X = {XStr} =&gt; {ElimStr}</value>
+  </data>
+  <data name="TechniqueFormat_AlmostLockedSetsXyWingStep" xml:space="preserve">
+    <value>{Name}: {Als1Str} -&gt; {BridgeStr} -&gt; {Als2Str}, X = {XStr}, Y = {YStr}, Z = {ZStr} =&gt; {ElimStr}</value>
+  </data>
+  <data name="TechniqueFormat_AlmostLockedSetsXzRule" xml:space="preserve">
+    <value>{Name}: ALS #1: {Als1Str}, ALS #2: {Als2Str}, X = {XStr}{ZResultStr} =&gt; {ElimStr}</value>
+  </data>
+  <data name="TechniqueFormat_AlternatingInferenceChainStep" xml:space="preserve">
+    <value>{Name}: Chain {ChainStr} =&gt; {ElimStr}</value>
+  </data>
+  <data name="TechniqueFormat_AvoidableRectangleWithHiddenSingleStep" xml:space="preserve">
+    <value>{Name}: Digits {D1Str} and {D2Str} in {CellsStr} with hidden single: if cell {BaseCellStr} is filled with the digit {Digit1Str}, region {RegionStr} will only contain a cell {TargetCellStr} can be filled with that digit, but will raise the deadly pattern =&gt; {ElimStr}</value>
+  </data>
+  <data name="TechniqueFormat_BinaryChainingStep" xml:space="preserve">
+    <value>{Name}: It can be proved to be a contradiction if {AnchorIsTrueOrFalseStr} is {AnchorIsNotOnStr} =&gt; {ElimStr}</value>
+  </data>
+  <data name="TechniqueFormat_BivalueOddagonType1Step" xml:space="preserve">
+    <value>{Name}: If the cell {CellStr} only contains the digits {Digit1Str} and {Digit2Str} (or one of those two), the loop {LoopStr} will form an error structure =&gt; {ElimStr}</value>
+  </data>
+  <data name="TechniqueFormat_BivalueOddagonType2Step" xml:space="preserve">
+    <value>{Name}: If all digit {ExtraDigitStr} in cells {LoopStr} are removed, the loop will from an error structure =&gt; {ElimStr}</value>
+  </data>
+  <data name="TechniqueFormat_BivalueOddagonType3Step" xml:space="preserve">
+    <value>{Name}: To avoid the structure {LoopStr} of digits {Digit1Str} and {Digit2Str} error, the only way is to form the subset (digits {DigitsStr} in cells {ExtraCellsStr}) =&gt; {ElimStr}</value>
+  </data>
+  <data name="TechniqueFormat_BivalueUniversalGraveMultipleStep" xml:space="preserve">
+    <value>{Name}: True candidates: {CandidatesStr} =&gt; {ElimStr}</value>
+  </data>
+  <data name="TechniqueFormat_BivalueUniversalGraveType1Step" xml:space="preserve">
+    <value>{Name}: {ElimStr}</value>
+  </data>
+  <data name="TechniqueFormat_BivalueUniversalGraveType2Step" xml:space="preserve">
+    <value>{Name}: {ExtraDigitStr} with cells {CellsStr} =&gt; {ElimStr}</value>
+  </data>
+  <data name="TechniqueFormat_BivalueUniversalGraveType3Step" xml:space="preserve">
+    <value>{Name}: True candidates {TrueCandidatesStr} with {SubsetTypeStr} {SizeStr} {ExtraDigitsStr} in cells {CellsStr} =&gt; {ElimStr}</value>
+  </data>
+  <data name="TechniqueFormat_BivalueUniversalGraveType4Step" xml:space="preserve">
+    <value>{Name}: {DigitsStr} in cells {CellsStr} with conjugate pair {ConjStr} =&gt; {ElimStr}</value>
+  </data>
+  <data name="TechniqueFormat_BivalueUniversalGraveXzStep" xml:space="preserve">
+    <value>{Name}: {DigitStr} with cells {CellsStr}, with extra cell {ExtraCellStr} =&gt; {ElimStr}</value>
+  </data>
+  <data name="TechniqueFormat_BowmanBingoStep" xml:space="preserve">
+    <value>{Name}: Try {ContradictionSeriesStr} =&gt; {ElimStr}</value>
+  </data>
+  <data name="TechniqueFormat_BruteForceStep" xml:space="preserve">
+    <value>{Name}: {AssignmentStr}</value>
+  </data>
+  <data name="TechniqueFormat_CellChainingStep" xml:space="preserve">
+    <value>{Name}: It can be proved using chains that all digits are false from {SourceCellStr} =&gt; {ElimStr}</value>
+  </data>
+  <data name="TechniqueFormat_ComplexFishStep" xml:space="preserve">
+    <value>{Name}: {DigitStr} in {BaseSetsStr}\\{CoverSetsStr} {ExofinsStr}{EndofinsStr}=&gt; {ElimStr}</value>
+  </data>
+  <data name="TechniqueFormat_ContinuousNiceLoopStep" xml:space="preserve">
+    <value>{Name}: Loop {ChainStr} =&gt; {ElimStr}</value>
+  </data>
+  <data name="TechniqueFormat_DominoLoopStep" xml:space="preserve">
+    <value>{Name}: {CellsCountStr} cells {CellsStr} =&gt; {ElimStr}</value>
+  </data>
+  <data name="TechniqueFormat_EmptyRectangleIntersectionPairStep" xml:space="preserve">
+    <value>{Name}: Digits {Digit1Str}, {Digit2Str} in bivalue cells {StartCellStr} and {EndCellStr} with empty rectangle in {RegionStr} =&gt; {ElimStr}</value>
+  </data>
+  <data name="TechniqueFormat_EmptyRectangleStep" xml:space="preserve">
+    <value>{Name}: {DigitStr} in {RegionStr} with conjugate pair {ConjStr} =&gt; {ElimStr}</value>
+  </data>
+  <data name="TechniqueFormat_ExtendedRectangleType1Step" xml:space="preserve">
+    <value>{Name}: {DigitsStr} in {CellsStr} =&gt; {ElimStr}</value>
+  </data>
+  <data name="TechniqueFormat_ExtendedRectangleType2Step" xml:space="preserve">
+    <value>{Name}: {DigitsStr} in {CellsStr} with extra digit {ExtraDigitStr} =&gt; {ElimStr}</value>
+  </data>
+  <data name="TechniqueFormat_ExtendedRectangleType3Step" xml:space="preserve">
+    <value>{Name}: {DigitsStr} in {CellsStr} with {ExtraDigitsStr} in cells {ExtraCellsStr} in {RegionStr} =&gt; {ElimStr}</value>
+  </data>
+  <data name="TechniqueFormat_ExtendedRectangleType4Step" xml:space="preserve">
+    <value>{Name}: {DigitsStr} in {CellsStr} with the conjugate pair {ConjStr} =&gt; {ElimStr}</value>
+  </data>
+  <data name="TechniqueFormat_ExtendedSubsetPrincipleWithDuplicate" xml:space="preserve">
+    <value>{Name}: Only the digit {EspDigitStr} can be duplicate in cells {CellsStr} =&gt; {ElimStr}</value>
+  </data>
+  <data name="TechniqueFormat_ExtendedSubsetPrincipleWithoutDuplicate" xml:space="preserve">
+    <value>{Name}: All digits can't be duplicate in cells {CellsStr} =&gt; {ElimStr}</value>
+  </data>
+  <data name="TechniqueFormat_FullHouseStep" xml:space="preserve">
+    <value>{Name}: {CellStr} = {DigitStr}</value>
+  </data>
+  <data name="TechniqueFormat_GuardianStep" xml:space="preserve">
+    <value>{Name}: Cells {CellsStr} with {GuardianSingularOrPlural} {GuardianStr} =&gt; {ElimStr}</value>
+  </data>
+  <data name="TechniqueFormat_HiddenSingle" xml:space="preserve">
+    <value>{Name}: {CellStr} = {DigitStr} in {RegionStr}</value>
+  </data>
+  <data name="TechniqueFormat_HiddenSubsetStep" xml:space="preserve">
+    <value>{Name}: {DigitStr} in {RegionStr} =&gt; {ElimStr}</value>
+  </data>
+  <data name="TechniqueFormat_LastDigit" xml:space="preserve">
+    <value>{Name}: {CellStr} = {DigitStr}</value>
+  </data>
+  <data name="TechniqueFormat_LockedCandidatesStep" xml:space="preserve">
+    <value>{Name}: {DigitStr} in {BaseSetStr}\\{CoverSetStr} =&gt; {ElimStr}</value>
+  </data>
+  <data name="TechniqueFormat_MultisectorLockedSetsStep" xml:space="preserve">
+    <value>{Name}: {CellsCountStr} cells {CellsStr} =&gt; {ElimStr}</value>
+  </data>
+  <data name="TechniqueFormat_NakedSingleStep" xml:space="preserve">
+    <value>{Name}: {CellStr} = {DigitStr}</value>
+  </data>
+  <data name="TechniqueFormat_NakedSubsetStep" xml:space="preserve">
+    <value>{Name}: {DigitsStr} in {RegionStr} =&gt; {ElimStr}</value>
+  </data>
+  <data name="TechniqueFormat_NormalFishStep" xml:space="preserve">
+    <value>{Name}: {DigitStr} in {BaseSetStr}\\{CoverSetStr}{FinsStr} =&gt; {ElimStr}</value>
+  </data>
+  <data name="TechniqueFormat_PatternOverlayStep" xml:space="preserve">
+    <value>{Name}: Digit {DigitStr} =&gt; {ElimStr}</value>
+  </data>
+  <data name="TechniqueFormat_QiuDeadlyPatternLockedTypeStep" xml:space="preserve">
+    <value>{Name}: Cells {PatternStr} will be a deadly pattern if{Quantifier}{Number} {SingularOrPlural} {CandidateStr} {BeVerb} false =&gt; {ElimStr}</value>
+  </data>
+  <data name="TechniqueFormat_QiuDeadlyPatternType1Step" xml:space="preserve">
+    <value>{Name}: Cells {PatternStr} will be a deadly pattern if {CandidateStr} is false =&gt; {ElimStr}</value>
+  </data>
+  <data name="TechniqueFormat_QiuDeadlyPatternType2Step" xml:space="preserve">
+    <value>{Name}: Cells {PatternStr} will be a deadly pattern if all the extra digits {ExtraDigitStr} in pair cells is false =&gt; {ElimStr}</value>
+  </data>
+  <data name="TechniqueFormat_QiuDeadlyPatternType3Step" xml:space="preserve">
+    <value>{Name}: Cells {PatternStr} won't be a deadly pattern if and only if digits {DigitsStr} in cells {CellsStr} is a naked {SubsetName} =&gt; {ElimStr}</value>
+  </data>
+  <data name="TechniqueFormat_QiuDeadlyPatternType4Step" xml:space="preserve">
+    <value>{Name}: Cells {PatternStr} will be a deadly pattern if another digit in either cells lying on the conjugate pair {ConjStr} is true =&gt; {ElimStr}</value>
+  </data>
+  <data name="TechniqueFormat_RegionChainingStep" xml:space="preserve">
+    <value>{Name}: It can be proved using chains that digit {DigitStr} from {RegionStr} are false =&gt; {ElimStr}</value>
+  </data>
+  <data name="TechniqueFormat_RegularWingStep" xml:space="preserve">
+    <value>{Name}: {DigitsStr} in {PivotCellStr} with {CellsStr} =&gt; {ElimStr}</value>
+  </data>
+  <data name="TechniqueFormat_SueDeCoq3DimensionStep" xml:space="preserve">
+    <value>{Name}: {Cells1Str}({Digits1Str}) + {Cells2Str}({Digits2Str}) + {Cells3Str}({Digits3Str}) =&gt; {ElimStr}</value>
+  </data>
+  <data name="TechniqueFormat_SueDeCoqStep" xml:space="preserve">
+    <value>{Name}: {IntersectionCellsStr}({IntersectionDigitsStr}) - {BlockCellsStr}({BlockDigitsStr}) &amp; {LineCellsStr}({LineDigitsStr}) =&gt; {ElimStr}</value>
+  </data>
+  <data name="TechniqueFormat_TemplateStep" xml:space="preserve">
+    <value>{Name}: Digit {DigitStr} =&gt; {ElimStr}</value>
+  </data>
+  <data name="TechniqueFormat_TwoStrongLinksStep" xml:space="preserve">
+    <value>{Name}: {DigitStr} in {BaseRegionStr}\\{TargetRegionStr} =&gt; {ElimStr}</value>
+  </data>
+  <data name="TechniqueFormat_UniqueLoopType1Step" xml:space="preserve">
+    <value>{Name}: Digits {Digit1Str}, {Digit2Str} in cells {LoopStr} =&gt; {ElimStr}</value>
+  </data>
+  <data name="TechniqueFormat_UniqueLoopType2Step" xml:space="preserve">
+    <value>{Name}: Digits {Digit1Str}, {Digit2Str} in cells {LoopStr} with the extra digit {ExtraDigitStr} =&gt; {ElimStr}</value>
+  </data>
+  <data name="TechniqueFormat_UniqueLoopType3Step" xml:space="preserve">
+    <value>{Name}: Digits {Digit1Str}, {Digit2Str} in cells {LoopStr} with the naked {SubsetName} with extra digits {DigitsStr} in cells {SubsetCellsStr} =&gt; {ElimStr}</value>
+  </data>
+  <data name="TechniqueFormat_UniqueLoopType4Step" xml:space="preserve">
+    <value>{Name}: Digits {Digit1Str}, {Digit2Str} in cells {LoopStr} with the conjugate pair {ConjStr} =&gt; {ElimStr}</value>
+  </data>
+  <data name="TechniqueFormat_UniquePolygonType1Step" xml:space="preserve">
+    <value>{Name}: {DigitsStr} in cells {CellsStr} =&gt; {ElimStr}</value>
+  </data>
+  <data name="TechniqueFormat_UniquePolygonType2Step" xml:space="preserve">
+    <value>{Name}: {DigitsStr} in cells {CellsStr} with the extra digit {ExtraDigitStr} =&gt; {ElimStr}</value>
+  </data>
+  <data name="TechniqueFormat_UniquePolygonType3Step" xml:space="preserve">
+    <value>{Name}: {DigitsStr} in cells {CellsStr} with the digits {ExtraDigitsStr} in cells {ExtraCellsStr} =&gt; {ElimStr}</value>
+  </data>
+  <data name="TechniqueFormat_UniquePolygonType4Step" xml:space="preserve">
+    <value>{Name}: {DigitsStr} in cells {CellsStr} with the conjugate region {ConjRegionStr} of the extra digits {ExtraCombStr} =&gt; {ElimStr}</value>
+  </data>
+  <data name="TechniqueFormat_UniqueRectangle2DOr3XStep" xml:space="preserve">
+    <value>{Name}: Digits {D1Str} and {D2Str} in {CellsStr}, with X = {XDigitStr}, Y = {YDigitStr} and a bi-value cell {XYCellsStr} =&gt; {ElimStr}</value>
+  </data>
+  <data name="TechniqueFormat_UniqueRectangleType1Step" xml:space="preserve">
+    <value>{Name}: Digits {D1Str} and {D2Str} in {CellsStr} =&gt; {ElimStr}</value>
+  </data>
+  <data name="TechniqueFormat_UniqueRectangleType2Step" xml:space="preserve">
+    <value>{Name}: Digits {D1Str} and {D2Str} in {CellsStr}, with the extra digit {ExtraDigitStr} =&gt; {ElimStr}</value>
+  </data>
+  <data name="TechniqueFormat_UniqueRectangleType3Step" xml:space="preserve">
+    <value>{Name}: Digits {D1Str} and {D2Str} in {CellsStr}, with the digit {DigitsStr} in {OnlyKeyword}cells {CellsStr} in {RegionStr} =&gt; {ElimStr}</value>
+  </data>
+  <data name="TechniqueFormat_UniqueRectangleWithConjugatePairStep" xml:space="preserve">
+    <value>{Name}: Digits {D1Str} and {D2Str} in {CellsStr} with {Prefix}conjugate pair{Suffix} {ConjPairsStr} =&gt; {ElimStr}</value>
+  </data>
+  <data name="TechniqueFormat_UniqueRectangleWithGuardianStep" xml:space="preserve">
+    <value>{Name}: Digits {D1Str} and {D2Str} in {CellsStr} with guardian: digit {GuardianDigitStr} in cells {GuardianCellsStr} =&gt; {ElimStr}</value>
+  </data>
+  <data name="TechniqueFormat_UniqueRectangleWithSueDeCoqStep" xml:space="preserve">
+    <value>{Name}: Digits {D1Str} and {D2Str} in {CellsStr}, with a generalized Sue de Coq in cells {MergedCellsStr} of digits {DigitsStr} =&gt; {ElimStr}</value>
+  </data>
+  <data name="TechniqueFormat_UniqueRectangleWithUnknownCoveringStep" xml:space="preserve">
+    <value>{Name}: Digits {D1Str} and {D2Str} in {CellsStr}, with unknown covering: Suppose {TargetCellStr} is filled with the unknown digit X (X is {DigitsStr}), then 4 cells form a UR deadly pattern of digit X and {ExtraDigitStr} =&gt; {ElimStr}</value>
+  </data>
+  <data name="TechniqueFormat_UniqueRectangleWithWingStep" xml:space="preserve">
+    <value>{Name}: Digits {D1Str} and {D2Str} in {CellsStr}, with a wing (pivots: {PivotsStr}, with digits: {DigitsStr} in cells {CellsStr}) =&gt; {ElimStr}</value>
+  </data>
+  <data name="TechniqueFormat_UniqueSquareType1Step" xml:space="preserve">
+    <value>{Name}: Digits {DigitsStr} in cells {CellsStr} will form a deadly pattern if the candidate {CandidateStr} is false =&gt; {ElimStr}</value>
+  </data>
+  <data name="TechniqueFormat_UniqueSquareType2Step" xml:space="preserve">
+    <value>{Name}: Digits {DigitsStr} in cells {CellsStr} will form a deadly pattern if the extra digit {ExtraDigitStr} is all false in the pattern =&gt; {ElimStr}</value>
+  </data>
+  <data name="TechniqueFormat_UniqueSquareType3Step" xml:space="preserve">
+    <value>{Name}: Digits {DigitsStr} in cells {CellsStr} can be avoid to form a deadly pattern if and only if the digits {ExtraDigitStr} in cells {ExtraCellsStr} form a naked {SubsetName} =&gt; {ElimStr}</value>
+  </data>
+  <data name="TechniqueFormat_UniqueSquareType4Step" xml:space="preserve">
+    <value>{Name}: Digits {DigitsStr} in cells {CellsStr} can avoid to form a deadly pattern if and only if the conjugate region {ConjStr} can't set the digit neither {Digit1Str} nor {Digit2Str} =&gt; {ElimStr}</value>
+  </data>
+  <data name="TechniqueFormat_WWingStep" xml:space="preserve">
+    <value>{Name}: {StartCellStr} to {EndCellStr} with conjugate pair {ConjStr} =&gt; {ElimStr}</value>
+  </data>
+  <data name="TrueKeyword" xml:space="preserve">
+    <value>true</value>
+  </data>
+  <data name="FullHouse" xml:space="preserve">
+    <value>Full House</value>
+  </data>
+  <data name="LastDigit" xml:space="preserve">
+    <value>Last Digit</value>
+  </data>
+  <data name="HiddenSingleBlock" xml:space="preserve">
+    <value>Hidden Single in Block</value>
+  </data>
+  <data name="HiddenSingleRow" xml:space="preserve">
+    <value>Hidden Single in Row</value>
+  </data>
+  <data name="HiddenSingleColumn" xml:space="preserve">
+    <value>Hidden Single in Column</value>
+  </data>
+  <data name="NakedSingle" xml:space="preserve">
+    <value>Naked Single</value>
+  </data>
+  <data name="Pointing" xml:space="preserve">
+    <value>Pointing</value>
+  </data>
+  <data name="Claiming" xml:space="preserve">
+    <value>Claiming</value>
+  </data>
+  <data name="AlmostLockedPair" xml:space="preserve">
+    <value>Almost Locked Pair</value>
+  </data>
+  <data name="AlmostLockedTriple" xml:space="preserve">
+    <value>Almost Locked Triple</value>
+  </data>
+  <data name="AlmostLockedQuadruple" xml:space="preserve">
+    <value>Almost Locked Quadruple</value>
+  </data>
+  <data name="NakedPair" xml:space="preserve">
+    <value>Naked Pair</value>
+  </data>
+  <data name="NakedPairPlus" xml:space="preserve">
+    <value>Naked Pair (+)</value>
+  </data>
+  <data name="LockedPair" xml:space="preserve">
+    <value>Locked Pair</value>
+  </data>
+  <data name="HiddenPair" xml:space="preserve">
+    <value>Hidden Pair</value>
+  </data>
+  <data name="NakedTriple" xml:space="preserve">
+    <value>Naked Triple</value>
+  </data>
+  <data name="NakedTriplePlus" xml:space="preserve">
+    <value>Naked Triple (+)</value>
+  </data>
+  <data name="LockedTriple" xml:space="preserve">
+    <value>Locked Triple</value>
+  </data>
+  <data name="HiddenTriple" xml:space="preserve">
+    <value>Hidden Triple</value>
+  </data>
+  <data name="NakedQuadruple" xml:space="preserve">
+    <value>Naked Quadruple</value>
+  </data>
+  <data name="NakedQuadruplePlus" xml:space="preserve">
+    <value>Naked Quadruple (+)</value>
+  </data>
+  <data name="HiddenQuadruple" xml:space="preserve">
+    <value>Hidden Quadruple</value>
+  </data>
+  <data name="XWing" xml:space="preserve">
+    <value>X-Wing</value>
+  </data>
+  <data name="FinnedXWing" xml:space="preserve">
+    <value>Finned X-Wing</value>
+  </data>
+  <data name="SashimiXWing" xml:space="preserve">
+    <value>Sashimi X-Wing</value>
+  </data>
+  <data name="SiameseFinnedXWing" xml:space="preserve">
+    <value>Siamese Finned X-Wing</value>
+  </data>
+  <data name="SiameseSashimiXWing" xml:space="preserve">
+    <value>Siamese Sashimi X-Wing</value>
+  </data>
+  <data name="FrankenXWing" xml:space="preserve">
+    <value>Franken X-Wing</value>
+  </data>
+  <data name="FinnedFrankenXWing" xml:space="preserve">
+    <value>Finned Franken X-Wing</value>
+  </data>
+  <data name="SashimiFrankenXWing" xml:space="preserve">
+    <value>Sashimi Franken X-Wing</value>
+  </data>
+  <data name="SiameseFinnedFrankenXWing" xml:space="preserve">
+    <value>Siamese Finned Franken X-Wing</value>
+  </data>
+  <data name="SiameseSashimiFrankenXWing" xml:space="preserve">
+    <value>Siamese Sashimi Franken X-Wing</value>
+  </data>
+  <data name="MutantXWing" xml:space="preserve">
+    <value>Mutant X-Wing</value>
+  </data>
+  <data name="FinnedMutantXWing" xml:space="preserve">
+    <value>Finned Mutant X-Wing</value>
+  </data>
+  <data name="SashimiMutantXWing" xml:space="preserve">
+    <value>Sashimi Mutant X-Wing</value>
+  </data>
+  <data name="SiameseFinnedMutantXWing" xml:space="preserve">
+    <value>Siamese Finned Mutant X-Wing</value>
+  </data>
+  <data name="SiameseSashimiMutantXWing" xml:space="preserve">
+    <value>Siamese Sashimi Mutant X-Wing</value>
+  </data>
+  <data name="Swordfish" xml:space="preserve">
+    <value>Swordfish</value>
+  </data>
+  <data name="FinnedSwordfish" xml:space="preserve">
+    <value>Finned Swordfish</value>
+  </data>
+  <data name="SashimiSwordfish" xml:space="preserve">
+    <value>Sashimi Swordfish</value>
+  </data>
+  <data name="SiameseFinnedSwordfish" xml:space="preserve">
+    <value>Siamese Finned Swordfish</value>
+  </data>
+  <data name="SiameseSashimiSwordfish" xml:space="preserve">
+    <value>Siamese Sashimi Swordfish</value>
+  </data>
+  <data name="FrankenSwordfish" xml:space="preserve">
+    <value>Franken Swordfish</value>
+  </data>
+  <data name="FinnedFrankenSwordfish" xml:space="preserve">
+    <value>Finned Franken Swordfish</value>
+  </data>
+  <data name="SashimiFrankenSwordfish" xml:space="preserve">
+    <value>Sashimi Franken Swordfish</value>
+  </data>
+  <data name="SiameseFinnedFrankenSwordfish" xml:space="preserve">
+    <value>Siamese Finned Franken Swordfish</value>
+  </data>
+  <data name="SiameseSashimiFrankenSwordfish" xml:space="preserve">
+    <value>Siamese Sashimi Franken Swordfish</value>
+  </data>
+  <data name="MutantSwordfish" xml:space="preserve">
+    <value>Mutant Swordfish</value>
+  </data>
+  <data name="FinnedMutantSwordfish" xml:space="preserve">
+    <value>Finned Mutant Swordfish</value>
+  </data>
+  <data name="SashimiMutantSwordfish" xml:space="preserve">
+    <value>Sashimi Mutant Swordfish</value>
+  </data>
+  <data name="SiameseFinnedMutantSwordfish" xml:space="preserve">
+    <value>Siamese Finned Mutant Swordfish</value>
+  </data>
+  <data name="SiameseSashimiMutantSwordfish" xml:space="preserve">
+    <value>Siamese Sashimi Mutant Swordfish</value>
+  </data>
+  <data name="Jellyfish" xml:space="preserve">
+    <value>Jellyfish</value>
+  </data>
+  <data name="FinnedJellyfish" xml:space="preserve">
+    <value>Finned Jellyfish</value>
+  </data>
+  <data name="SashimiJellyfish" xml:space="preserve">
+    <value>Sashimi Jellyfish</value>
+  </data>
+  <data name="SiameseFinnedJellyfish" xml:space="preserve">
+    <value>Siamese Finned Jellyfish</value>
+  </data>
+  <data name="SiameseSashimiJellyfish" xml:space="preserve">
+    <value>Siamese Sashimi Jellyfish</value>
+  </data>
+  <data name="FrankenJellyfish" xml:space="preserve">
+    <value>Franken Jellyfish</value>
+  </data>
+  <data name="FinnedFrankenJellyfish" xml:space="preserve">
+    <value>Finned Franken Jellyfish</value>
+  </data>
+  <data name="SashimiFrankenJellyfish" xml:space="preserve">
+    <value>Sashimi Franken Jellyfish</value>
+  </data>
+  <data name="SiameseFinnedFrankenJellyfish" xml:space="preserve">
+    <value>Siamese Finned Franken Jellyfish</value>
+  </data>
+  <data name="SiameseSashimiFrankenJellyfish" xml:space="preserve">
+    <value>Siamese Sashimi Franken Jellyfish</value>
+  </data>
+  <data name="MutantJellyfish" xml:space="preserve">
+    <value>Mutant Jellyfish</value>
+  </data>
+  <data name="FinnedMutantJellyfish" xml:space="preserve">
+    <value>Finned Mutant Jellyfish</value>
+  </data>
+  <data name="SashimiMutantJellyfish" xml:space="preserve">
+    <value>Sashimi Mutant Jellyfish</value>
+  </data>
+  <data name="SiameseFinnedMutantJellyfish" xml:space="preserve">
+    <value>Siamese Finned Mutant Jellyfish</value>
+  </data>
+  <data name="SiameseSashimiMutantJellyfish" xml:space="preserve">
+    <value>Siamese Sashimi Mutant Jellyfish</value>
+  </data>
+  <data name="Squirmbag" xml:space="preserve">
+    <value>Squirmbag</value>
+  </data>
+  <data name="FinnedSquirmbag" xml:space="preserve">
+    <value>Finned Squirmbag</value>
+  </data>
+  <data name="SashimiSquirmbag" xml:space="preserve">
+    <value>Sashimi Squirmbag</value>
+  </data>
+  <data name="SiameseFinnedSquirmbag" xml:space="preserve">
+    <value>Siamese Finned Squirmbag</value>
+  </data>
+  <data name="SiameseSashimiSquirmbag" xml:space="preserve">
+    <value>Siamese Sashimi Squirmbag</value>
+  </data>
+  <data name="FrankenSquirmbag" xml:space="preserve">
+    <value>Franken Squirmbag</value>
+  </data>
+  <data name="FinnedFrankenSquirmbag" xml:space="preserve">
+    <value>Finned Franken Squirmbag</value>
+  </data>
+  <data name="SashimiFrankenSquirmbag" xml:space="preserve">
+    <value>Sashimi Franken Squirmbag</value>
+  </data>
+  <data name="SiameseFinnedFrankenSquirmbag" xml:space="preserve">
+    <value>Siamese Finned Franken Squirmbag</value>
+  </data>
+  <data name="SiameseSashimiFrankenSquirmbag" xml:space="preserve">
+    <value>Siamese Sashimi Franken Squirmbag</value>
+  </data>
+  <data name="MutantSquirmbag" xml:space="preserve">
+    <value>Mutant Squirmbag</value>
+  </data>
+  <data name="FinnedMutantSquirmbag" xml:space="preserve">
+    <value>Finned Mutant Squirmbag</value>
+  </data>
+  <data name="SashimiMutantSquirmbag" xml:space="preserve">
+    <value>Sashimi Mutant Squirmbag</value>
+  </data>
+  <data name="SiameseFinnedMutantSquirmbag" xml:space="preserve">
+    <value>Siamese Finned Mutant Squirmbag</value>
+  </data>
+  <data name="SiameseSashimiMutantSquirmbag" xml:space="preserve">
+    <value>Siamese Sashimi Mutant Squirmbag</value>
+  </data>
+  <data name="Whale" xml:space="preserve">
+    <value>Whale</value>
+  </data>
+  <data name="FinnedWhale" xml:space="preserve">
+    <value>Finned Whale</value>
+  </data>
+  <data name="SashimiWhale" xml:space="preserve">
+    <value>Sashimi Whale</value>
+  </data>
+  <data name="SiameseFinnedWhale" xml:space="preserve">
+    <value>Siamese Finned Whale</value>
+  </data>
+  <data name="SiameseSashimiWhale" xml:space="preserve">
+    <value>Siamese Sashimi Whale</value>
+  </data>
+  <data name="FrankenWhale" xml:space="preserve">
+    <value>Franken Whale</value>
+  </data>
+  <data name="FinnedFrankenWhale" xml:space="preserve">
+    <value>Finned Franken Whale</value>
+  </data>
+  <data name="SashimiFrankenWhale" xml:space="preserve">
+    <value>Sashimi Franken Whale</value>
+  </data>
+  <data name="SiameseFinnedFrankenWhale" xml:space="preserve">
+    <value>Siamese Finned Franken Whale</value>
+  </data>
+  <data name="SiameseSashimiFrankenWhale" xml:space="preserve">
+    <value>Siamese Sashimi Franken Whale</value>
+  </data>
+  <data name="MutantWhale" xml:space="preserve">
+    <value>Mutant Whale</value>
+  </data>
+  <data name="FinnedMutantWhale" xml:space="preserve">
+    <value>Finned Mutant Whale</value>
+  </data>
+  <data name="SashimiMutantWhale" xml:space="preserve">
+    <value>Sashimi Mutant Whale</value>
+  </data>
+  <data name="SiameseFinnedMutantWhale" xml:space="preserve">
+    <value>Siamese Finned Mutant Whale</value>
+  </data>
+  <data name="SiameseSashimiMutantWhale" xml:space="preserve">
+    <value>Siamese Sashimi Mutant Whale</value>
+  </data>
+  <data name="Leviathan" xml:space="preserve">
+    <value>Leviathan</value>
+  </data>
+  <data name="FinnedLeviathan" xml:space="preserve">
+    <value>Finned Leviathan</value>
+  </data>
+  <data name="SashimiLeviathan" xml:space="preserve">
+    <value>Sashimi Leviathan</value>
+  </data>
+  <data name="SiameseFinnedLeviathan" xml:space="preserve">
+    <value>Siamese Finned Leviathan</value>
+  </data>
+  <data name="SiameseSashimiLeviathan" xml:space="preserve">
+    <value>Siamese Sashimi Leviathan</value>
+  </data>
+  <data name="FrankenLeviathan" xml:space="preserve">
+    <value>Franken Leviathan</value>
+  </data>
+  <data name="FinnedFrankenLeviathan" xml:space="preserve">
+    <value>Finned Franken Leviathan</value>
+  </data>
+  <data name="SashimiFrankenLeviathan" xml:space="preserve">
+    <value>Sashimi Franken Leviathan</value>
+  </data>
+  <data name="SiameseFinnedFrankenLeviathan" xml:space="preserve">
+    <value>Siamese Finned Franken Leviathan</value>
+  </data>
+  <data name="SiameseSashimiFrankenLeviathan" xml:space="preserve">
+    <value>Siamese Sashimi Franken Leviathan</value>
+  </data>
+  <data name="MutantLeviathan" xml:space="preserve">
+    <value>Mutant Leviathan</value>
+  </data>
+  <data name="FinnedMutantLeviathan" xml:space="preserve">
+    <value>Finned Mutant Leviathan</value>
+  </data>
+  <data name="SashimiMutantLeviathan" xml:space="preserve">
+    <value>Sashimi Mutant Leviathan</value>
+  </data>
+  <data name="SiameseFinnedMutantLeviathan" xml:space="preserve">
+    <value>Siamese Finned Mutant Leviathan</value>
+  </data>
+  <data name="SiameseSashimiMutantLeviathan" xml:space="preserve">
+    <value>Siamese Sashimi Mutant Leviathan</value>
+  </data>
+  <data name="XyWing" xml:space="preserve">
+    <value>XY-Wing</value>
+  </data>
+  <data name="XyzWing" xml:space="preserve">
+    <value>XYZ-Wing</value>
+  </data>
+  <data name="WxyzWing" xml:space="preserve">
+    <value>WXYZ-Wing</value>
+  </data>
+  <data name="VwxyzWing" xml:space="preserve">
+    <value>VWXYZ-Wing</value>
+  </data>
+  <data name="UvwxyzWing" xml:space="preserve">
+    <value>UVWXYZ-Wing</value>
+  </data>
+  <data name="TuvwxyzWing" xml:space="preserve">
+    <value>TUVWXYZ-Wing</value>
+  </data>
+  <data name="StuvwxyzWing" xml:space="preserve">
+    <value>STUVWXYZ-Wing</value>
+  </data>
+  <data name="RstuvwxyzWing" xml:space="preserve">
+    <value>RSTUVWXYZ-Wing</value>
+  </data>
+  <data name="IncompleteWxyzWing" xml:space="preserve">
+    <value>Incomplete WXYZ-Wing</value>
+  </data>
+  <data name="IncompleteVwxyzWing" xml:space="preserve">
+    <value>Incomplete VWXYZ-Wing</value>
+  </data>
+  <data name="IncompleteUvwxyzWing" xml:space="preserve">
+    <value>Incomplete UVWXYZ-Wing</value>
+  </data>
+  <data name="IncompleteTuvwxyzWing" xml:space="preserve">
+    <value>Incomplete TUVWXYZ-Wing</value>
+  </data>
+  <data name="IncompleteStuvwxyzWing" xml:space="preserve">
+    <value>Incomplete STUVWXYZ-Wing</value>
+  </data>
+  <data name="IncompleteRstuvwxyzWing" xml:space="preserve">
+    <value>Incomplete RSTUVWXYZ-Wing</value>
+  </data>
+  <data name="WWing" xml:space="preserve">
+    <value>W-Wing</value>
+  </data>
+  <data name="MWing" xml:space="preserve">
+    <value>M-Wing</value>
+  </data>
+  <data name="LocalWing" xml:space="preserve">
+    <value>Local Wing</value>
+  </data>
+  <data name="SplitWing" xml:space="preserve">
+    <value>Split Wing</value>
+  </data>
+  <data name="HybridWing" xml:space="preserve">
+    <value>Hybrid Wing</value>
+  </data>
+  <data name="GroupedXyWing" xml:space="preserve">
+    <value>Grouped XY-Wing</value>
+  </data>
+  <data name="GroupedWWing" xml:space="preserve">
+    <value>Grouped W-Wing</value>
+  </data>
+  <data name="GroupedMWing" xml:space="preserve">
+    <value>Grouped M-Wing</value>
+  </data>
+  <data name="GroupedLocalWing" xml:space="preserve">
+    <value>Grouped Local Wing</value>
+  </data>
+  <data name="GroupedSplitWing" xml:space="preserve">
+    <value>Grouped Split Wing</value>
+  </data>
+  <data name="GroupedHybridWing" xml:space="preserve">
+    <value>Grouped Hybrid Wing</value>
+  </data>
+  <data name="UniqueRectangleType1" xml:space="preserve">
+    <value>Unique Rectangle Type 1</value>
+  </data>
+  <data name="UniqueRectangleType2" xml:space="preserve">
+    <value>Unique Rectangle Type 2</value>
+  </data>
+  <data name="UniqueRectangleType3" xml:space="preserve">
+    <value>Unique Rectangle Type 3</value>
+  </data>
+  <data name="UniqueRectangleType4" xml:space="preserve">
+    <value>Unique Rectangle Type 4</value>
+  </data>
+  <data name="UniqueRectangleType5" xml:space="preserve">
+    <value>Unique Rectangle Type 5</value>
+  </data>
+  <data name="UniqueRectangleType6" xml:space="preserve">
+    <value>Unique Rectangle Type 6</value>
+  </data>
+  <data name="HiddenUniqueRectangle" xml:space="preserve">
+    <value>Hidden Unique Rectangle</value>
+  </data>
+  <data name="UniqueRectangle2D" xml:space="preserve">
+    <value>Unique Rectangle + 2D</value>
+  </data>
+  <data name="UniqueRectangle2B1" xml:space="preserve">
+    <value>Unique Rectangle + 2B/1SL</value>
+  </data>
+  <data name="UniqueRectangle2D1" xml:space="preserve">
+    <value>Unique Rectangle + 2D/1SL</value>
+  </data>
+  <data name="UniqueRectangle3X" xml:space="preserve">
+    <value>Unique Rectangle + 3X</value>
+  </data>
+  <data name="UniqueRectangle3X1L" xml:space="preserve">
+    <value>Unique Rectangle + 3x/1SL</value>
+  </data>
+  <data name="UniqueRectangle3X1U" xml:space="preserve">
+    <value>Unique Rectangle + 3X/1SL</value>
+  </data>
+  <data name="UniqueRectangle3X2" xml:space="preserve">
+    <value>Unique Rectangle + 3X/2SL</value>
+  </data>
+  <data name="UniqueRectangle3N2" xml:space="preserve">
+    <value>Unique Rectangle + 3N/2SL</value>
+  </data>
+  <data name="UniqueRectangle3U2" xml:space="preserve">
+    <value>Unique Rectangle + 3U/2SL</value>
+  </data>
+  <data name="UniqueRectangle3E2" xml:space="preserve">
+    <value>Unique Rectangle + 3E/2SL</value>
+  </data>
+  <data name="UniqueRectangle4X1L" xml:space="preserve">
+    <value>Unique Rectangle + 4x/1SL</value>
+  </data>
+  <data name="UniqueRectangle4X1U" xml:space="preserve">
+    <value>Unique Rectangle + 4X/1SL</value>
+  </data>
+  <data name="UniqueRectangle4X2L" xml:space="preserve">
+    <value>Unique Rectangle + 4x/2SL</value>
+  </data>
+  <data name="UniqueRectangle4X2U" xml:space="preserve">
+    <value>Unique Rectangle + 4X/2SL</value>
+  </data>
+  <data name="UniqueRectangle4X3" xml:space="preserve">
+    <value>Unique Rectangle 4X/3SL</value>
+  </data>
+  <data name="UniqueRectangle4C3" xml:space="preserve">
+    <value>Unique Rectangle 4C/3SL</value>
+  </data>
+  <data name="UniqueRectangleXyWing" xml:space="preserve">
+    <value>Unique Rectangle XY-Wing</value>
+  </data>
+  <data name="UniqueRectangleXyzWing" xml:space="preserve">
+    <value>Unique Rectangle XYZ-Wing</value>
+  </data>
+  <data name="UniqueRectangleWxyzWing" xml:space="preserve">
+    <value>Unique Rectangle WXYZ-Wing</value>
+  </data>
+  <data name="UniqueRectangleSueDeCoq" xml:space="preserve">
+    <value>Unique Rectangle Sue de Coq</value>
+  </data>
+  <data name="UniqueRectangleUnknownCovering" xml:space="preserve">
+    <value>Unique Rectangle Unknown Covering</value>
+  </data>
+  <data name="UniqueRectangleBrokenWing" xml:space="preserve">
+    <value>Unique Rectangle Guardian</value>
+  </data>
+  <data name="AvoidableRectangleType1" xml:space="preserve">
+    <value>Avoidable Rectangle Type 1</value>
+  </data>
+  <data name="AvoidableRectangleType2" xml:space="preserve">
+    <value>Avoidable Rectangle Type 2</value>
+  </data>
+  <data name="AvoidableRectangleType3" xml:space="preserve">
+    <value>Avoidable Rectangle Type 3</value>
+  </data>
+  <data name="AvoidableRectangleType5" xml:space="preserve">
+    <value>Avoidable Rectangle Type 5</value>
+  </data>
+  <data name="HiddenAvoidableRectangle" xml:space="preserve">
+    <value>Hidden Avoidable Rectangle</value>
+  </data>
+  <data name="AvoidableRectangle2D" xml:space="preserve">
+    <value>Avoidable Rectangle + 2D</value>
+  </data>
+  <data name="AvoidableRectangle3X" xml:space="preserve">
+    <value>Avoidable Rectangle + 3X</value>
+  </data>
+  <data name="AvoidableRectangleXyWing" xml:space="preserve">
+    <value>Avoidable Rectangle XY-Wing</value>
+  </data>
+  <data name="AvoidableRectangleXyzWing" xml:space="preserve">
+    <value>Avoidable Rectangle XYZ-Wing</value>
+  </data>
+  <data name="AvoidableRectangleWxyzWing" xml:space="preserve">
+    <value>Avoidable Rectangle WXYZ-Wing</value>
+  </data>
+  <data name="AvoidableRectangleSueDeCoq" xml:space="preserve">
+    <value>Avoidable Rectangle Sue de Coq</value>
+  </data>
+  <data name="AvoidableRectangleBrokenWing" xml:space="preserve">
+    <value>Avoidable Rectangle Guardian</value>
+  </data>
+  <data name="AvoidableRectangleHiddenSingleBlock" xml:space="preserve">
+    <value>Avoidable Rectangle Hidden Single in Block</value>
+  </data>
+  <data name="AvoidableRectangleHiddenSingleRow" xml:space="preserve">
+    <value>Avoidable Rectangle Hidden Single in Row</value>
+  </data>
+  <data name="AvoidableRectangleHiddenSingleColumn" xml:space="preserve">
+    <value>Avoidable Rectangle Hidden Single in Column</value>
+  </data>
+  <data name="UniqueLoopType1" xml:space="preserve">
+    <value>Unique Loop Type 1</value>
+  </data>
+  <data name="UniqueLoopType2" xml:space="preserve">
+    <value>Unique Loop Type 2</value>
+  </data>
+  <data name="UniqueLoopType3" xml:space="preserve">
+    <value>Unique Loop Type 3</value>
+  </data>
+  <data name="UniqueLoopType4" xml:space="preserve">
+    <value>Unique Loop Type 4</value>
+  </data>
+  <data name="ExtendedRectangleType1" xml:space="preserve">
+    <value>Extended Rectangle Type 1</value>
+  </data>
+  <data name="ExtendedRectangleType2" xml:space="preserve">
+    <value>Extended Rectangle Type 2</value>
+  </data>
+  <data name="ExtendedRectangleType3" xml:space="preserve">
+    <value>Extended Rectangle Type 3</value>
+  </data>
+  <data name="ExtendedRectangleType4" xml:space="preserve">
+    <value>Extended Rectangle Type 4</value>
+  </data>
+  <data name="BivalueUniversalGraveType1" xml:space="preserve">
+    <value>Bi-value Universal Grave Type 1</value>
+  </data>
+  <data name="BivalueUniversalGraveType2" xml:space="preserve">
+    <value>Bi-value Universal Grave Type 2</value>
+  </data>
+  <data name="BivalueUniversalGraveType3" xml:space="preserve">
+    <value>Bi-value Universal Grave Type 3</value>
+  </data>
+  <data name="BivalueUniversalGraveType4" xml:space="preserve">
+    <value>Bi-value Universal Grave Type 4</value>
+  </data>
+  <data name="BivalueUniversalGravePlusN" xml:space="preserve">
+    <value>Bi-value Universal Grave + n</value>
+  </data>
+  <data name="BivalueUniversalGravePlusNForcingChains" xml:space="preserve">
+    <value>Bi-value Universal Grave + n Forcing Chains</value>
+  </data>
+  <data name="BivalueUniversalGraveXzRule" xml:space="preserve">
+    <value>Bi-value Universal Grave XZ Rule</value>
+  </data>
+  <data name="BivalueUniversalGraveXyWing" xml:space="preserve">
+    <value>Bi-value Universal Grave XY-Wing</value>
+  </data>
+  <data name="UniquePolygonType1" xml:space="preserve">
+    <value>Unique Polygon Type 1</value>
+  </data>
+  <data name="UniquePolygonType2" xml:space="preserve">
+    <value>Unique Polygon Type 2</value>
+  </data>
+  <data name="UniquePolygonType3" xml:space="preserve">
+    <value>Unique Polygon Type 3</value>
+  </data>
+  <data name="UniquePolygonType4" xml:space="preserve">
+    <value>Unique Polygon Type 4</value>
+  </data>
+  <data name="QiuDeadlyPatternType1" xml:space="preserve">
+    <value>Qiu's Deadly Pattern Type 1</value>
+  </data>
+  <data name="QiuDeadlyPatternType2" xml:space="preserve">
+    <value>Qiu's Deadly Pattern Type 2</value>
+  </data>
+  <data name="QiuDeadlyPatternType3" xml:space="preserve">
+    <value>Qiu's Deadly Pattern Type 3</value>
+  </data>
+  <data name="QiuDeadlyPatternType4" xml:space="preserve">
+    <value>Qiu's Deadly Pattern Type 4</value>
+  </data>
+  <data name="LockedQiuDeadlyPattern" xml:space="preserve">
+    <value>Locked Qiu's Deadly Pattern</value>
+  </data>
+  <data name="UniqueSquareType1" xml:space="preserve">
+    <value>Unique Square Type 1</value>
+  </data>
+  <data name="UniqueSquareType2" xml:space="preserve">
+    <value>Unique Square Type 2</value>
+  </data>
+  <data name="UniqueSquareType3" xml:space="preserve">
+    <value>Unique Square Type 3</value>
+  </data>
+  <data name="UniqueSquareType4" xml:space="preserve">
+    <value>Unique Square Type 4</value>
+  </data>
+  <data name="SueDeCoq" xml:space="preserve">
+    <value>Sue de Coq</value>
+  </data>
+  <data name="SueDeCoqIsolated" xml:space="preserve">
+    <value>Sue de Coq Isolated Digit</value>
+  </data>
+  <data name="SueDeCoq3Dimension" xml:space="preserve">
+    <value>Sue de Coq 3 Dimension</value>
+  </data>
+  <data name="SueDeCoqCannibalism" xml:space="preserve">
+    <value>Sue de Coq Cannibalism</value>
+  </data>
+  <data name="Skyscraper" xml:space="preserve">
+    <value>Skyscraper</value>
+  </data>
+  <data name="TwoStringKite" xml:space="preserve">
+    <value>Two-String Kite</value>
+  </data>
+  <data name="TurbotFish" xml:space="preserve">
+    <value>Turbot Fish</value>
+  </data>
+  <data name="EmptyRectangle" xml:space="preserve">
+    <value>Empty Rectangle</value>
+  </data>
+  <data name="BrokenWing" xml:space="preserve">
+    <value>Guardian</value>
+  </data>
+  <data name="BivalueOddagonType1" xml:space="preserve">
+    <value>Bi-value Oddagon Type 1</value>
+  </data>
+  <data name="BivalueOddagonType2" xml:space="preserve">
+    <value>Bi-value Oddagon Type 2</value>
+  </data>
+  <data name="BivalueOddagonType3" xml:space="preserve">
+    <value>Bi-value Oddagon Type 3</value>
+  </data>
+  <data name="GroupedBivalueOddagon" xml:space="preserve">
+    <value>Grouped Bi-value Oddagon</value>
+  </data>
+  <data name="XChain" xml:space="preserve">
+    <value>X-Chain</value>
+  </data>
+  <data name="YChain" xml:space="preserve">
+    <value>Y-Chain</value>
+  </data>
+  <data name="FishyCycle" xml:space="preserve">
+    <value>Fishy Cycle</value>
+  </data>
+  <data name="XyChain" xml:space="preserve">
+    <value>XY-Chain</value>
+  </data>
+  <data name="XyCycle" xml:space="preserve">
+    <value>XY-Cycle</value>
+  </data>
+  <data name="XyXChain" xml:space="preserve">
+    <value>XY-X-Chain</value>
+  </data>
+  <data name="PurpleCow" xml:space="preserve">
+    <value>Purple Cow</value>
+  </data>
+  <data name="DiscontinuousNiceLoop" xml:space="preserve">
+    <value>Discontinuous Nice Loop</value>
+  </data>
+  <data name="ContinuousNiceLoop" xml:space="preserve">
+    <value>Continuous Nice Loop</value>
+  </data>
+  <data name="AlternatingInferenceChain" xml:space="preserve">
+    <value>Alternating Inference Chain</value>
+  </data>
+  <data name="GroupedXChain" xml:space="preserve">
+    <value>Grouped X-Chain</value>
+  </data>
+  <data name="GroupedFishyCycle" xml:space="preserve">
+    <value>Grouped Fishy Cycle</value>
+  </data>
+  <data name="GroupedXyChain" xml:space="preserve">
+    <value>Grouped XY-Chain</value>
+  </data>
+  <data name="GroupedXyCycle" xml:space="preserve">
+    <value>Grouped XY-Cycle</value>
+  </data>
+  <data name="GroupedXyXChain" xml:space="preserve">
+    <value>Grouped XY-X-Chain</value>
+  </data>
+  <data name="GroupedPurpleCow" xml:space="preserve">
+    <value>Grouped Purple Cow</value>
+  </data>
+  <data name="GroupedDiscontinuousNiceLoop" xml:space="preserve">
+    <value>Grouped Discontinuous Nice Loop</value>
+  </data>
+  <data name="GroupedContinuousNiceLoop" xml:space="preserve">
+    <value>Grouped Continuous Nice Loop</value>
+  </data>
+  <data name="GroupedAlternatingInferenceChain" xml:space="preserve">
+    <value>Grouped Alternating Inference Chain</value>
+  </data>
+  <data name="NishioForcingChains" xml:space="preserve">
+    <value>Nishio Forcing Chains</value>
+  </data>
+  <data name="RegionForcingChains" xml:space="preserve">
+    <value>Region Forcing Chains</value>
+  </data>
+  <data name="CellForcingChains" xml:space="preserve">
+    <value>Cell Forcing Chains</value>
+  </data>
+  <data name="DynamicRegionForcingChains" xml:space="preserve">
+    <value>Dynamic Region Forcing Chains</value>
+  </data>
+  <data name="DynamicCellForcingChains" xml:space="preserve">
+    <value>Dynamic Cell Forcing Chains</value>
+  </data>
+  <data name="DynamicContradictionForcingChains" xml:space="preserve">
+    <value>Dynamic Contradiction Forcing Chains</value>
+  </data>
+  <data name="DynamicDoubleForcingChains" xml:space="preserve">
+    <value>Dynamic Double Forcing Chains</value>
+  </data>
+  <data name="DynamicForcingChains" xml:space="preserve">
+    <value>Dynamic Forcing Chains</value>
+  </data>
+  <data name="EmptyRectangleIntersectionPair" xml:space="preserve">
+    <value>Empty Rectangle Intersection Pair</value>
+  </data>
+  <data name="ExtendedSubsetPrinciple" xml:space="preserve">
+    <value>Extended Subset Principle</value>
+  </data>
+  <data name="SinglyLinkedAlmostLockedSetsXzRule" xml:space="preserve">
+    <value>Singly-Linked Almost Locked Sets XZ Rule</value>
+  </data>
+  <data name="DoublyLinkedAlmostLockedSetsXzRule" xml:space="preserve">
+    <value>Doubly-Linked Almost Locked Sets XZ Rule</value>
+  </data>
+  <data name="AlmostLockedSetsXyWing" xml:space="preserve">
+    <value>Almost Locked Sets XY-Wing</value>
+  </data>
+  <data name="AlmostLockedSetsWWing" xml:space="preserve">
+    <value>Almost Locked Sets W-Wing</value>
+  </data>
+  <data name="DeathBlossom" xml:space="preserve">
+    <value>Death Blossom</value>
+  </data>
+  <data name="GurthSymmetricalPlacement" xml:space="preserve">
+    <value>Gurth's Symmetrical Placement</value>
+  </data>
+  <data name="ExtendedGurthSymmetricalPlacement" xml:space="preserve">
+    <value>Extended Gurth's Symmetrical Placement</value>
+  </data>
+  <data name="JuniorExocet" xml:space="preserve">
+    <value>Junior Exocet</value>
+  </data>
+  <data name="SeniorExocet" xml:space="preserve">
+    <value>Senior Exocet</value>
+  </data>
+  <data name="ComplexSeniorExocet" xml:space="preserve">
+    <value>Complex Senior Exocet</value>
+  </data>
+  <data name="SiameseJuniorExocet" xml:space="preserve">
+    <value>Siamese Junior Exocet</value>
+  </data>
+  <data name="SiameseSeniorExocet" xml:space="preserve">
+    <value>Siamese Senior Exocet</value>
+  </data>
+  <data name="DominoLoop" xml:space="preserve">
+    <value>Domino Loop</value>
+  </data>
+  <data name="MultisectorLockedSets" xml:space="preserve">
+    <value>Multi-sector Locked Sets</value>
+  </data>
+  <data name="PatternOverlay" xml:space="preserve">
+    <value>Pattern Overlay</value>
+  </data>
+  <data name="TemplateSet" xml:space="preserve">
+    <value>Template Set</value>
+  </data>
+  <data name="TemplateDelete" xml:space="preserve">
+    <value>Template Delete</value>
+  </data>
+  <data name="BowmanBingo" xml:space="preserve">
+    <value>Bowman Bingo</value>
+  </data>
+  <data name="BruteForce" xml:space="preserve">
+    <value>Brute Force</value>
+  </data>
+</root>
